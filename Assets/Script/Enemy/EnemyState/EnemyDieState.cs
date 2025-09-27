@@ -1,9 +1,18 @@
-using StateMachine;
-using UnityEngine;
-
-public class EnemyDieState : BaseState
+public class EnemyDieState : EnemyBaseState
 {
-    public EnemyDieState(EnemyController enemy, Animator animator)
+    public EnemyDieState(IEnemy enemy, IEnemyAnimator animator) : base(enemy, animator)
+    {
+    }
+
+    public override void onEnter()
+    {
+        if (animator != null)
+        {
+            animator.SetTrigger("Die");
+        }
+    }
+
+    public override void onExit()
     {
     }
 }

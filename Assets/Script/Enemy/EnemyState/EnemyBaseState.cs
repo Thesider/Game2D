@@ -1,27 +1,20 @@
 using StateMachine;
 using UnityEngine;
 
-public class EnemyBaseState : IState
+// Base state for enemies: uses IEnemy and an animator abstraction so nodes don't depend on Unity Animator.
+public class EnemyBaseState : BaseState
 {
-    protected readonly EnemyController enemy;
-    protected readonly Animator animator;
+    protected readonly IEnemy enemy;
+    protected readonly IEnemyAnimator animator;
 
-    protected EnemyBaseState(EnemyController enemy, Animator animator)
+    protected EnemyBaseState(IEnemy enemy, IEnemyAnimator animator)
     {
         this.enemy = enemy;
         this.animator = animator;
     }
-    public virtual void onEnter()
-    {
-    }
-    public virtual void onExit()
-    {
-    }
-    public virtual void onUpdate()
-    {
-    }
-    public virtual void onFixedUpdate()
-    {
-    }
-}
 
+    public override void onEnter() { }
+    public override void onExit() { }
+    public override void onUpdate() { }
+    public override void onFixedUpdate() { }
+}
