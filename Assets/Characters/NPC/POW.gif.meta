@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 0c198e9fd9bd5eb44b1fc3efb96dd8bb
+guid: 0c2ce4adfb2a6494082b8dc7859ed195
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8082514273087960088
+    second: POW_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -53,7 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -63,9 +66,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -123,37 +126,33 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: helpfull_npcs_tied
+      name: POW_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2923
-        width: 33
-        height: 34
+        x: 18
+        y: 459
+        width: 39
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b5f1136902dbaf64c968b413433d8b1c
-      internalID: -516642857
+      spriteID: 8eb4194771425df80800000000000000
+      internalID: -8082514273087960088
       vertices: []
       indices: 
       edges: []
       weights: []
     outline: []
     customData: 
-    physicsShape:
-    - - {x: 289, y: 1490}
-      - {x: -289, y: 1490}
-      - {x: -289, y: -1490}
-      - {x: 289, y: -1490}
+    physicsShape: []
     bones: []
-    spriteID: 80d241e8ef496a14a9343fe7e562a1bd
-    internalID: -1599692182
+    spriteID: c260a96c3562755488609ca63b432a38
+    internalID: 0
     vertices: []
     indices: 
     edges: []
@@ -162,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      helpfull_npcs_tied: -516642857
+      POW_0: -8082514273087960088
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

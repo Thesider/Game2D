@@ -1096,6 +1096,31 @@ MonoBehaviour:
   gameManager: {fileID: 1635060056}
   itemBag: {fileID: 0}
   newSprite: {fileID: 0}
+--- !u!1 &964510465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2236937221550534801, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
+  m_PrefabInstance: {fileID: 2083362592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &964510466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964510465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af2a377e4dc2804599a2dd7b97cc00b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: 14ed53438d130a34f8a3ab90b712c411, type: 3}
+  moveSpeed: 5
+  jumpForce: 5
+  bulletPrefab: {fileID: 8908353632752610231, guid: af679940e12007743b893428a112500c, type: 3}
+  firePoint: {fileID: 433052346}
+  bulletSpeed: 8
+  bulletDamage: 10
+  bulletLifetime: 4
 --- !u!1 &1188241229
 GameObject:
   m_ObjectHideFlags: 0
@@ -2560,7 +2585,7 @@ Transform:
   m_GameObject: {fileID: 1349680075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -18.79, y: 5.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3763,7 +3788,7 @@ GameObject:
   - component: {fileID: 1847931553}
   m_Layer: 6
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24891,7 +24916,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e78c2253cebe79942a0873037c32e22c, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -25125,10 +25150,14 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 1847931550}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7448608056847570066, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2236937221550534801, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 964510466}
   m_SourcePrefab: {fileID: 100100000, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
 --- !u!1 &2102290977
 GameObject:

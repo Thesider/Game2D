@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Shooting")]
     public GameObject bulletPrefab;
-    public Transform firePoint;    // chỗ viên đạn bắn ra
+    public Transform firePoint;
     public float bulletSpeed = 8f;
     public float bulletDamage = 10f;
     public float bulletLifetime = 4f;

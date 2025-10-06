@@ -7,12 +7,12 @@ public class ScenesManager : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;    
+        Instance = this;
     }
     public enum Scene
     {
         MainMenu,
-        SampleScene
+        SampleScene_Map_0
     }
 
 
@@ -23,7 +23,7 @@ public class ScenesManager : MonoBehaviour
 
     public void LoadNewGame()
     {
-        SceneManager.LoadScene(Scene.SampleScene.ToString());
+        SceneManager.LoadScene(Scene.SampleScene_Map_0.ToString());
     }
 
     public void LoadNextScene()
