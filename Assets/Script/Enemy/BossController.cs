@@ -17,11 +17,12 @@ public class BossController : MonoBehaviour, IEnemy
     public float AttackRange => attackRange;
     public float AttackCooldown => attackCooldown;
     public Transform Player => player;
-    public Transform Self => transform; // added
+    public Transform Self => transform;
+    public bool IsAlive => health > 0;
     public float Health { get => health; set => health = value; }
 
     // Implement IEnemy.Animator
-    public IEnemyAnimator Animator => animator as IEnemyAnimator;
+    public IAnimator Animator => animator as IAnimator;
 
     private StateMachine.StateMachine stateMachine;
     private EnemyIdleState idleState;

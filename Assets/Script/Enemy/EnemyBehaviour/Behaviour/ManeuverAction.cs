@@ -7,8 +7,6 @@ public enum ManeuverStrategy
     Flank         // Circle / strafe while staying near attack range
 }
 
-// ManeuverAction now supports an optional maxDuration so it can terminate.
-// It also initializes a start time on first Evaluate and resets when completed.
 public class ManeuverAction : Action
 {
     private readonly ManeuverStrategy strategy;
@@ -30,10 +28,10 @@ public class ManeuverAction : Action
         switch (strategy)
         {
             case ManeuverStrategy.Aggressive:
-                desiredDistance = enemy.AttackRange * 0.9f;
+                desiredDistance = enemy.AttackRange * 0.8f;
                 break;
             case ManeuverStrategy.KeepDistance:
-                desiredDistance = enemy.AttackRange * 1.3f;
+                desiredDistance = enemy.AttackRange * 1.5f;
                 break;
             case ManeuverStrategy.Flank:
             default:
@@ -41,7 +39,7 @@ public class ManeuverAction : Action
                 break;
         }
         // Randomize initial flank direction
-        flankDirection = UnityEngine.Random.value < 0.5f ? -1f : 1f;
+        flankDirection = UnityEngine.Random.value < 0.5f ? 0.5f : 1f;
     }
 
     protected override NodeState DoAction()
@@ -60,7 +58,6 @@ public class ManeuverAction : Action
 
         float step = enemy.MoveSpeed * Time.deltaTime;
 
-        // If we exceeded max duration, reset and report Success so Selector can reconsider attack.
         if (maxDuration > 0f && Time.time - startTime > maxDuration)
         {
             if (debug) Debug.Log($"[BT] ManeuverAction: timed out after {maxDuration}s");

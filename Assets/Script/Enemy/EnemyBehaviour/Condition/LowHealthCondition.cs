@@ -1,6 +1,5 @@
 using UnityEngine;
 
-// Condition: true when enemy health is below or equal to a threshold.
 public class LowHealthCondition : Condition
 {
     private readonly bool debug;
@@ -12,7 +11,6 @@ public class LowHealthCondition : Condition
         this.debug = debug;
     }
 
-    // Implement the required abstract method from Condition
     protected override bool CheckCondition()
     {
         if (enemy == null)

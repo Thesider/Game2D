@@ -1,47 +1,15 @@
 using UnityEngine;
-
-// Move towards the player until within attack range.
-public class MoveToPlayerAction : Action
-{
-    private readonly bool debug;
-
-    public MoveToPlayerAction(IEnemy enemy, bool debug = false) : base(enemy)
-    {
-        this.debug = debug;
-    }
-
-    protected override NodeState DoAction()
-    {
-        if (enemy.Player == null) return NodeState.Failure;
-
-        Vector3 target = enemy.Player.position;
-        float dist = Vector3.Distance(enemy.Self.position, target);
-
-        if (dist <= enemy.AttackRange)
-        {
-            if (debug) Debug.Log("[BT] MoveToPlayerAction: Reached target");
-            return NodeState.Success;
-        }
-
-        float step = enemy.MoveSpeed * Time.deltaTime;
-        enemy.Self.position = Vector3.MoveTowards(enemy.Self.position, target, step);
-
-        if (debug) Debug.Log("[BT] MoveToPlayerAction: Moving towards player");
-        return NodeState.Running;
-    }
-}
-
 // Try to attack the player when in range and cooldown is ready.
 // Triggers the provided animator (if any) when an attack occurs and spawns a bullet prefab if available.
 public class AttackAction : Action
 {
-    private readonly IEnemyAnimator animator;
+    private readonly IAnimator animator;
     private readonly bool debug;
     private float lastAttackTime = -999f;
     private readonly Blackboard blackboard;
     private const string LastAttackKey = "lastAttack";
 
-    public AttackAction(IEnemy enemy, IEnemyAnimator animator = null, bool debug = false, Blackboard blackboard = null) : base(enemy)
+    public AttackAction(IEnemy enemy, IAnimator animator = null, bool debug = false, Blackboard blackboard = null) : base(enemy)
     {
         this.animator = animator;
         this.debug = debug;
@@ -79,7 +47,7 @@ public class AttackAction : Action
         else
             lastAttackTime = now;
 
-        // Trigger animation if available (through IEnemyAnimator)
+        // Trigger animation if available (through IAnimator)
         if (animator != null)
         {
             animator.SetTrigger("Attack");

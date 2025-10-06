@@ -1,8 +1,7 @@
 using UnityEngine;
 
-// Adapter implementing IEnemyAnimator by forwarding to Unity's Animator.
-// Safe to call even if underlying animator is null.
-public class AnimatorAdapter : IEnemyAnimator
+
+public class AnimatorAdapter : IAnimator
 {
     private readonly Animator animator;
 
@@ -25,4 +24,5 @@ public class AnimatorAdapter : IEnemyAnimator
     {
         if (animator != null) animator.Play(stateName);
     }
+
 }

@@ -5,8 +5,8 @@ public class TimeoutNode : Node
 {
     private readonly Node child;
     private readonly float timeoutSeconds;
-    private readonly System.Action onTimeout; // optional
-    private readonly Node onTimeoutNode; // optional node to evaluate when timeout occurs
+    private readonly System.Action onTimeout;
+    private readonly Node onTimeoutNode;
     private float startTime = -1f;
 
     public TimeoutNode(Node child, float timeoutSeconds, System.Action onTimeout = null)
@@ -16,7 +16,6 @@ public class TimeoutNode : Node
         this.onTimeout = onTimeout;
     }
 
-    // Overload: accept a Node to execute/evaluate when timeout occurs (useful when callers pass an Action node).
     public TimeoutNode(Node child, float timeoutSeconds, Node onTimeoutNode)
     {
         this.child = child;

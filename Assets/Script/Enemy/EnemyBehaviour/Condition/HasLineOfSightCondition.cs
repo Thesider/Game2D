@@ -1,8 +1,6 @@
 using UnityEngine;
 
-// Condition: true when there is an unobstructed line of sight between enemy and player.
-// Optional layerMask to ignore e.g. triggers; default uses everything.
-// Uses a small offset to avoid self-intersection.
+
 public class HasLineOfSightCondition : Condition
 {
     private readonly float maxDistance;

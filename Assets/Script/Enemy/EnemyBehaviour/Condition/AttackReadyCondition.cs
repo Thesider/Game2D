@@ -1,6 +1,5 @@
 using UnityEngine;
 
-// Returns true if player in attack range AND cooldown is ready.
 public class AttackReadyCondition : Condition
 {
     private readonly bool debug;

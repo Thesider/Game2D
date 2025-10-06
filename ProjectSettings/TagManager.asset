@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Treasure
+  - Fish
+  - BlindBox
+  - Enemy
   layers:
   - Default
   - TransparentFX
