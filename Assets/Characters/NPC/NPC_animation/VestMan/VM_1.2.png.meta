@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 5535a9f10a00b25408297099f7b01e36
+guid: bd607546bff3dbb4ba9f6955f1eb648c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5621770477158864569
-    second: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      213: -2145500213138744099
+    second: VM_1.2_0
+  - first:
+      213: -4867428506323296945
+    second: VM_1.2_1
+  - first:
+      213: -5101494639854780626
+    second: VM_1.2_2
+  - first:
+      213: 3590450182021982972
+    second: VM_1.2_3
+  - first:
+      213: 7709303022033056070
+    second: VM_1.2_4
+  - first:
+      213: 4115329821127866069
+    second: VM_1.2_5
+  - first:
+      213: -6068310678874172960
+    second: VM_1.2_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      name: VM_1.2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 850
-        height: 534
+        width: 107
+        height: 149
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +159,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b615dba67a840e40800000000000000
-      internalID: 5621770477158864569
+      spriteID: ddc175a6ce6a932e0800000000000000
+      internalID: -2145500213138744099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_1.2_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 107
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d5dfeef8b637cb0800000000000000
+      internalID: -4867428506323296945
       vertices: []
       indices: 
       edges: []
@@ -151,7 +191,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3401a06baaf42544499d928d8fcc172e
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +201,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      desktop-wallpaper-retro-metal-slug-2-metal-slug_0: 5621770477158864569
+      VM_1.2_0: -2145500213138744099
+      VM_1.2_1: -4867428506323296945
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

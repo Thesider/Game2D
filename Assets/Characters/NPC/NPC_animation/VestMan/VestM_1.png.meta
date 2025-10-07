@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 5535a9f10a00b25408297099f7b01e36
+guid: a97c182de94c76d4bad57d9cd7e543df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5621770477158864569
-    second: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      213: -4819937295087768974
+    second: VestM_1_0
+  - first:
+      213: -7459377048847873487
+    second: VestM_1_1
+  - first:
+      213: -3828057113224518754
+    second: VestM_1_2
+  - first:
+      213: 6455027762905841669
+    second: VestM_1_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      name: VestM_1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 850
-        height: 534
+        width: 75
+        height: 98
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b615dba67a840e40800000000000000
-      internalID: 5621770477158864569
+      spriteID: 27ae2a631942c1db0800000000000000
+      internalID: -4819937295087768974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 61
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a88b57818fa7890800000000000000
+      internalID: -7459377048847873487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e936852665200eac0800000000000000
+      internalID: -3828057113224518754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5008947dc8dd49950800000000000000
+      internalID: 6455027762905841669
       vertices: []
       indices: 
       edges: []
@@ -160,8 +235,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      desktop-wallpaper-retro-metal-slug-2-metal-slug_0: 5621770477158864569
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

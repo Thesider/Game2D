@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 5535a9f10a00b25408297099f7b01e36
+guid: 8e6ca1cd58d14c943aacbb04d6fadfc0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5621770477158864569
-    second: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      213: 5894400576583351382
+    second: VM_2.1_0
+  - first:
+      213: 7597907880732704777
+    second: VM_2.1_1
+  - first:
+      213: 4195401664091466213
+    second: VM_2.1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +132,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      name: VM_2.1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 850
-        height: 534
+        x: 5
+        y: 2
+        width: 120
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +147,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b615dba67a840e40800000000000000
-      internalID: 5621770477158864569
+      spriteID: 65cbb13381e1dc150800000000000000
+      internalID: 5894400576583351382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_2.1_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 111
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 900c63b46f0317960800000000000000
+      internalID: 7597907880732704777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_2.1_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 2
+        width: 104
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e92146d59f093a30800000000000000
+      internalID: 4195401664091466213
       vertices: []
       indices: 
       edges: []
@@ -160,8 +210,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      desktop-wallpaper-retro-metal-slug-2-metal-slug_0: 5621770477158864569
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

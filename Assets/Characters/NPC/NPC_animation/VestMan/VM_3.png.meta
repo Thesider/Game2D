@@ -1,10 +1,49 @@
 fileFormatVersion: 2
-guid: 5535a9f10a00b25408297099f7b01e36
+guid: 47b5341fbcc5ed84bbcee5a4eb7c8f76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5621770477158864569
-    second: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      213: -9154491559314031031
+    second: VM_3_0
+  - first:
+      213: 7745558662672355343
+    second: VM_3_1
+  - first:
+      213: 32633275933759693
+    second: VM_3_2
+  - first:
+      213: -3235673981538874863
+    second: VM_3_3
+  - first:
+      213: 6298204989097036372
+    second: VM_3_4
+  - first:
+      213: -6239954892469287751
+    second: VM_3_5
+  - first:
+      213: 7155817154050150618
+    second: VM_3_6
+  - first:
+      213: 4267540759454859434
+    second: VM_3_7
+  - first:
+      213: 4274332675645432839
+    second: VM_3_8
+  - first:
+      213: -3742393503450038385
+    second: VM_3_9
+  - first:
+      213: 5551341875031577222
+    second: VM_3_10
+  - first:
+      213: 6626145854499514765
+    second: VM_3_11
+  - first:
+      213: -959471896793851066
+    second: VM_3_12
+  - first:
+      213: 356499591949070792
+    second: VM_3_13
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -126,13 +165,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: desktop-wallpaper-retro-metal-slug-2-metal-slug_0
+      name: VM_3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 850
-        height: 534
+        width: 158
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +180,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b615dba67a840e40800000000000000
-      internalID: 5621770477158864569
+      spriteID: 94e76cbed66b4f080800000000000000
+      internalID: -9154491559314031031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_3_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0
+        width: 158
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f001983e090cd7b60800000000000000
+      internalID: 7745558662672355343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VM_3_2
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0
+        width: 158
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc893e3aacfe37000800000000000000
+      internalID: 32633275933759693
       vertices: []
       indices: 
       edges: []
@@ -151,7 +234,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3d232edb1aa39694eb29f2e60560bc8e
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +244,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      desktop-wallpaper-retro-metal-slug-2-metal-slug_0: 5621770477158864569
+      VM_3_0: -9154491559314031031
+      VM_3_1: 7745558662672355343
+      VM_3_2: 32633275933759693
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

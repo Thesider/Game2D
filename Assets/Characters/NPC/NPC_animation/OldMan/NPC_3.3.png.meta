@@ -1,0 +1,376 @@
+fileFormatVersion: 2
+guid: ee485e89e12f9814399e9059a39bba1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2346474064984757608
+    second: NPC_3.3_0
+  - first:
+      213: -2161885122096993994
+    second: NPC_3.3_1
+  - first:
+      213: 3511972429773832668
+    second: NPC_3.3_2
+  - first:
+      213: 4736233467937346875
+    second: NPC_3.3_3
+  - first:
+      213: -532907883515135600
+    second: NPC_3.3_4
+  - first:
+      213: -2616476824682104008
+    second: NPC_3.3_5
+  - first:
+      213: -3162654628027854870
+    second: NPC_3.3_6
+  - first:
+      213: 3467150069315270750
+    second: NPC_3.3_7
+  - first:
+      213: -2627082502577218186
+    second: NPC_3.3_8
+  - first:
+      213: 1665471398606783606
+    second: NPC_3.3_9
+  - first:
+      213: -789652786613721056
+    second: NPC_3.3_10
+  - first:
+      213: -7682600741952445372
+    second: NPC_3.3_11
+  - first:
+      213: -2892663493143587851
+    second: NPC_3.3_12
+  - first:
+      213: 1821941903688808290
+    second: NPC_3.3_13
+  - first:
+      213: -1938197802442183823
+    second: NPC_3.3_14
+  - first:
+      213: 8280887308187183437
+    second: NPC_3.3_15
+  - first:
+      213: 8273885332414932870
+    second: NPC_3.3_16
+  - first:
+      213: 6722263808142619553
+    second: NPC_3.3_17
+  - first:
+      213: -466271222282222787
+    second: NPC_3.3_18
+  - first:
+      213: 3046128783645264100
+    second: NPC_3.3_19
+  - first:
+      213: 1424189773005873232
+    second: NPC_3.3_20
+  - first:
+      213: -5910760875340753804
+    second: NPC_3.3_21
+  - first:
+      213: -3399838703980024072
+    second: NPC_3.3_22
+  - first:
+      213: -6699554877561096836
+    second: NPC_3.3_23
+  - first:
+      213: 2506732336878949512
+    second: NPC_3.3_24
+  - first:
+      213: 1978830116801829279
+    second: NPC_3.3_25
+  - first:
+      213: 2953430750023252090
+    second: NPC_3.3_26
+  - first:
+      213: 5819234208553773591
+    second: NPC_3.3_27
+  - first:
+      213: 2165757931013483031
+    second: NPC_3.3_28
+  - first:
+      213: -9045449707567364029
+    second: NPC_3.3_29
+  - first:
+      213: 8453433969322902271
+    second: NPC_3.3_30
+  - first:
+      213: 2418236677138518840
+    second: NPC_3.3_31
+  - first:
+      213: 9023684954069926201
+    second: NPC_3.3_32
+  - first:
+      213: -789034385968929786
+    second: NPC_3.3_33
+  - first:
+      213: 7465947025970649416
+    second: NPC_3.3_34
+  - first:
+      213: 6496317269680068028
+    second: NPC_3.3_35
+  - first:
+      213: 4764296580813447870
+    second: NPC_3.3_36
+  - first:
+      213: 758353568224862943
+    second: NPC_3.3_37
+  - first:
+      213: 6533080861603649021
+    second: NPC_3.3_38
+  - first:
+      213: 3484338879561203751
+    second: NPC_3.3_39
+  - first:
+      213: 3319848197748694266
+    second: NPC_3.3_40
+  - first:
+      213: 7637724543017431167
+    second: NPC_3.3_41
+  - first:
+      213: 2192270578145574357
+    second: NPC_3.3_42
+  - first:
+      213: -1618803976453380457
+    second: NPC_3.3_43
+  - first:
+      213: 3417474575462718179
+    second: NPC_3.3_44
+  - first:
+      213: -875504180451637992
+    second: NPC_3.3_45
+  - first:
+      213: 6578195820521653641
+    second: NPC_3.3_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_3.3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89aaae12546af6fd0800000000000000
+      internalID: -2346474064984757608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_3.3_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 7
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 639e4348fe07ff1e0800000000000000
+      internalID: -2161885122096993994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_3.3_2
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 7
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd182a151580db030800000000000000
+      internalID: 3511972429773832668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_3.3_3
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 7
+        width: 145
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b35d8b5de3b7ab140800000000000000
+      internalID: 4736233467937346875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f5ba344cc8c1c8c458a40cdba89f4f24
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NPC_3.3_0: -2346474064984757608
+      NPC_3.3_1: -2161885122096993994
+      NPC_3.3_2: 3511972429773832668
+      NPC_3.3_3: 4736233467937346875
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
