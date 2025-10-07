@@ -23,7 +23,13 @@ public class EnemyController : MonoBehaviour, IEnemy
     public float MoveSpeed => moveSpeed;
     public float AttackRange => attackRange;
     public float AttackCooldown => attackCooldown;
-    public Transform Player => player;
+    public Transform Player { get => player; set => player = value; }
+
+    // Convenience setter if other code prefers a method call
+    public void SetPlayer(Transform t)
+    {
+        player = t;
+    }
     public Transform Self => transform;
 
     public bool IsAlive => health > 0;
@@ -58,6 +64,14 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     private void Start()
     {
+        if (player == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+                player = p.transform;
+            else
+                Debug.LogWarning("EnemyController: Player not found in scene!");
+        }
         stateMachine = new StateMachine.StateMachine();
         idleState = new EnemyIdleState(this, Animator);
         combatState = new EnemyCombatState(this, Animator);
@@ -78,6 +92,8 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     private void FixedUpdate()
     {
+        if (player == null) return;
+        float distance = Vector2.Distance(transform.position, player.position);
         stateMachine.FixedUpdate();
     }
 

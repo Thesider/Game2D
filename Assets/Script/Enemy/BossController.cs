@@ -24,6 +24,8 @@ public class BossController : MonoBehaviour, IEnemy
     // Implement IEnemy.Animator
     public IAnimator Animator => animator as IAnimator;
 
+    Transform IEnemy.Player { get => Player; set => throw new System.NotImplementedException(); }
+
     private StateMachine.StateMachine stateMachine;
     private EnemyIdleState idleState;
     private EnemyCombatState combatState;

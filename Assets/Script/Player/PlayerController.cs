@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public InputActionAsset inputActions;
 
+    private InputActionMap playerActionMap;
     private InputAction moveAction;
     private InputAction jumpAction;
     private InputAction shootAction;
@@ -27,44 +28,80 @@ public class PlayerController : MonoBehaviour
 
     private Vector2 facingDirection = Vector2.right;
 
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+
+        if (inputActions == null)
+        {
+            Debug.LogError("InputActionAsset reference missing on PlayerController.", this);
+            return;
+        }
+
+        playerActionMap = inputActions.FindActionMap("Player", throwIfNotFound: false);
+        if (playerActionMap == null)
+        {
+            Debug.LogError("'Player' action map not found in InputActionAsset.", this);
+            return;
+        }
+
+        moveAction = playerActionMap.FindAction("Move", throwIfNotFound: false);
+        jumpAction = playerActionMap.FindAction("Jump", throwIfNotFound: false);
+        shootAction = playerActionMap.FindAction("Attack", throwIfNotFound: false);
+
+        if (moveAction == null || jumpAction == null || shootAction == null)
+        {
+            Debug.LogError("One or more required actions (Move, Jump, Attack) are missing from the 'Player' action map.", this);
+        }
+    }
+
     private void OnEnable()
     {
-        inputActions.FindActionMap("Player").Enable();
+        if (playerActionMap == null)
+            return;
+
+        playerActionMap.Enable();
+        moveAction?.Enable();
+        jumpAction?.Enable();
+        shootAction?.Enable();
+
+        if (shootAction != null)
+        {
+            shootAction.performed += OnShootPerformed;
+        }
     }
 
     private void OnDisable()
     {
-        inputActions.FindActionMap("Player").Disable();
-    }
+        if (playerActionMap == null)
+            return;
 
-    private void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-    }
+        if (shootAction != null)
+        {
+            shootAction.performed -= OnShootPerformed;
+            shootAction.Disable();
+        }
 
-    void Start()
-    {
-        moveAction = inputActions.FindAction("Move");
-        jumpAction = inputActions.FindAction("Jump");
-        shootAction = inputActions.FindAction("Shoot");
-
-        moveAction.Enable();
-        jumpAction.Enable();
-        shootAction.Enable();
-
-        shootAction.performed += ctx => Shoot();
+        jumpAction?.Disable();
+        moveAction?.Disable();
+        playerActionMap.Disable();
     }
 
     void Update()
     {
+        if (moveAction == null || jumpAction == null)
+            return;
+
         moveAmount = moveAction.ReadValue<Vector2>();
         jumpAmount = jumpAction.ReadValue<float>();
 
-        // Cập nhật hướng player đang nhìn (trái hoặc phải)
         if (moveAmount.x > 0.1f)
             facingDirection = Vector2.right;
         else if (moveAmount.x < -0.1f)
             facingDirection = Vector2.left;
+
+        if (rb == null)
+            return;
 
         rb.linearVelocity = new Vector2(moveAmount.x * moveSpeed, rb.linearVelocity.y);
 
@@ -81,11 +118,17 @@ public class PlayerController : MonoBehaviour
 
     private void Walk()
     {
+        if (rb == null)
+            return;
+
         rb.linearVelocity = new Vector2(moveAmount.x * moveSpeed, rb.linearVelocity.y);
     }
 
     private void Jump()
     {
+        if (rb == null)
+            return;
+
         rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
         isGrounded = false;
     }
@@ -96,6 +139,11 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+    }
+
+    private void OnShootPerformed(InputAction.CallbackContext context)
+    {
+        Shoot();
     }
 
     private void Shoot()

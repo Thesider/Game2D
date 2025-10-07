@@ -21,7 +21,6 @@ public class HelperNPCController : MonoBehaviour, INPC
     private NPCFollowingState followingState;
     private NPCCombatState combatState;
 
-    #region INPC Implementation
     public string NPCId => npcId;
     public NPCType Type => type;
     public Transform Transform => transform;
@@ -30,7 +29,6 @@ public class HelperNPCController : MonoBehaviour, INPC
     public bool IsAlive => health > 0f;
     public Blackboard Blackboard => blackboard;
     public IAnimator Animator => animatorAdapter;
-    #endregion
 
     private void Awake()
     {
