@@ -1,9 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-// Very small node pooling helper to reduce allocations for frequently-created node types.
-// Usage: var n = NodePool.Get<MyNode>(() => new MyNode(...)); NodePool.Return(n);
-// This keeps one instance per type by default; extend if you need more capacity.
+
 public static class NodePool
 {
     private static readonly Dictionary<Type, object> pool = new Dictionary<Type, object>();
@@ -18,7 +16,6 @@ public static class NodePool
                 return instance;
             }
         }
-        // fallback to factory
         return factory();
     }
 
@@ -30,7 +27,6 @@ public static class NodePool
             var t = typeof(T);
             if (!pool.ContainsKey(t))
                 pool[t] = instance;
-            // otherwise drop — simple single-slot cache per type
         }
     }
 

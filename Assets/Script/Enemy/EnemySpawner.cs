@@ -5,6 +5,7 @@ public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private Transform[] spawnPoints;
+    [SerializeField] private Transform player;
     [SerializeField] private float spawnInterval = 5.0f;
     [SerializeField] private int maxSpawned = 0;
     [SerializeField] private bool spawnOnStart = true;
@@ -36,13 +37,8 @@ public class EnemySpawner : MonoBehaviour
         if (enemyPrefab == null || spawnPoints == null || spawnPoints.Length == 0)
             return;
 
-        for (int i = spawned.Count - 1; i >= 0; i--)
-        {
-            if (spawned[i] == null || !((MonoBehaviour)spawned[i]).gameObject.activeInHierarchy)
-            {
-                spawned.RemoveAt(i);
-            }
-        }
+        // Remove destroyed or inactive enemies safely before accessing the list.
+        CleanUpSpawned();
 
         if (maxSpawned > 0 && spawned.Count >= maxSpawned)
             return;
@@ -66,13 +62,26 @@ public class EnemySpawner : MonoBehaviour
         Transform spawn = spawnPoints[idx];
         go.transform.position = spawn != null ? spawn.position : transform.position;
         go.transform.rotation = spawn != null ? spawn.rotation : Quaternion.identity;
-        go.SetActive(true);
-
+        // Set player on the enemy before enabling so states can use it immediately
         IEnemy enemy = go.GetComponent<IEnemy>();
         if (enemy != null)
         {
+            // If spawner has no player assigned, try to find one in scene once
+            if (player == null)
+            {
+                GameObject p = GameObject.FindGameObjectWithTag("Player");
+                if (p != null) player = p.transform;
+            }
+
+            if (player != null)
+            {
+                try { enemy.Player = player; } catch { }
+            }
+
             spawned.Add(enemy);
         }
+
+        go.SetActive(true);
     }
 
     private GameObject GetPooledEnemy()
@@ -94,9 +103,7 @@ public class EnemySpawner : MonoBehaviour
         if (enemyPrefab == null || spawnPoints == null || spawnPoints.Length == 0)
             return;
 
-        for (int i = spawned.Count - 1; i >= 0; i--)
-            if (spawned[i] == null || !((MonoBehaviour)spawned[i]).gameObject.activeInHierarchy)
-                spawned.RemoveAt(i);
+        CleanUpSpawned();
 
         if (maxSpawned > 0 && spawned.Count >= maxSpawned)
             return;
@@ -107,16 +114,63 @@ public class EnemySpawner : MonoBehaviour
 
     public void ClearAllSpawned()
     {
-        foreach (IEnemy enemy in spawned)
+        for (int i = spawned.Count - 1; i >= 0; i--)
         {
-            if (enemy != null)
+            var enemy = spawned[i];
+            if (enemy == null)
+            {
+                spawned.RemoveAt(i);
+                continue;
+            }
+
+            try
             {
                 GameObject go = ((MonoBehaviour)enemy).gameObject;
-                go.SetActive(false);
-                pool.Enqueue(go);
+                if (go != null)
+                {
+                    go.SetActive(false);
+                    pool.Enqueue(go);
+                }
             }
+            catch (System.Exception)
+            {
+                // If accessing gameObject throws (destroyed), just ignore and continue.
+            }
+
+            spawned.RemoveAt(i);
         }
         spawned.Clear();
+    }
+
+    // Remove destroyed or inactive entries from the spawned list safely.
+    private void CleanUpSpawned()
+    {
+        for (int i = spawned.Count - 1; i >= 0; i--)
+        {
+            var enemy = spawned[i];
+            // If the reference is already null according to Unity, remove it.
+            if (enemy == null)
+            {
+                spawned.RemoveAt(i);
+                continue;
+            }
+
+            // Safely check activeInHierarchy without throwing if the native object was destroyed.
+            try
+            {
+                var mb = enemy as MonoBehaviour;
+                if (mb == null || mb.gameObject == null || !mb.gameObject.activeInHierarchy)
+                {
+                    spawned.RemoveAt(i);
+                }
+            }
+            catch (System.Exception)
+            {
+                // Accessing properties of a destroyed Unity object can throw in some editor/runtime states.
+                // Remove the entry to avoid MissingReferenceException.
+                spawned.RemoveAt(i);
+            }
+        }
     }
 
     public void SpawnWave(int count)

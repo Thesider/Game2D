@@ -17,17 +17,23 @@ public class EnemyController : MonoBehaviour, IEnemy
     [SerializeField] private float bulletSpeed = 8f;
     [SerializeField] private float bulletLifetime = 4f;
 
-    // Per-enemy runtime data
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
 
     public float MoveSpeed => moveSpeed;
     public float AttackRange => attackRange;
     public float AttackCooldown => attackCooldown;
-    public Transform Player => player;
+    public Transform Player { get => player; set => player = value; }
+
+    // Convenience setter if other code prefers a method call
+    public void SetPlayer(Transform t)
+    {
+        player = t;
+    }
     public Transform Self => transform;
 
-    // Projectile accessors
+    public bool IsAlive => health > 0;
+
     public GameObject BulletPrefab => bulletPrefab;
     public Transform AttackPoint => attackPoint;
     public float AttackDamage => attackDamage;
@@ -36,8 +42,8 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     public float Health { get => health; set => health = value; }
 
-    // IEnemy interface wiring
-    public IEnemyAnimator Animator => animatorAdapter;
+    // IEnemy interface wiring (expose generic animator facade)
+    public IAnimator Animator => animatorAdapter;
     public Blackboard Blackboard => blackboard;
 
     private StateMachine.StateMachine stateMachine;
@@ -52,13 +58,20 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     private void OnEnable()
     {
-        // Record spawn time so behaviour nodes can avoid triggering attack animations immediately after spawn.
-        // OnEnable runs when the pooled enemy is activated by the spawner.
+
         blackboard.Set("spawnTime", Time.time);
     }
 
     private void Start()
     {
+        if (player == null)
+        {
+            GameObject p = GameObject.FindGameObjectWithTag("Player");
+            if (p != null)
+                player = p.transform;
+            else
+                Debug.LogWarning("EnemyController: Player not found in scene!");
+        }
         stateMachine = new StateMachine.StateMachine();
         idleState = new EnemyIdleState(this, Animator);
         combatState = new EnemyCombatState(this, Animator);
@@ -79,6 +92,8 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     private void FixedUpdate()
     {
+        if (player == null) return;
+        float distance = Vector2.Distance(transform.position, player.position);
         stateMachine.FixedUpdate();
     }
 
@@ -89,5 +104,10 @@ public class EnemyController : MonoBehaviour, IEnemy
         {
             stateMachine.SetState(dieState);
         }
+    }
+
+    public void OnDieAnimationComplete()
+    {
+        Destroy(gameObject);
     }
 }

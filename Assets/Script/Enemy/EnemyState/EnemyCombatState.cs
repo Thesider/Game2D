@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 // Combat state caches its behaviour-tree nodes to avoid allocations each tick.
@@ -5,6 +6,8 @@ using UnityEngine;
 public class EnemyCombatState : StateWithBehaviour
 {
     // Cached nodes (created once per state instance)
+    private PlayerInRangeCondition playerInRangeCondition;
+    private HasLineOfSightCondition hasLineOfSightCondition;
     private Sequence attackSeq;
     private AttackAction attackAction;
     private DebugDecorator attackDebug;
@@ -16,34 +19,32 @@ public class EnemyCombatState : StateWithBehaviour
     private DebugDecorator maneuverTimeoutDebug;
     private Selector rootSel;
 
-    public EnemyCombatState(IEnemy enemy, IEnemyAnimator animator, bool debug = true) : base(enemy, animator, debug)
+    public EnemyCombatState(IEnemy enemy, IAnimator animator, bool debug = true) : base(enemy, animator, debug)
     {
-        // Example: faster decision tick for combat (optional)
-        SetTickInterval(0.12f); // ~8 Hz
+        SetTickInterval(0.2f);
     }
 
     public override void onEnter()
     {
         base.onEnter();
-        if (animator != null)
-            animator.SetBool("IsMoving", true);
+
     }
 
     protected override void BuildTree()
     {
-        // Build once and reuse cached instances while this state is active.
         if (rootSel != null)
         {
-            // already built
             root = rootSel;
             return;
         }
 
-        // ATTACK SEQUENCE
         attackSeq = new Sequence();
-        attackSeq.AddChild(new PlayerInRangeCondition(enemy, enemy.AttackRange, debug));
+        // Cache condition nodes so they can be returned to the NodePool on exit
+        playerInRangeCondition = new PlayerInRangeCondition(enemy, enemy.AttackRange, debug);
+        attackSeq.AddChild(playerInRangeCondition);
         // Require line of sight before attempting attack
-        attackSeq.AddChild(new HasLineOfSightCondition(enemy, debug));
+        hasLineOfSightCondition = new HasLineOfSightCondition(enemy, debug);
+        attackSeq.AddChild(hasLineOfSightCondition);
 
         // AttackAction uses the enemy's animator adapter and blackboard for cooldown timing
         attackAction = new AttackAction(enemy, animator, debug, blackboard);
@@ -77,25 +78,38 @@ public class EnemyCombatState : StateWithBehaviour
 
     public override void onExit()
     {
-        // Return cached nodes to pool (best-effort) and clear references.
         try
         {
             if (attackAction != null) NodePool.Return(attackAction);
             if (attackSeq != null) NodePool.Return(attackSeq);
             if (attackDebug != null) NodePool.Return(attackDebug);
+            if (playerInRangeCondition != null) NodePool.Return(playerInRangeCondition);
+            if (hasLineOfSightCondition != null) NodePool.Return(hasLineOfSightCondition);
+            if (moveAction != null) NodePool.Return(moveAction);
+            if (moveDebug != null) NodePool.Return(moveDebug);
             if (maneuverAction != null) NodePool.Return(maneuverAction);
             if (maneuverDebug != null) NodePool.Return(maneuverDebug);
+            if (maneuverTimeout != null) NodePool.Return(maneuverTimeout);
+            if (maneuverTimeoutDebug != null) NodePool.Return(maneuverTimeoutDebug);
             if (rootSel != null) NodePool.Return(rootSel);
         }
-        catch { /* pooling is optional — ignore failures */ }
+        catch (Exception ex)
+        {
+            Debug.LogError($"Error during EnemyCombatState cleanup: {ex}");
+        }
 
         attackAction = null;
         attackSeq = null;
         attackDebug = null;
+        playerInRangeCondition = null;
+        hasLineOfSightCondition = null;
+        moveAction = null;
+        moveDebug = null;
         maneuverAction = null;
         maneuverDebug = null;
+        maneuverTimeout = null;
+        maneuverTimeoutDebug = null;
         rootSel = null;
-
         base.onExit();
     }
 

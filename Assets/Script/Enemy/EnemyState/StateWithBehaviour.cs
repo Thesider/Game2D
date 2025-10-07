@@ -18,7 +18,7 @@ public abstract class StateWithBehaviour : EnemyBaseState
     protected float tickInterval = 0.2f;
     private float lastTickTime = 0f;
 
-    protected StateWithBehaviour(IEnemy enemy, IEnemyAnimator animator, bool debug = false) : base(enemy, animator)
+    protected StateWithBehaviour(IEnemy enemy, IAnimator animator, bool debug = false) : base(enemy, animator)
     {
         this.debug = debug;
         // Use the enemy's blackboard; do not create a new one per-state.

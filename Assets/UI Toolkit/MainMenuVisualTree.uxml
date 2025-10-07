@@ -1,0 +1,10 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=97a9a01b057c4f244a06dac68cca8707&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 0; background-image: url(&quot;project://database/Assets/Scenes/MenuBackground/Background.png?fileID=-1955448553306655712&amp;guid=1410b850b15b54743999211d1413f5fe&amp;type=3#Background_0&quot;);">
+        <ui:Label text="Main Menu" name="Header" class="header" style="font-size: 40px; -unity-text-align: upper-center;" />
+        <ui:Button text="New game" name="NewGame" class="button" style="justify-content: flex-start;" />
+        <ui:Button text="Load game" name="LoadGame" class="button" />
+        <ui:Button text="Setting" name="Setting" class="button" />
+        <ui:Button text="Quit game" name="QuitGame" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
