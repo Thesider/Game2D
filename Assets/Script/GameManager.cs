@@ -7,17 +7,6 @@ public class GameManager : MonoBehaviour
 
     public int score = 0;
     [SerializeField] TextMeshProUGUI scoreText;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        updateScore();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void addScore(int point)
     {
         score += point;
@@ -26,6 +15,6 @@ public class GameManager : MonoBehaviour
     private void updateScore()
     {
         scoreText.text = score.ToString();
-        
+
     }
 }

@@ -54,6 +54,8 @@ public class EnemyController : MonoBehaviour, IEnemy
     private void Awake()
     {
         animatorAdapter = new AnimatorAdapter(animator);
+        // store the original serialized health so we can reset when reusing pooled instances
+        initialHealth = health;
     }
 
     private void OnEnable()
@@ -108,6 +110,29 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     public void OnDieAnimationComplete()
     {
-        Destroy(gameObject);
+
+        gameObject.SetActive(false);
     }
+
+    private void OnDisable()
+    {
+        blackboard.Clear();
+    }
+
+    public void ResetForReuse()
+    {
+        health = initialHealth;
+        blackboard.Clear();
+        // Re-enable colliders when returning to pool / reuse
+        try
+        {
+            foreach (var c2 in GetComponentsInChildren<Collider2D>(true))
+                c2.enabled = true;
+            foreach (var c in GetComponentsInChildren<Collider>(true))
+                c.enabled = true;
+        }
+        catch { }
+    }
+
+    private float initialHealth;
 }

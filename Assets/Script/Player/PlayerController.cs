@@ -150,12 +150,14 @@ public class PlayerController : MonoBehaviour
     {
         if (bulletPrefab == null || firePoint == null) return;
 
-        GameObject bulletObj = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-
-        Bullet bullet = bulletObj.GetComponent<Bullet>();
-        if (bullet != null)
-        {
-            bullet.Initialize(facingDirection, bulletSpeed, bulletDamage, bulletLifetime, gameObject);
-        }
+        BulletPool.Spawn(
+            bulletPrefab,
+            firePoint.position,
+            Quaternion.identity,
+            facingDirection,
+            bulletSpeed,
+            bulletDamage,
+            bulletLifetime,
+            gameObject);
     }
 }

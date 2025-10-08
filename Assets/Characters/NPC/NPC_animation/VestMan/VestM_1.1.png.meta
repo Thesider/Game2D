@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 75717fd62c15d0d4fa165c57a3005ee3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -627585821820678033
+    second: VestM_1.1_0
+  - first:
+      213: 8576774556578270111
+    second: VestM_1.1_1
+  - first:
+      213: 74387089515002997
+    second: VestM_1.1_2
+  - first:
+      213: -2465000835069051730
+    second: VestM_1.1_3
+  - first:
+      213: 7488014360345130981
+    second: VestM_1.1_4
+  - first:
+      213: 6037650021664377088
+    second: VestM_1.1_5
+  - first:
+      213: -5298989766279359807
+    second: VestM_1.1_6
+  - first:
+      213: 2680911065408713249
+    second: VestM_1.1_7
+  - first:
+      213: -2963232612234533405
+    second: VestM_1.1_8
+  - first:
+      213: 2646662364746082159
+    second: VestM_1.1_9
+  - first:
+      213: 7698551617147224631
+    second: VestM_1.1_10
+  - first:
+      213: -806479587133983020
+    second: VestM_1.1_11
+  - first:
+      213: -4223597698475515456
+    second: VestM_1.1_12
+  - first:
+      213: -1964244372344050790
+    second: VestM_1.1_13
+  - first:
+      213: 42471919787807521
+    second: VestM_1.1_14
+  - first:
+      213: -4348770181162978995
+    second: VestM_1.1_15
+  - first:
+      213: -322459185834720028
+    second: VestM_1.1_16
+  - first:
+      213: 8990577735773955539
+    second: VestM_1.1_17
+  - first:
+      213: 4155527718578218985
+    second: VestM_1.1_18
+  - first:
+      213: -2015847271023346228
+    second: VestM_1.1_19
+  - first:
+      213: 2609513995653027486
+    second: VestM_1.1_20
+  - first:
+      213: 1765308629579852992
+    second: VestM_1.1_21
+  - first:
+      213: -5437571646866819777
+    second: VestM_1.1_22
+  - first:
+      213: -5237891146201741441
+    second: VestM_1.1_23
+  - first:
+      213: -3887472053489801167
+    second: VestM_1.1_24
+  - first:
+      213: -2300484828449224921
+    second: VestM_1.1_25
+  - first:
+      213: -6818458316165445400
+    second: VestM_1.1_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VestM_1.1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 136
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f609e48250e5a47f0800000000000000
+      internalID: -627585821820678033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1.1_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 0
+        width: 136
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9bc47b7403d60770800000000000000
+      internalID: 8576774556578270111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1.1_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 136
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57cba6ee9a6480100800000000000000
+      internalID: 74387089515002997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1.1_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 136
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacfaa6fcce8acdd0800000000000000
+      internalID: -2465000835069051730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VestM_1.1_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 136
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e735653365cae760800000000000000
+      internalID: 7488014360345130981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 724dd91bb1fddf74990c4d707c80b927
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      VestM_1.1_0: -627585821820678033
+      VestM_1.1_1: 8576774556578270111
+      VestM_1.1_2: 74387089515002997
+      VestM_1.1_3: -2465000835069051730
+      VestM_1.1_4: 7488014360345130981
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

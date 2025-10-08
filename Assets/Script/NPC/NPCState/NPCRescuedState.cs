@@ -6,11 +6,13 @@ public class NPCRescuedState : NPCStateWithBehaviour
     private float recoveryTimer;
     private bool isRecovered;
     private const string RecoveredKey = "IsRecovered";
+    private readonly NPCRescuedBehaviourTree rescuedBehaviour;
 
     public NPCRescuedState(INPC npc, float recoveryDuration = 3f, bool debug = false) : base(npc, debug)
     {
         this.recoveryDuration = Mathf.Max(0f, recoveryDuration);
         SetTickInterval(0.25f);
+        rescuedBehaviour = new NPCRescuedBehaviourTree(npc);
     }
 
     public override void onEnter()
@@ -20,6 +22,9 @@ public class NPCRescuedState : NPCStateWithBehaviour
         recoveryTimer = 0f;
         isRecovered = recoveryDuration <= 0f;
         npc.Blackboard?.Set(RecoveredKey, isRecovered);
+
+        npc.Animator?.Play("Rescued");
+        npc.Animator?.SetBool("IsMoving", false);
 
         if (Debug.isDebugBuild) Debug.Log($"[Hostage] {npc.NPCId} has been rescued! Recovering...");
         npc.Animator?.SetTrigger("ThankPlayer");
@@ -43,26 +48,14 @@ public class NPCRescuedState : NPCStateWithBehaviour
     public override void onExit()
     {
         base.onExit();
+        rescuedBehaviour.Reset();
         npc.Blackboard?.Remove(RecoveredKey);
     }
 
     protected override void BuildTree()
     {
         if (root != null) return;
-
-        var scan = new ScanForThreatsAction(npc);
-        var isAlive = new IsAliveCondition(npc);
-        var interactable = new IsInteractableCondition(npc);
-
-        var recoverySequence = new Sequence();
-        recoverySequence.AddChild(isAlive);
-        recoverySequence.AddChild(interactable);
-
-        var rootSequence = new Sequence();
-        rootSequence.AddChild(scan);
-        rootSequence.AddChild(recoverySequence);
-
-        root = rootSequence;
+        root = rescuedBehaviour.Build();
     }
 
     public bool IsRecovered() => isRecovered;

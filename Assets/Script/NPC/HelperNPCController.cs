@@ -9,10 +9,11 @@ public class HelperNPCController : MonoBehaviour, INPC
     [Header("References")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Animator animator;
+    [SerializeField] private Rigidbody2D rb;
 
     [Header("Stats")]
     [SerializeField] private float health = 80f;
-
+    [SerializeField] private float moveSpeed = 10f;
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
 
@@ -29,10 +30,14 @@ public class HelperNPCController : MonoBehaviour, INPC
     public bool IsAlive => health > 0f;
     public Blackboard Blackboard => blackboard;
     public IAnimator Animator => animatorAdapter;
+    public Rigidbody2D Rigidbody => rb;
+    public float MoveSpeed => moveSpeed;
+    public bool IsGrounded { get; private set; }
 
     private void Awake()
     {
         animatorAdapter = new AnimatorAdapter(animator);
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
@@ -93,5 +98,27 @@ public class HelperNPCController : MonoBehaviour, INPC
     public void UpdateNPC()
     {
         stateMachine.Update();
+    }
+
+    // Movement helpers
+    public void Move(Vector2 velocity)
+    {
+        if (rb == null) return;
+        rb.linearVelocity = new Vector2(velocity.x, rb.linearVelocity.y);
+    }
+
+    public void Jump(float force)
+    {
+        if (rb == null) return;
+        rb.AddForce(new Vector2(0f, force), ForceMode2D.Impulse);
+        IsGrounded = false;
+    }
+
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = true;
+        }
     }
 }

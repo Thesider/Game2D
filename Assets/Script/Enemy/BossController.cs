@@ -12,6 +12,8 @@ public class BossController : MonoBehaviour, IEnemy
     // Add a field for Blackboard
     private Blackboard blackboard;
     public Blackboard Blackboard => blackboard;
+    // Keep the initial health to reset when reusing pooled instances
+    private float initialHealth;
 
     public float MoveSpeed => moveSpeed;
     public float AttackRange => attackRange;
@@ -35,6 +37,9 @@ public class BossController : MonoBehaviour, IEnemy
     {
         // Initialize blackboard
         blackboard = new Blackboard();
+
+        // store initial health for reuse
+        initialHealth = health;
 
         //stateMachine = new StateMachine.StateMachine();
         //idleState = new EnemyIdleState(this, animator);
@@ -66,5 +71,31 @@ public class BossController : MonoBehaviour, IEnemy
         {
             stateMachine.SetState(dieState);
         }
+    }
+
+    public void OnDieAnimationComplete()
+    {
+        // Disable for pooling instead of destroying
+        gameObject.SetActive(false);
+    }
+
+    private void OnDisable()
+    {
+        blackboard?.Clear();
+    }
+
+    public void ResetForReuse()
+    {
+        health = initialHealth;
+        blackboard?.Clear();
+        // Re-enable colliders when reusing the boss
+        try
+        {
+            foreach (var c2 in GetComponentsInChildren<Collider2D>(true))
+                c2.enabled = true;
+            foreach (var c in GetComponentsInChildren<Collider>(true))
+                c.enabled = true;
+        }
+        catch { }
     }
 }
