@@ -5,7 +5,7 @@ public class EnemyIdleState : EnemyBaseState
     private float idleTimer;
     private readonly float idleDuration = 1.5f;
 
-    public EnemyIdleState(IEnemy enemy, IEnemyAnimator animator) : base(enemy, animator)
+    public EnemyIdleState(IEnemy enemy, IAnimator animator) : base(enemy, animator)
     {
     }
 

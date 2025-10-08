@@ -1,9 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// Simple global runtime logger for behaviour trees.
-// Stores recent messages in a ring buffer for quick inspection.
-// Use BTDebug.Add(...) to append messages and BTDebug.GetRecent(n) to read.
+
 public static class BTDebug
 {
     private static readonly int MaxEntries = 256;
@@ -27,7 +25,6 @@ public static class BTDebug
         }
     }
 
-    // Return up to 'count' most recent messages (newest first).
     public static string[] GetRecent(int count = 20)
     {
         lock (locker)
@@ -45,7 +42,6 @@ public static class BTDebug
         }
     }
 
-    // Clear the debug buffer
     public static void Clear()
     {
         lock (locker)

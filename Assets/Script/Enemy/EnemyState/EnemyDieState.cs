@@ -1,6 +1,8 @@
+using UnityEngine;
+
 public class EnemyDieState : EnemyBaseState
 {
-    public EnemyDieState(IEnemy enemy, IEnemyAnimator animator) : base(enemy, animator)
+    public EnemyDieState(IEnemy enemy, IAnimator animator) : base(enemy, animator)
     {
     }
 
@@ -9,10 +11,15 @@ public class EnemyDieState : EnemyBaseState
         if (animator != null)
         {
             animator.SetTrigger("Die");
+            animator.Play("Die");
         }
+
+
     }
+
 
     public override void onExit()
     {
+
     }
 }

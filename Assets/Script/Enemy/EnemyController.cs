@@ -17,7 +17,6 @@ public class EnemyController : MonoBehaviour, IEnemy
     [SerializeField] private float bulletSpeed = 8f;
     [SerializeField] private float bulletLifetime = 4f;
 
-    // Per-enemy runtime data
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
 
@@ -27,7 +26,8 @@ public class EnemyController : MonoBehaviour, IEnemy
     public Transform Player => player;
     public Transform Self => transform;
 
-    // Projectile accessors
+    public bool IsAlive => health > 0;
+
     public GameObject BulletPrefab => bulletPrefab;
     public Transform AttackPoint => attackPoint;
     public float AttackDamage => attackDamage;
@@ -36,8 +36,8 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     public float Health { get => health; set => health = value; }
 
-    // IEnemy interface wiring
-    public IEnemyAnimator Animator => animatorAdapter;
+    // IEnemy interface wiring (expose generic animator facade)
+    public IAnimator Animator => animatorAdapter;
     public Blackboard Blackboard => blackboard;
 
     private StateMachine.StateMachine stateMachine;
@@ -52,8 +52,7 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     private void OnEnable()
     {
-        // Record spawn time so behaviour nodes can avoid triggering attack animations immediately after spawn.
-        // OnEnable runs when the pooled enemy is activated by the spawner.
+
         blackboard.Set("spawnTime", Time.time);
     }
 
@@ -89,5 +88,10 @@ public class EnemyController : MonoBehaviour, IEnemy
         {
             stateMachine.SetState(dieState);
         }
+    }
+
+    public void OnDieAnimationComplete()
+    {
+        Destroy(gameObject);
     }
 }

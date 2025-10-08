@@ -1,12 +1,14 @@
+using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour {
-    [Header("Player Component Referrences")]
-    [SerializeField] private Rigidbody2D rb;
-    [Header("Player Movement Settings")]
-    [SerializeField] private float moveSpeed;
-    [SerializeField] private float jumpForce;
+    [Header("Player Component References")]
+    [SerializeField] Rigidbody2D rb;
+
+    [Header("Player Settings")]
+    [SerializeField] private float speed;
+    [SerializeField] private float jumpingPower;
 
     [Header("Ground Check Settings")]
     [SerializeField] private Transform groundCheck;
@@ -14,40 +16,29 @@ public class PlayerController : MonoBehaviour {
 
     private float horizontalInput;
 
-    [SerializeField] private SpriteRenderer characterSR;
-    private Vector2 moveInput;
-
     private void FixedUpdate() {
-        // Handle horizontal movement
-        rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
-        // Ground check
-        bool isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f, groundLayer);
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space)) {
-            rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
-        }
+        rb.linearVelocity = new Vector2(horizontalInput * speed, rb.linearVelocity.y);
+
     }
-    #region Player_Controls
+
+    #region PlAYER_CONTROLS
     public void Move(InputAction.CallbackContext context) {
         horizontalInput = context.ReadValue<Vector2>().x;
 
-        if( moveInput.x != 0 ) {
-            if (moveInput.x > 0) characterSR.transform.localScale = new Vector2(1, 1);
-            else characterSR.transform.localScale = new Vector2(-1, 1);
-
-        }
+        if (horizontalInput > 0.1f) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, 1);
+        else if (horizontalInput < -0.1f) transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, 1);
     }
 
     public void Jump(InputAction.CallbackContext context) {
-        if (context.performed && isGrounded()) {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        if (context.performed && IsGrounded()) {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpingPower);
+
         }
     }
 
-    private bool isGrounded() {
+    private bool IsGrounded() {
         return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1f, 0.1f), CapsuleDirection2D.Horizontal, 0, groundLayer);
     }
+
     #endregion
-
-
-
 }

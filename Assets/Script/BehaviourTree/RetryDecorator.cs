@@ -1,8 +1,5 @@
 using UnityEngine;
 
-// Decorator that retries its child up to maxRetries times.
-// Returns Success if child returns Success within retry limit.
-// If maxRetries == 0 => no retry (behaves like a passthrough).
 public class RetryDecorator : Node
 {
     private readonly Node child;
