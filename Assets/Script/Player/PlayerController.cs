@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
 
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBarSlider healthBar;
     private Rigidbody2D rb;
 
     [Header("Shooting")]
@@ -31,6 +35,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
 
         if (inputActions == null)
         {
@@ -139,6 +145,13 @@ public class PlayerController : MonoBehaviour
         {
             isGrounded = true;
         }
+    }
+
+    void TakeDamge(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
     }
 
     private void OnShootPerformed(InputAction.CallbackContext context)
