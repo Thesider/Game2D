@@ -17,6 +17,10 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
 
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public HealthBarSlider healthBar;
     private Rigidbody2D rb;
 
     [Header("Shooting")]
@@ -31,6 +35,8 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
 
         if (inputActions == null)
         {
@@ -141,6 +147,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void TakeDamge(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
+    }
+
     private void OnShootPerformed(InputAction.CallbackContext context)
     {
         Shoot();
@@ -150,12 +163,14 @@ public class PlayerController : MonoBehaviour
     {
         if (bulletPrefab == null || firePoint == null) return;
 
-        GameObject bulletObj = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
-
-        Bullet bullet = bulletObj.GetComponent<Bullet>();
-        if (bullet != null)
-        {
-            bullet.Initialize(facingDirection, bulletSpeed, bulletDamage, bulletLifetime, gameObject);
-        }
+        BulletPool.Spawn(
+            bulletPrefab,
+            firePoint.position,
+            Quaternion.identity,
+            facingDirection,
+            bulletSpeed,
+            bulletDamage,
+            bulletLifetime,
+            gameObject);
     }
 }

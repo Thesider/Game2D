@@ -17,4 +17,6 @@ public interface IEnemy
     bool IsAlive { get; }
 
     void TakeDamage(float damage);
+
+    void ResetForReuse();
 }

@@ -59,16 +59,15 @@ public class AttackAction : Action
             Vector3 spawnPos = ec.AttackPoint != null ? ec.AttackPoint.position : enemy.Self.position;
             Vector3 dir = (enemy.Player.position - spawnPos).normalized;
 
-            var go = GameObject.Instantiate(ec.BulletPrefab, spawnPos, Quaternion.identity);
-            var bullet = go.GetComponent<Bullet>();
-            if (bullet != null)
-            {
-                bullet.Initialize(dir, ec.BulletSpeed, ec.AttackDamage, ec.BulletLifetime, enemy.Self.gameObject);
-            }
-            else
-            {
-                if (debug) Debug.LogWarning("[BT] AttackAction: Bullet prefab missing Bullet component.");
-            }
+            BulletPool.Spawn(
+                ec.BulletPrefab,
+                spawnPos,
+                Quaternion.identity,
+                dir,
+                ec.BulletSpeed,
+                ec.AttackDamage,
+                ec.BulletLifetime,
+                enemy.Self.gameObject);
 
             if (debug) Debug.Log("[BT] AttackAction: Spawned bullet");
         }

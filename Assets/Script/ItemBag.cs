@@ -5,36 +5,26 @@ public class ItemBag : MonoBehaviour
 {
     public GameObject droppedItemPrefab;
     public List<ItemData> dataItemList = new List<ItemData>();
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public ItemData GetDroppedItem()
     {
-       // int randomNumber = Random.Range(1, 100);
+        // int randomNumber = Random.Range(1, 100);
         List<ItemData> possibleItems = new List<ItemData>();
-        foreach( ItemData item in dataItemList)
+        foreach (ItemData item in dataItemList)
         {
-            if(0 <= item.dropChance)
+            if (0 <= item.dropChance)
             {
                 possibleItems.Add(item);
-               
+
             }
         }
         if (possibleItems.Count > 0)
         {
-            ItemData droppedItem = possibleItems[Random.Range(0,possibleItems.Count)];
+            ItemData droppedItem = possibleItems[Random.Range(0, possibleItems.Count)];
             return droppedItem;
         }
-        
+
         return dataItemList[0];
     }
 
@@ -71,7 +61,7 @@ public class ItemBag : MonoBehaviour
         {
             sr.sprite = droppedItem.sprite;
             Debug.Log("Set sprite to: " + droppedItem.sprite);
-           
+
         }
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         if (rb != null)
@@ -79,7 +69,7 @@ public class ItemBag : MonoBehaviour
             rb.gravityScale = 1.5f;        // đảm bảo có trọng lực
 
             float dropForce = 4.5f;        // lực ban đầu
-                                         // Vector2(x, y): x > 0 sang phải, y > 0 nhích lên
+                                           // Vector2(x, y): x > 0 sang phải, y > 0 nhích lên
             Vector2 dropDirection = new Vector2(Random.Range(0.8f, 1.2f), Random.Range(0.3f, 0.8f)).normalized;
 
             rb.AddForce(dropDirection * dropForce, ForceMode2D.Impulse);
