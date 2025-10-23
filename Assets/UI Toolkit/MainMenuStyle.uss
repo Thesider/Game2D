@@ -4,7 +4,7 @@
 .header {
     top: 100px;
     color: rgb(255, 255, 255);
-    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=c6eb1415227c74942a6778c030798976&type=3#NotInter-Regular");
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=8946f3daceb3cd747a303437259da009&type=3#NotInter-Regular");
     font-size: 100px;
 }
 
@@ -32,4 +32,8 @@
     background-color: rgb(255, 0, 0);
     -unity-text-outline-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+}
+
+#MusicSlider Label {
+    display: none;
 }
