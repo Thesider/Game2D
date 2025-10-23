@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=97a9a01b057c4f244a06dac68cca8707&amp;type=3#MainMenuStyle" />
+    <engine:VisualElement name="Wrapper" style="flex-grow: 1; height: 435px;">
+        <engine:Slider label="Music" value="42" high-value="100" name="MusicSlider" style="font-size: 100px; -unity-text-align: middle-center; width: 80%; top: 100px; align-items: auto; align-self: center; height: 80px;" />
+        <engine:Button text="Back" name="BackButton" class="button" />
+    </engine:VisualElement>
+</engine:UXML>
