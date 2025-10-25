@@ -1,0 +1,8 @@
+#progressBar {
+    background-color: #333;
+    unity-background-image-tint-color: #444;
+}
+
+#loadingLabel {
+    unity-text-align: center;
+}

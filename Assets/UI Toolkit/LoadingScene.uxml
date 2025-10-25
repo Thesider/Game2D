@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/LoadingScene.uss?fileID=7433441132597879392&amp;guid=4ec5c51c6ec2e0347a677ba8d82239f9&amp;type=3#LoadingScene" />
+    <engine:VisualElement name="root" style="flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; background-color: rgb(18, 18, 18);">
+        <engine:Label text="Loading..." name="loadingLabel" style="color: white; font-size: 24px; margin-bottom: 20px;" />
+        <engine:Slider name="progressBar" low-value="0" high-value="100" style="width: 50%; height: 24px;" />
+    </engine:VisualElement>
+</engine:UXML>
