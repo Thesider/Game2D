@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7698085de79514e4cbb1f1205b5731ae, type: 3}
+  m_Name: HeavyMachineGun_Data
+  m_EditorClassIdentifier: 
+  playerSpriteWithWeapon: {fileID: 21301350, guid: dcbb48e878343b2438b39a02a451ee4f, type: 3}
+  weaponName: HeavyMachine
+  weaponIcon: {fileID: 21300800, guid: dcbb48e878343b2438b39a02a451ee4f, type: 3}
+  fireRate: 10
+  bulletPrefab: {fileID: 1058500535117424268, guid: 2dd0acf4a1c8c8e41bfda8ad49bcbb77, type: 3}
+  bulletSpeed: 20
+  bulletDamage: 20
+  bulletLifetime: 4
+  ammoAmount: 50
+  usageDuration: 10
+  shootSound: {fileID: 0}

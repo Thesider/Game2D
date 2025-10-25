@@ -13,7 +13,7 @@ public class ItemBag : MonoBehaviour
         List<ItemData> possibleItems = new List<ItemData>();
         foreach (ItemData item in dataItemList)
         {
-            if (0 <= item.dropChance)
+            if (50 <= item.dropChance)
             {
                 possibleItems.Add(item);
 
