@@ -16,7 +16,7 @@ public class PlayerInRangeCondition : Condition
         if (enemy.Player == null) return false;
         float dist = Vector3.Distance(enemy.Self.position, enemy.Player.position);
         bool result = dist <= detectionRange;
-        if (debug) Debug.Log($"[BT] PlayerInRangeCondition: {result} (dist={dist})");
+        if (debug) Debug.Log($"[BT] PlayerInRangeCondition: {result}");
         return result;
     }
 }

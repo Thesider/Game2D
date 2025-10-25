@@ -23,7 +23,8 @@ public class ScenesManager : MonoBehaviour
     {
         MainMenu,
         LoadingScene,
-        SampleScene_Map_0
+        SampleScene_Map_0,
+        Map_1
     }
 
     // This method always goes through the loading scene

@@ -26,6 +26,7 @@ public class EnemyCombatState : StateWithBehaviour
     public override void onUpdate()
     {
         base.onUpdate();
+        FacePlayer();
     }
 
     public override void onExit()
@@ -37,5 +38,18 @@ public class EnemyCombatState : StateWithBehaviour
 
     public override void onFixedUpdate()
     {
+    }
+    private void FacePlayer()
+    {
+        if (enemy?.Player == null) return;
+
+        Transform self = enemy.Self;
+        float deltaX = enemy.Player.position.x - self.position.x;
+        if (Mathf.Approximately(deltaX, 0f)) return;
+
+        Vector3 scale = self.localScale;
+        float facingSign = Mathf.Sign(deltaX);
+        scale.x = Mathf.Abs(scale.x) * facingSign * -1f;
+        self.localScale = scale;
     }
 }
