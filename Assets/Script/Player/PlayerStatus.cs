@@ -58,7 +58,7 @@ public class PlayerStatus : MonoBehaviour
 
     // --- CÁC HÀM CÔNG KHAI (PUBLIC METHODS) ---
 
-  
+
     public void TakeDamage(int damage)
     {
         if (isInvincible)
@@ -66,7 +66,7 @@ public class PlayerStatus : MonoBehaviour
             Debug.Log("Player is INVINCIBLE, no damage taken.");
             return;
         }
-        
+
         int remainingDamage = damage;
 
         // 2. Trừ vào giáp trước (lớp bảo vệ ngoài)
@@ -216,14 +216,14 @@ public class PlayerStatus : MonoBehaviour
 
         Debug.Log("Player is RESPAWNING!");
         // Hiện lại sprite và bật lại va chạm
-        gameObject.SetActive(true); 
+        gameObject.SetActive(true);
         GetComponent<SpriteRenderer>().enabled = true;
         GetComponent<Collider2D>().enabled = true;
         currentHealth = maxHealth;
         currentArmor = 0;
         speedModifier = 1.0f;
-       
-        transform.position = deathPosition ;
+
+        transform.position = deathPosition;
 
         // CẬP NHẬT: Kích hoạt trạng thái bất tử tạm thời sau khi hồi sinh
         ActivateInvincibility(respawnInvincibilityDuration);
@@ -247,5 +247,29 @@ public class PlayerStatus : MonoBehaviour
     public int GetScore()
     {
         return score;
+    }
+
+    public void ForceKill()
+    {
+        if (currentHealth <= 0)
+        {
+            return;
+        }
+
+        if (invincibilityCoroutine != null)
+        {
+            StopCoroutine(invincibilityCoroutine);
+            invincibilityCoroutine = null;
+        }
+
+        isInvincible = false;
+        currentArmor = 0;
+        currentHealth = 0;
+        if (HealthBarSlider != null)
+        {
+            HealthBarSlider.SetHealth(currentHealth);
+        }
+
+        Die();
     }
 }
