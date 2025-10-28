@@ -100,7 +100,6 @@ public class HelperNPCController : MonoBehaviour, INPC
         stateMachine.Update();
     }
 
-    // Movement helpers
     public void Move(Vector2 velocity)
     {
         if (rb == null) return;
