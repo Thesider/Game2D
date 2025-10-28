@@ -5,6 +5,6 @@
         <ui:Button text="Resume" name="ResumeButton" class="button" />
         <ui:Button text="Restart" name="RestartButton" class="button" />
         <ui:Button text="Quit to menu" name="QuitToMenuButton" class="button" />
-        <ui:Button text="Quit to desktop" name="QuitButton" class="button" />
+        <ui:Button text="Quit to desktop" name="QuitToDesktopButton" class="button" />
     </ui:VisualElement>
 </ui:UXML>
