@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using System.Collections;
 
 
 public class GameManager : MonoBehaviour
@@ -27,6 +28,9 @@ public class GameManager : MonoBehaviour
     public Image weaponIcon;
     [Tooltip("Kéo Text WeaponNameText vào đây")]
     public TextMeshProUGUI weaponNameText;
+    [Tooltip("Kéo Slider InvincibilityBar vào đây")]
+    public Slider invincibilitySlider;
+    private Coroutine invincibilityUICoroutine;
     void Start()
     {
        if(playerStatus != null)
@@ -35,6 +39,10 @@ public class GameManager : MonoBehaviour
             healthSlider.value = playerStatus.maxHealth;
             armorSlider.maxValue = playerStatus.maxArmor;
             armorSlider.value = 0;
+        }
+        if (invincibilitySlider != null)
+        {
+            invincibilitySlider.gameObject.SetActive(false);
         }
     }
 
@@ -69,6 +77,40 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    
-  
+
+    public void ShowInvincibilityTimer(float duration)
+    {
+        // Dừng coroutine cũ nếu có để reset lại thanh đếm ngược
+        if (invincibilityUICoroutine != null)
+        {
+            StopCoroutine(invincibilityUICoroutine);
+        }
+        // Bắt đầu một coroutine mới để quản lý UI
+        invincibilityUICoroutine = StartCoroutine(InvincibilityTimerRoutine(duration));
+    }
+
+    private IEnumerator InvincibilityTimerRoutine(float duration)
+    {
+        // 1. Hiện thanh Slider lên
+        invincibilitySlider.gameObject.SetActive(true);
+        invincibilitySlider.maxValue = duration;
+        invincibilitySlider.value = duration;
+
+        float timer = duration;
+
+        // 2. Vòng lặp đếm ngược
+        while (timer > 0)
+        {
+            // Cập nhật giá trị của slider mỗi frame
+            invincibilitySlider.value = timer;
+            timer -= Time.deltaTime;
+            yield return null; // Chờ đến frame tiếp theo
+        }
+
+        // 3. Hết giờ, ẩn thanh Slider đi
+        invincibilitySlider.gameObject.SetActive(false);
+        invincibilityUICoroutine = null;
+    }
+
+
 }

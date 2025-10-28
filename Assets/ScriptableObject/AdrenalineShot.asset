@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54ade0dbd0bad434d8d00ba1515adce1, type: 3}
-  m_Name: Treasure
-  m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  sprite: {fileID: 7627038615238945442, guid: e2ae3db2fe6683a449b6c73a3a0af22d, type: 3}
-  point: 10000
-  dropChance: 52
-  type: 4
+  m_Name: AdrenalineShot
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  point: 0
+  dropChance: 80
+  type: 3
   amount: 0
-  duration: 0
+  duration: 15
   weaponData: {fileID: 0}

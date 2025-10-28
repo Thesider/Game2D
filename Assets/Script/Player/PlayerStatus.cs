@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
+    private PlayerVisual playerVisuals;
+
     // --- CÁC BIẾN (PROPERTIES) ---
     [Header("--- SỨC KHỎE (HEALTH) ---")]
     public int maxHealth = 100;
@@ -29,6 +30,19 @@ public class PlayerStatus : MonoBehaviour
     private int currentLives;
     private Vector3 deathPosition; // Biến lưu vị trí
 
+    [Tooltip("Kéo UIManager_Object vào đây")]
+    public GameManager uiManager;
+
+    [Header("Score to Armor Conversion")]
+    [Tooltip("Số điểm cần đạt để đổi lấy giáp")]
+    public int scoreThresholdForArmor = 100;
+
+    [Tooltip("Lượng giáp nhận được mỗi khi đạt ngưỡng")]
+    public int armorRewardAmount = 10;
+    private int nextScoreThreshold;
+    [Tooltip("Sau mỗi lần nhận thưởng, ngưỡng sẽ nhân với hệ số này")]
+    public float thresholdMultiplier = 1.2f; // tăng 50% mỗi lần
+
     // MỚI: Biến để theo dõi coroutine đang chạy
     private Coroutine invincibilityCoroutine;
     private Coroutine speedModifierCoroutine;
@@ -36,14 +50,17 @@ public class PlayerStatus : MonoBehaviour
 
     //biến để lưu điểm
     private int score = 0;
+    // Biến để theo dõi ngưỡng điểm tiếp theo cần đạt
+   
 
-    private HealthBarSlider HealthBarSlider;
     void Awake()
     {
         currentHealth = maxHealth;
         currentArmor = 0;
         currentLives = maxLives;
         UpdateSpeed();
+        playerVisuals = GetComponent<PlayerVisual>();
+        nextScoreThreshold = scoreThresholdForArmor;
     }
 
     void Update()
@@ -92,7 +109,7 @@ public class PlayerStatus : MonoBehaviour
         if (remainingDamage > 0)
         {
             currentHealth -= remainingDamage;
-            HealthBarSlider.SetHealth(currentHealth);
+           // HealthBarSlider.SetHealth(currentHealth);
             Debug.Log("Health took " + remainingDamage + " damage. Health left: " + currentHealth);
         }
 
@@ -178,14 +195,20 @@ public class PlayerStatus : MonoBehaviour
         Debug.Log("Player became INVINCIBLE for " + duration + " seconds.");
         isInvincible = true;
 
-        // TODO: Thêm hiệu ứng nhấp nháy cho player ở đây để người chơi biết đang bất tử
+        playerVisuals?.SetInvincible(true);
+
+        if (uiManager != null)
+        {
+            uiManager.ShowInvincibilityTimer(duration);
+        }
 
         // Tạm dừng hàm này trong 'duration' giây
         yield return new WaitForSeconds(duration);
 
         // Sau khi chờ xong, thực hiện phần code bên dưới
+
+        playerVisuals?.SetInvincible(false);
         isInvincible = false;
-        // TODO: Tắt hiệu ứng nhấp nháy
         Debug.Log("Player is no longer invincible.");
 
         invincibilityCoroutine = null; // Reset biến coroutine
@@ -233,6 +256,23 @@ public class PlayerStatus : MonoBehaviour
     {
         score += point;
         Debug.Log("Score increased by " + point + ". Total score: " + score);
+        CheckForScoreReward();
+    }
+    private void CheckForScoreReward()
+    {
+        while (score >= nextScoreThreshold)
+        {
+            AddArmor(armorRewardAmount);
+            Debug.Log("SCORE REWARD! Gained " + armorRewardAmount + " armor at " + nextScoreThreshold + " score.");
+
+           
+            int nextThreshold = (int)(nextScoreThreshold * thresholdMultiplier);
+
+            // Đặt lại ngưỡng tiếp theo
+            nextScoreThreshold = nextThreshold;
+
+            Debug.Log("Next armor reward at " + nextScoreThreshold + " score. (Threshold multiplied by " + thresholdMultiplier + ")");
+        }
     }
 
     public int GetCurrentHealth()
