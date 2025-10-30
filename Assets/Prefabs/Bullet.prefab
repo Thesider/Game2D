@@ -173,6 +173,6 @@ MonoBehaviour:
   normalbulletSpeed: 15
   normalbulletDamage: 30
   physicBulletSpeed: 17.5
-  physicBulletGravity: 3
+  physicBulletGravity: 5
   physicBulletDamage: 100
   bulletType: 0
