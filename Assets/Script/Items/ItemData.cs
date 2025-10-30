@@ -1,10 +1,44 @@
+<<<<<<< HEAD
 using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
+=======
+﻿using UnityEngine;
+using UnityEngine.InputSystem.Controls;
+
+
+// Enum để định nghĩa các loại item
+public enum ItemType
+{
+    Health,
+    Armor,
+    SpeedBoost,
+    Invincibility,
+    Treasure,
+    BlindBox,
+    Weapon
+}
+
+>>>>>>> main
 [CreateAssetMenu(fileName = "ItemData", menuName = "Scriptable Objects/ItemData")]
 public class ItemData : ScriptableObject
 {
     public Sprite sprite;
     public int point;
     public int dropChance;
+<<<<<<< HEAD
+=======
+    public ItemType type;
+
+    [Header("Values")]
+    [Tooltip("Dùng cho Health, Armor, Treasure")]
+    public int amount; // Một biến giá trị chung
+
+    [Tooltip("Dùng cho SpeedBoost, Invincibility")]
+    public float duration; // Một biến thời gian chung
+
+    [Header("Weapon Config")]
+    [Tooltip("Chỉ điền vào đây nếu 'Type' là Weapon")]
+    public WeaponData weaponData;
+>>>>>>> main
 }

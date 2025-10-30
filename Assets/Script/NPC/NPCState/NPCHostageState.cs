@@ -2,14 +2,24 @@ using UnityEngine;
 
 public class NPCHostageState : NPCStateWithBehaviour
 {
+<<<<<<< HEAD
     public NPCHostageState(INPC npc, bool debug = false) : base(npc, debug)
     {
         SetTickInterval(0.2f);
+=======
+    private readonly NPCHostageBehaviourTree hostageBehaviour;
+
+    public NPCHostageState(INPC npc, bool debug = false) : base(npc, debug)
+    {
+        SetTickInterval(0.2f);
+        hostageBehaviour = new NPCHostageBehaviourTree(npc);
+>>>>>>> main
     }
 
     protected override void BuildTree()
     {
         if (root != null) return;
+<<<<<<< HEAD
 
         var scan = new ScanForThreatsAction(npc);
         var isAlive = new IsAliveCondition(npc);
@@ -41,5 +51,14 @@ public class NPCHostageState : NPCStateWithBehaviour
         rootSequence.AddChild(behaviourSelector);
 
         root = rootSequence;
+=======
+        root = hostageBehaviour.Build();
+    }
+
+    public override void onExit()
+    {
+        base.onExit();
+        hostageBehaviour.Reset();
+>>>>>>> main
     }
 }

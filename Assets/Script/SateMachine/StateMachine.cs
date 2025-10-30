@@ -11,12 +11,22 @@ namespace StateMachine
 
         public void Update()
         {
-            if (currentState == null) return;
+            if (currentState == null)
+            {
+                var pending = GetTransition();
+                if (pending != null)
+                {
+                    ApplyTransition(pending);
+                }
+
+                if (currentState == null) return;
+            }
 
             var transition = GetTransition();
             if (transition != null)
             {
-                ChangeState(transition.To);
+                ApplyTransition(transition);
+                if (currentState == null) return;
             }
 
             currentState.State.onUpdate();
@@ -97,7 +107,6 @@ namespace StateMachine
 
         public void AddAnyTransition(IState to, IPredicate condition)
         {
-            if (to == null) throw new ArgumentNullException(nameof(to));
             if (condition == null) throw new ArgumentNullException(nameof(condition));
 
             anyTransitions.Add(new Transition(to, condition));
@@ -114,6 +123,27 @@ namespace StateMachine
                 states.Add(key, node);
             }
             return node;
+        }
+
+        void ApplyTransition(ITransition transition)
+        {
+            if (transition == null) return;
+
+            if (transition.To != null)
+            {
+                ChangeState(transition.To);
+                return;
+            }
+
+            ExitCurrentState();
+        }
+
+        void ExitCurrentState()
+        {
+            if (currentState == null) return;
+
+            currentState.State.onExit();
+            currentState = null;
         }
 
         class StateNode

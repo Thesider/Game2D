@@ -6,7 +6,7 @@ public interface IEnemy
     float MoveSpeed { get; }
     float AttackRange { get; }
     float AttackCooldown { get; }
-    Transform Player { get; }
+    Transform Player { get; set; }
     Transform Self { get; }
     float Health { get; set; }
 
@@ -17,4 +17,6 @@ public interface IEnemy
     bool IsAlive { get; }
 
     void TakeDamage(float damage);
+
+    void ResetForReuse();
 }

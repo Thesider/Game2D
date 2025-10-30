@@ -2,14 +2,24 @@ using UnityEngine;
 
 public class NPCHelperState : NPCStateWithBehaviour
 {
+<<<<<<< HEAD
     public NPCHelperState(INPC npc, bool debug = false) : base(npc, debug)
     {
         SetTickInterval(0.15f);
+=======
+    private readonly NPCHelperBehaviourTree helperBehaviour;
+
+    public NPCHelperState(INPC npc, bool debug = false) : base(npc, debug)
+    {
+        SetTickInterval(0.15f);
+        helperBehaviour = new NPCHelperBehaviourTree(npc);
+>>>>>>> main
     }
 
     protected override void BuildTree()
     {
         if (root != null) return;
+<<<<<<< HEAD
 
         var scan = new ScanForThreatsAction(npc);
         var isAlive = new IsAliveCondition(npc);
@@ -37,5 +47,14 @@ public class NPCHelperState : NPCStateWithBehaviour
         rootSequence.AddChild(behaviourSelector);
 
         root = rootSequence;
+=======
+        root = helperBehaviour.Build();
+    }
+
+    public override void onExit()
+    {
+        base.onExit();
+        helperBehaviour.Reset();
+>>>>>>> main
     }
 }

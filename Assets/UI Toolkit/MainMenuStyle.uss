@@ -4,7 +4,11 @@
 .header {
     top: 100px;
     color: rgb(255, 255, 255);
+<<<<<<< HEAD
     -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=c6eb1415227c74942a6778c030798976&type=3#NotInter-Regular");
+=======
+    -unity-font-definition: url("project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&guid=8946f3daceb3cd747a303437259da009&type=3#NotInter-Regular");
+>>>>>>> main
     font-size: 100px;
 }
 
@@ -33,3 +37,10 @@
     -unity-text-outline-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
 }
+<<<<<<< HEAD
+=======
+
+#MusicSlider Label {
+    display: none;
+}
+>>>>>>> main

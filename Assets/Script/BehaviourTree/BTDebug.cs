@@ -9,6 +9,13 @@ public static class BTDebug
     private static int index = 0;
     private static readonly object locker = new object();
 
+    [RuntimeInitializeOnLoadMethod]
+    private static void InitializeOnLoad()
+    {
+        entries.Clear();
+        index = 0;
+    }
+
     public static void Add(string message)
     {
         lock (locker)

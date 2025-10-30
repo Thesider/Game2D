@@ -5,6 +5,7 @@ public class ItemBag : MonoBehaviour
 {
     public GameObject droppedItemPrefab;
     public List<ItemData> dataItemList = new List<ItemData>();
+<<<<<<< HEAD
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,14 +28,35 @@ public class ItemBag : MonoBehaviour
             {
                 possibleItems.Add(item);
                
+=======
+
+
+    public ItemData GetDroppedItem()
+    {
+        // int randomNumber = Random.Range(1, 100);
+        List<ItemData> possibleItems = new List<ItemData>();
+        foreach (ItemData item in dataItemList)
+        {
+            if (50 <= item.dropChance)
+            {
+                possibleItems.Add(item);
+
+>>>>>>> main
             }
         }
         if (possibleItems.Count > 0)
         {
+<<<<<<< HEAD
             ItemData droppedItem = possibleItems[Random.Range(0,possibleItems.Count)];
             return droppedItem;
         }
         
+=======
+            ItemData droppedItem = possibleItems[Random.Range(0, possibleItems.Count)];
+            return droppedItem;
+        }
+
+>>>>>>> main
         return dataItemList[0];
     }
 
@@ -71,7 +93,11 @@ public class ItemBag : MonoBehaviour
         {
             sr.sprite = droppedItem.sprite;
             Debug.Log("Set sprite to: " + droppedItem.sprite);
+<<<<<<< HEAD
            
+=======
+
+>>>>>>> main
         }
         Rigidbody2D rb = go.GetComponent<Rigidbody2D>();
         if (rb != null)
@@ -79,7 +105,11 @@ public class ItemBag : MonoBehaviour
             rb.gravityScale = 1.5f;        // đảm bảo có trọng lực
 
             float dropForce = 4.5f;        // lực ban đầu
+<<<<<<< HEAD
                                          // Vector2(x, y): x > 0 sang phải, y > 0 nhích lên
+=======
+                                           // Vector2(x, y): x > 0 sang phải, y > 0 nhích lên
+>>>>>>> main
             Vector2 dropDirection = new Vector2(Random.Range(0.8f, 1.2f), Random.Range(0.3f, 0.8f)).normalized;
 
             rb.AddForce(dropDirection * dropForce, ForceMode2D.Impulse);

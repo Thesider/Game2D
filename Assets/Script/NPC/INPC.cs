@@ -16,6 +16,17 @@ public interface INPC
     void TakeDamage(float damage);
     void Die();
     void UpdateNPC();
+<<<<<<< HEAD
+=======
+
+    UnityEngine.Rigidbody2D Rigidbody { get; }
+    float MoveSpeed { get; }
+    bool IsGrounded { get; }
+
+    void Move(UnityEngine.Vector2 velocity);
+
+    void Jump(float force);
+>>>>>>> main
 }
 
 

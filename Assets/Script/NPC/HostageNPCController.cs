@@ -9,12 +9,20 @@ public class HostageNPCController : MonoBehaviour, INPC
     [Header("References")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Animator animator;
+<<<<<<< HEAD
+=======
+    [SerializeField] private Rigidbody2D rb;
+>>>>>>> main
 
     [Header("Stats")]
     [SerializeField] private float health = 50f;
 
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
+<<<<<<< HEAD
+=======
+    [SerializeField] private float moveSpeed = 3f;
+>>>>>>> main
 
     private StateMachine.StateMachine stateMachine;
     private NPCCapturedState capturedState;
@@ -25,6 +33,12 @@ public class HostageNPCController : MonoBehaviour, INPC
     public NPCType Type => type;
     public Transform Transform => transform;
     public Transform PlayerTransform => playerTransform;
+<<<<<<< HEAD
+=======
+    public Rigidbody2D Rigidbody => rb;
+    public float MoveSpeed => moveSpeed;
+    public bool IsGrounded { get; private set; }
+>>>>>>> main
     public bool IsInteractable => true;
     public bool IsAlive => health > 0f;
     public Blackboard Blackboard => blackboard;
@@ -34,6 +48,10 @@ public class HostageNPCController : MonoBehaviour, INPC
     private void Awake()
     {
         animatorAdapter = new AnimatorAdapter(animator);
+<<<<<<< HEAD
+=======
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+>>>>>>> main
     }
 
     private void Start()
@@ -94,4 +112,29 @@ public class HostageNPCController : MonoBehaviour, INPC
         // keep compatibility with possible external calls
         stateMachine.Update();
     }
+<<<<<<< HEAD
+=======
+
+    // Movement helpers
+    public void Move(Vector2 velocity)
+    {
+        if (rb == null) return;
+        rb.linearVelocity = new Vector2(velocity.x, rb.linearVelocity.y);
+    }
+
+    public void Jump(float force)
+    {
+        if (rb == null) return;
+        rb.AddForce(new Vector2(0f, force), ForceMode2D.Impulse);
+        IsGrounded = false;
+    }
+
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = true;
+        }
+    }
+>>>>>>> main
 }

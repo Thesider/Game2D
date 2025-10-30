@@ -25,6 +25,7 @@ public class ScanForThreatsAction : NPCAction
 
     protected override NodeState DoAction()
     {
+<<<<<<< HEAD
         Vector3 npcPosition = npc.Transform.position;
         Collider2D[] hits = Physics2D.OverlapCircleAll(npcPosition, radius, threatMask);
         npc.Blackboard?.Set(enemyCountKey, hits.Length);
@@ -50,6 +51,29 @@ public class ScanForThreatsAction : NPCAction
         }
 
         npc.Blackboard?.Set(nearestThreatKey, closestPosition);
+=======
+        ThreatSummary summary = NPCThreatUtility.EvaluateThreats(npc, radius, threatMask);
+        npc.Blackboard?.Set(enemyCountKey, summary.EnemyCount);
+        npc.Blackboard?.Set(enemiesNearbyKey, summary.HasThreat);
+
+        if (!summary.HasThreat)
+        {
+            npc.Blackboard?.Remove(nearestThreatKey);
+            npc.Blackboard?.Remove("NearestThreatTransform");
+            npc.Blackboard?.Set("ThreatLevel", 0f);
+            npc.Blackboard?.Set("ThreatLevelNormalized", 0f);
+            npc.Blackboard?.Set("HighThreat", false);
+            npc.Blackboard?.Remove("ThreatCenter");
+            return NodeState.Success;
+        }
+
+        npc.Blackboard?.Set(nearestThreatKey, summary.NearestPosition);
+        npc.Blackboard?.Set("NearestThreatTransform", summary.NearestEnemy);
+        npc.Blackboard?.Set("ThreatLevel", summary.ThreatScore);
+        npc.Blackboard?.Set("ThreatLevelNormalized", summary.NormalizedThreat);
+        npc.Blackboard?.Set("HighThreat", summary.IsHighThreat);
+        npc.Blackboard?.Set("ThreatCenter", summary.AveragePosition);
+>>>>>>> main
         return NodeState.Success;
     }
 }

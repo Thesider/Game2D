@@ -1,10 +1,9 @@
 using System;
 using UnityEngine;
 
-// Combat state caches its behaviour-tree nodes to avoid allocations each tick.
-// It also returns cached nodes to the NodePool on exit (optional single-slot pooling).
 public class EnemyCombatState : StateWithBehaviour
 {
+<<<<<<< HEAD
     // Cached nodes (created once per state instance)
     private PlayerInRangeCondition playerInRangeCondition;
     private HasLineOfSightCondition hasLineOfSightCondition;
@@ -18,20 +17,33 @@ public class EnemyCombatState : StateWithBehaviour
     private TimeoutNode maneuverTimeout;
     private DebugDecorator maneuverTimeoutDebug;
     private Selector rootSel;
+=======
+    private readonly EnemyCombatBehaviourTree combatBehaviour;
+>>>>>>> main
 
     public EnemyCombatState(IEnemy enemy, IAnimator animator, bool debug = true) : base(enemy, animator, debug)
     {
         SetTickInterval(0.2f);
+<<<<<<< HEAD
+=======
+        combatBehaviour = new EnemyCombatBehaviourTree(enemy, animator, blackboard, debug);
+>>>>>>> main
     }
 
     public override void onEnter()
     {
         base.onEnter();
+<<<<<<< HEAD
 
+=======
+        animator?.Play("Running");
+        animator?.SetBool("IsMoving", true);
+>>>>>>> main
     }
 
     protected override void BuildTree()
     {
+<<<<<<< HEAD
         if (rootSel != null)
         {
             root = rootSel;
@@ -69,15 +81,21 @@ public class EnemyCombatState : StateWithBehaviour
         rootSel.AddChild(maneuverTimeoutDebug);
 
         root = rootSel;
+=======
+        if (root != null) return;
+        root = combatBehaviour.Build();
+>>>>>>> main
     }
 
     public override void onUpdate()
     {
         base.onUpdate();
+        FacePlayer();
     }
 
     public override void onExit()
     {
+<<<<<<< HEAD
         try
         {
             if (attackAction != null) NodePool.Return(attackAction);
@@ -110,10 +128,27 @@ public class EnemyCombatState : StateWithBehaviour
         maneuverTimeout = null;
         maneuverTimeoutDebug = null;
         rootSel = null;
+=======
+        combatBehaviour.Reset();
+        animator?.SetBool("IsMoving", false);
+>>>>>>> main
         base.onExit();
     }
 
     public override void onFixedUpdate()
     {
+    }
+    private void FacePlayer()
+    {
+        if (enemy?.Player == null) return;
+
+        Transform self = enemy.Self;
+        float deltaX = enemy.Player.position.x - self.position.x;
+        if (Mathf.Approximately(deltaX, 0f)) return;
+
+        Vector3 scale = self.localScale;
+        float facingSign = Mathf.Sign(deltaX);
+        scale.x = Mathf.Abs(scale.x) * facingSign * -1f;
+        self.localScale = scale;
     }
 }

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class KillBox : MonoBehaviour
 {
+<<<<<<< HEAD
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,4 +14,7 @@ public class KillBox : MonoBehaviour
     {
         
     }
+=======
+
+>>>>>>> main
 }

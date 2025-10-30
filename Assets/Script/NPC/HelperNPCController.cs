@@ -9,10 +9,18 @@ public class HelperNPCController : MonoBehaviour, INPC
     [Header("References")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private Animator animator;
+<<<<<<< HEAD
 
     [Header("Stats")]
     [SerializeField] private float health = 80f;
 
+=======
+    [SerializeField] private Rigidbody2D rb;
+
+    [Header("Stats")]
+    [SerializeField] private float health = 80f;
+    [SerializeField] private float moveSpeed = 10f;
+>>>>>>> main
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
 
@@ -21,7 +29,10 @@ public class HelperNPCController : MonoBehaviour, INPC
     private NPCFollowingState followingState;
     private NPCCombatState combatState;
 
+<<<<<<< HEAD
     #region INPC Implementation
+=======
+>>>>>>> main
     public string NPCId => npcId;
     public NPCType Type => type;
     public Transform Transform => transform;
@@ -30,11 +41,21 @@ public class HelperNPCController : MonoBehaviour, INPC
     public bool IsAlive => health > 0f;
     public Blackboard Blackboard => blackboard;
     public IAnimator Animator => animatorAdapter;
+<<<<<<< HEAD
     #endregion
+=======
+    public Rigidbody2D Rigidbody => rb;
+    public float MoveSpeed => moveSpeed;
+    public bool IsGrounded { get; private set; }
+>>>>>>> main
 
     private void Awake()
     {
         animatorAdapter = new AnimatorAdapter(animator);
+<<<<<<< HEAD
+=======
+        if (rb == null) rb = GetComponent<Rigidbody2D>();
+>>>>>>> main
     }
 
     private void Start()
@@ -96,4 +117,28 @@ public class HelperNPCController : MonoBehaviour, INPC
     {
         stateMachine.Update();
     }
+<<<<<<< HEAD
+=======
+
+    public void Move(Vector2 velocity)
+    {
+        if (rb == null) return;
+        rb.linearVelocity = new Vector2(velocity.x, rb.linearVelocity.y);
+    }
+
+    public void Jump(float force)
+    {
+        if (rb == null) return;
+        rb.AddForce(new Vector2(0f, force), ForceMode2D.Impulse);
+        IsGrounded = false;
+    }
+
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = true;
+        }
+    }
+>>>>>>> main
 }

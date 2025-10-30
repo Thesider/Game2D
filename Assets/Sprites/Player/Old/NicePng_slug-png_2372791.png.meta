@@ -1,0 +1,5317 @@
+fileFormatVersion: 2
+guid: 9e9ade95232ceb34a91fec74a2251141
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7346735373250245676
+    second: NicePng_slug-png_2372791_0
+  - first:
+      213: -5871116260519709171
+    second: NicePng_slug-png_2372791_1
+  - first:
+      213: 2934591717057420928
+    second: NicePng_slug-png_2372791_2
+  - first:
+      213: -1061730359320670102
+    second: NicePng_slug-png_2372791_3
+  - first:
+      213: -5314488716794697344
+    second: NicePng_slug-png_2372791_4
+  - first:
+      213: -7209334473301435154
+    second: NicePng_slug-png_2372791_5
+  - first:
+      213: -8446764481105475056
+    second: NicePng_slug-png_2372791_6
+  - first:
+      213: -7456652324311607331
+    second: NicePng_slug-png_2372791_7
+  - first:
+      213: -3635580651110093606
+    second: NicePng_slug-png_2372791_8
+  - first:
+      213: -2300547122496304983
+    second: NicePng_slug-png_2372791_9
+  - first:
+      213: 6335370419313761341
+    second: NicePng_slug-png_2372791_10
+  - first:
+      213: -4167900804943516800
+    second: NicePng_slug-png_2372791_11
+  - first:
+      213: 6546644778479488152
+    second: NicePng_slug-png_2372791_12
+  - first:
+      213: 1615546892280340751
+    second: NicePng_slug-png_2372791_13
+  - first:
+      213: -7646494439661432318
+    second: NicePng_slug-png_2372791_14
+  - first:
+      213: -1678030115496596281
+    second: NicePng_slug-png_2372791_15
+  - first:
+      213: -5771403818105336702
+    second: NicePng_slug-png_2372791_16
+  - first:
+      213: -16279627803915231
+    second: NicePng_slug-png_2372791_17
+  - first:
+      213: -8399513343812185968
+    second: NicePng_slug-png_2372791_18
+  - first:
+      213: 8760924673084590939
+    second: NicePng_slug-png_2372791_19
+  - first:
+      213: 477896219198056074
+    second: NicePng_slug-png_2372791_20
+  - first:
+      213: -3252269346047252453
+    second: NicePng_slug-png_2372791_21
+  - first:
+      213: -6979474670030708145
+    second: NicePng_slug-png_2372791_22
+  - first:
+      213: -8811990229119383996
+    second: NicePng_slug-png_2372791_23
+  - first:
+      213: -7625294357640828350
+    second: NicePng_slug-png_2372791_24
+  - first:
+      213: -3163176473928901351
+    second: NicePng_slug-png_2372791_25
+  - first:
+      213: 552280145263465421
+    second: NicePng_slug-png_2372791_26
+  - first:
+      213: -2369367173660268500
+    second: NicePng_slug-png_2372791_27
+  - first:
+      213: -4613661617647563646
+    second: NicePng_slug-png_2372791_28
+  - first:
+      213: -8354139636013044831
+    second: NicePng_slug-png_2372791_29
+  - first:
+      213: -4293659451387756432
+    second: NicePng_slug-png_2372791_30
+  - first:
+      213: -3207119424743970166
+    second: NicePng_slug-png_2372791_31
+  - first:
+      213: -7828334973609440505
+    second: NicePng_slug-png_2372791_32
+  - first:
+      213: -738173557743147277
+    second: NicePng_slug-png_2372791_33
+  - first:
+      213: 7075319401608092974
+    second: NicePng_slug-png_2372791_34
+  - first:
+      213: 6014572631076987268
+    second: NicePng_slug-png_2372791_35
+  - first:
+      213: -5189185583426873350
+    second: NicePng_slug-png_2372791_36
+  - first:
+      213: -2066492240651902483
+    second: NicePng_slug-png_2372791_37
+  - first:
+      213: -195161068233492797
+    second: NicePng_slug-png_2372791_38
+  - first:
+      213: 3076083807771910876
+    second: NicePng_slug-png_2372791_39
+  - first:
+      213: 4975206593660027095
+    second: NicePng_slug-png_2372791_40
+  - first:
+      213: -6229623679516853485
+    second: NicePng_slug-png_2372791_41
+  - first:
+      213: -7846589770688403373
+    second: NicePng_slug-png_2372791_42
+  - first:
+      213: 8523704278174313374
+    second: NicePng_slug-png_2372791_43
+  - first:
+      213: -9052730789900771550
+    second: NicePng_slug-png_2372791_44
+  - first:
+      213: 6709097036800874876
+    second: NicePng_slug-png_2372791_45
+  - first:
+      213: 8160210508681156255
+    second: NicePng_slug-png_2372791_46
+  - first:
+      213: 3488188674186802380
+    second: NicePng_slug-png_2372791_47
+  - first:
+      213: 8163050251825656319
+    second: NicePng_slug-png_2372791_48
+  - first:
+      213: -9003407451706354378
+    second: NicePng_slug-png_2372791_49
+  - first:
+      213: 2814252534528556685
+    second: NicePng_slug-png_2372791_50
+  - first:
+      213: -1113187070169742990
+    second: NicePng_slug-png_2372791_51
+  - first:
+      213: -2125095625996678656
+    second: NicePng_slug-png_2372791_52
+  - first:
+      213: -5278162205738269795
+    second: NicePng_slug-png_2372791_53
+  - first:
+      213: 7337295796129563187
+    second: NicePng_slug-png_2372791_54
+  - first:
+      213: 7672198527252637635
+    second: NicePng_slug-png_2372791_55
+  - first:
+      213: 7262889287057595995
+    second: NicePng_slug-png_2372791_56
+  - first:
+      213: 7815101056873188063
+    second: NicePng_slug-png_2372791_57
+  - first:
+      213: 2605239375685183632
+    second: NicePng_slug-png_2372791_58
+  - first:
+      213: 1538818083643898868
+    second: NicePng_slug-png_2372791_59
+  - first:
+      213: -5353693209563288595
+    second: NicePng_slug-png_2372791_60
+  - first:
+      213: 5554561146586401612
+    second: NicePng_slug-png_2372791_61
+  - first:
+      213: 8829642416684524774
+    second: NicePng_slug-png_2372791_62
+  - first:
+      213: -5725940271082810633
+    second: NicePng_slug-png_2372791_63
+  - first:
+      213: 4647801656121215753
+    second: NicePng_slug-png_2372791_64
+  - first:
+      213: 3871712906594870528
+    second: NicePng_slug-png_2372791_65
+  - first:
+      213: 8668100862969989492
+    second: NicePng_slug-png_2372791_66
+  - first:
+      213: -9205018190632917345
+    second: NicePng_slug-png_2372791_67
+  - first:
+      213: -371534385166271886
+    second: NicePng_slug-png_2372791_68
+  - first:
+      213: 1967480104706987365
+    second: NicePng_slug-png_2372791_69
+  - first:
+      213: -6284029579509570739
+    second: NicePng_slug-png_2372791_70
+  - first:
+      213: 2931729426328304459
+    second: NicePng_slug-png_2372791_71
+  - first:
+      213: 7300094599546009709
+    second: NicePng_slug-png_2372791_72
+  - first:
+      213: -5323113469235456412
+    second: NicePng_slug-png_2372791_73
+  - first:
+      213: -5643469062113936836
+    second: NicePng_slug-png_2372791_74
+  - first:
+      213: -7598710721863761819
+    second: NicePng_slug-png_2372791_75
+  - first:
+      213: 236004729389658808
+    second: NicePng_slug-png_2372791_76
+  - first:
+      213: 4195004087621591906
+    second: NicePng_slug-png_2372791_77
+  - first:
+      213: -423573188475976710
+    second: NicePng_slug-png_2372791_78
+  - first:
+      213: 6677400869834829545
+    second: NicePng_slug-png_2372791_79
+  - first:
+      213: -3065524371537443622
+    second: NicePng_slug-png_2372791_80
+  - first:
+      213: 660018582027746454
+    second: NicePng_slug-png_2372791_81
+  - first:
+      213: 4176518254514340889
+    second: NicePng_slug-png_2372791_82
+  - first:
+      213: -1538970339070558506
+    second: NicePng_slug-png_2372791_83
+  - first:
+      213: 2237248141289686495
+    second: NicePng_slug-png_2372791_84
+  - first:
+      213: 6791366624725555505
+    second: NicePng_slug-png_2372791_85
+  - first:
+      213: -3397205187628207645
+    second: NicePng_slug-png_2372791_86
+  - first:
+      213: -3045520639862331185
+    second: NicePng_slug-png_2372791_87
+  - first:
+      213: -4653076764644161320
+    second: NicePng_slug-png_2372791_88
+  - first:
+      213: -3268400522555674440
+    second: NicePng_slug-png_2372791_89
+  - first:
+      213: -1542051645855772982
+    second: NicePng_slug-png_2372791_90
+  - first:
+      213: -4570811052638009081
+    second: NicePng_slug-png_2372791_91
+  - first:
+      213: 3382476125840789215
+    second: NicePng_slug-png_2372791_92
+  - first:
+      213: 6323875586747935658
+    second: NicePng_slug-png_2372791_93
+  - first:
+      213: -309000395728811734
+    second: NicePng_slug-png_2372791_94
+  - first:
+      213: 6823414873870615558
+    second: NicePng_slug-png_2372791_95
+  - first:
+      213: 8895128830594681329
+    second: NicePng_slug-png_2372791_96
+  - first:
+      213: 7994005370924409207
+    second: NicePng_slug-png_2372791_97
+  - first:
+      213: -2415798017622857107
+    second: NicePng_slug-png_2372791_98
+  - first:
+      213: 6794591541618841201
+    second: NicePng_slug-png_2372791_99
+  - first:
+      213: 4385837699500417835
+    second: NicePng_slug-png_2372791_100
+  - first:
+      213: -7360225511243775988
+    second: NicePng_slug-png_2372791_101
+  - first:
+      213: 2460980965786172102
+    second: NicePng_slug-png_2372791_102
+  - first:
+      213: -2936348632850497493
+    second: NicePng_slug-png_2372791_103
+  - first:
+      213: 660087292698722040
+    second: NicePng_slug-png_2372791_104
+  - first:
+      213: -4561749145413669646
+    second: NicePng_slug-png_2372791_105
+  - first:
+      213: -7426432214734933443
+    second: NicePng_slug-png_2372791_106
+  - first:
+      213: 775321777287596157
+    second: NicePng_slug-png_2372791_107
+  - first:
+      213: -1041794004021095142
+    second: NicePng_slug-png_2372791_108
+  - first:
+      213: -7576976216967407238
+    second: NicePng_slug-png_2372791_109
+  - first:
+      213: 6465211864176222246
+    second: NicePng_slug-png_2372791_110
+  - first:
+      213: -7997767328396269975
+    second: NicePng_slug-png_2372791_111
+  - first:
+      213: 4537708647455491917
+    second: NicePng_slug-png_2372791_112
+  - first:
+      213: 305233184847192461
+    second: NicePng_slug-png_2372791_113
+  - first:
+      213: -2367493979017372057
+    second: NicePng_slug-png_2372791_114
+  - first:
+      213: 8914537745448698510
+    second: NicePng_slug-png_2372791_115
+  - first:
+      213: 6393850449100436025
+    second: NicePng_slug-png_2372791_116
+  - first:
+      213: -8532551651470161292
+    second: NicePng_slug-png_2372791_117
+  - first:
+      213: -2456718509591096673
+    second: NicePng_slug-png_2372791_118
+  - first:
+      213: -7923972116035183031
+    second: NicePng_slug-png_2372791_119
+  - first:
+      213: -4827742330733699032
+    second: NicePng_slug-png_2372791_120
+  - first:
+      213: 1323817331871254412
+    second: NicePng_slug-png_2372791_121
+  - first:
+      213: -4233702781630580704
+    second: NicePng_slug-png_2372791_122
+  - first:
+      213: 3936847526282695851
+    second: NicePng_slug-png_2372791_123
+  - first:
+      213: -6475138414691728475
+    second: NicePng_slug-png_2372791_124
+  - first:
+      213: 8143001079791347680
+    second: NicePng_slug-png_2372791_125
+  - first:
+      213: 7653722410234398025
+    second: NicePng_slug-png_2372791_126
+  - first:
+      213: -8981153839029036748
+    second: NicePng_slug-png_2372791_127
+  - first:
+      213: 4045846124574869003
+    second: NicePng_slug-png_2372791_128
+  - first:
+      213: 4850680656001192689
+    second: NicePng_slug-png_2372791_129
+  - first:
+      213: 2707275412638189616
+    second: NicePng_slug-png_2372791_130
+  - first:
+      213: -6854005377748624923
+    second: NicePng_slug-png_2372791_131
+  - first:
+      213: -2426003053132549545
+    second: NicePng_slug-png_2372791_132
+  - first:
+      213: -2536314399874463262
+    second: NicePng_slug-png_2372791_133
+  - first:
+      213: -2506017685844958506
+    second: NicePng_slug-png_2372791_134
+  - first:
+      213: 6611132985904715732
+    second: NicePng_slug-png_2372791_135
+  - first:
+      213: -4439736411843392064
+    second: NicePng_slug-png_2372791_136
+  - first:
+      213: 5122229062977567354
+    second: NicePng_slug-png_2372791_137
+  - first:
+      213: 3885215009840049434
+    second: NicePng_slug-png_2372791_138
+  - first:
+      213: 8225032003005115657
+    second: NicePng_slug-png_2372791_139
+  - first:
+      213: -8411919480456128134
+    second: NicePng_slug-png_2372791_140
+  - first:
+      213: 9086665194571177030
+    second: NicePng_slug-png_2372791_141
+  - first:
+      213: 7948740847165425430
+    second: NicePng_slug-png_2372791_142
+  - first:
+      213: 2213388025858706721
+    second: NicePng_slug-png_2372791_143
+  - first:
+      213: -331063298370293895
+    second: NicePng_slug-png_2372791_144
+  - first:
+      213: -884498945892419061
+    second: NicePng_slug-png_2372791_145
+  - first:
+      213: 8164573158173202231
+    second: NicePng_slug-png_2372791_146
+  - first:
+      213: 1004444219215613386
+    second: NicePng_slug-png_2372791_147
+  - first:
+      213: -5429694934403110602
+    second: NicePng_slug-png_2372791_148
+  - first:
+      213: 1012376836051406443
+    second: NicePng_slug-png_2372791_149
+  - first:
+      213: -5483337006137298242
+    second: NicePng_slug-png_2372791_150
+  - first:
+      213: -4221134622366107129
+    second: NicePng_slug-png_2372791_151
+  - first:
+      213: -9105672788101814417
+    second: NicePng_slug-png_2372791_152
+  - first:
+      213: 7424505834230616501
+    second: NicePng_slug-png_2372791_153
+  - first:
+      213: 5205822014816115296
+    second: NicePng_slug-png_2372791_154
+  - first:
+      213: -6966667903195293779
+    second: NicePng_slug-png_2372791_155
+  - first:
+      213: -3385481591836659321
+    second: NicePng_slug-png_2372791_156
+  - first:
+      213: -5897638565817017057
+    second: NicePng_slug-png_2372791_157
+  - first:
+      213: 6807153074904061870
+    second: NicePng_slug-png_2372791_158
+  - first:
+      213: 7798318094040215700
+    second: NicePng_slug-png_2372791_159
+  - first:
+      213: 1018085381795459199
+    second: NicePng_slug-png_2372791_160
+  - first:
+      213: 5915133819492586411
+    second: NicePng_slug-png_2372791_161
+  - first:
+      213: -3699514747223431075
+    second: NicePng_slug-png_2372791_162
+  - first:
+      213: 5323320570304198889
+    second: NicePng_slug-png_2372791_163
+  - first:
+      213: -1131167142805763464
+    second: NicePng_slug-png_2372791_164
+  - first:
+      213: -8434490919017314080
+    second: NicePng_slug-png_2372791_165
+  - first:
+      213: 8564505493961760427
+    second: NicePng_slug-png_2372791_166
+  - first:
+      213: -4893796852617687741
+    second: NicePng_slug-png_2372791_167
+  - first:
+      213: -2531295381382988661
+    second: NicePng_slug-png_2372791_168
+  - first:
+      213: -7245903280021242432
+    second: NicePng_slug-png_2372791_169
+  - first:
+      213: 1537877205041946890
+    second: NicePng_slug-png_2372791_170
+  - first:
+      213: -164265190651216398
+    second: NicePng_slug-png_2372791_171
+  - first:
+      213: 4317696982810932169
+    second: NicePng_slug-png_2372791_172
+  - first:
+      213: 6823688916777237211
+    second: NicePng_slug-png_2372791_173
+  - first:
+      213: 5962212375731849133
+    second: NicePng_slug-png_2372791_174
+  - first:
+      213: 2800351130915152157
+    second: NicePng_slug-png_2372791_175
+  - first:
+      213: 469384324572904599
+    second: NicePng_slug-png_2372791_176
+  - first:
+      213: -457446153719044400
+    second: NicePng_slug-png_2372791_177
+  - first:
+      213: 7546657731232362917
+    second: NicePng_slug-png_2372791_178
+  - first:
+      213: -5377912886250297029
+    second: NicePng_slug-png_2372791_179
+  - first:
+      213: -3022099173254458097
+    second: NicePng_slug-png_2372791_180
+  - first:
+      213: -4947974971808424635
+    second: NicePng_slug-png_2372791_181
+  - first:
+      213: -8026318920959626835
+    second: NicePng_slug-png_2372791_182
+  - first:
+      213: 7732151951604775410
+    second: NicePng_slug-png_2372791_183
+  - first:
+      213: -5142572372752665782
+    second: NicePng_slug-png_2372791_184
+  - first:
+      213: -8948343582459069302
+    second: NicePng_slug-png_2372791_185
+  - first:
+      213: -567948423756067033
+    second: NicePng_slug-png_2372791_186
+  - first:
+      213: 4392262194294204456
+    second: NicePng_slug-png_2372791_187
+  - first:
+      213: -6092691527737426418
+    second: NicePng_slug-png_2372791_188
+  - first:
+      213: -3009427053545391501
+    second: NicePng_slug-png_2372791_189
+  - first:
+      213: 3033782875728631937
+    second: NicePng_slug-png_2372791_190
+  - first:
+      213: 3462595234682968579
+    second: NicePng_slug-png_2372791_191
+  - first:
+      213: -5019942013028229836
+    second: NicePng_slug-png_2372791_192
+  - first:
+      213: 8867984443806973305
+    second: NicePng_slug-png_2372791_193
+  - first:
+      213: -8362038016093519052
+    second: NicePng_slug-png_2372791_194
+  - first:
+      213: 8571999141534729743
+    second: NicePng_slug-png_2372791_195
+  - first:
+      213: 2870531796023544144
+    second: NicePng_slug-png_2372791_196
+  - first:
+      213: -6345212813858158564
+    second: NicePng_slug-png_2372791_197
+  - first:
+      213: -1704400996436200086
+    second: NicePng_slug-png_2372791_198
+  - first:
+      213: 887078878648641677
+    second: NicePng_slug-png_2372791_199
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 400
+        height: 57
+      alignment: 9
+      pivot: {x: 0.03335883, y: 0.5943325}
+      border: {x: 0, y: 2, z: 300, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24b065b5e8d4f560800000000000000
+      internalID: 7346735373250245676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_1
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 503
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06f3b81eda958ea0800000000000000
+      internalID: -5871116260519709171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 503
+        width: 33
+        height: 39
+      alignment: 9
+      pivot: {x: 0.48089287, y: 0.46751863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ed2085e93c9b820800000000000000
+      internalID: 2934591717057420928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 503
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60917d0dd9f341f0800000000000000
+      internalID: -1061730359320670102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 503
+        width: 53
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08961a06ba42f36b0800000000000000
+      internalID: -5314488716794697344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 503
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecd3e34e7c43fb90800000000000000
+      internalID: -7209334473301435154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_6
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 463
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a4252157017ca80800000000000000
+      internalID: -8446764481105475056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 503
+        width: 35
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd7d0d3d736a48890800000000000000
+      internalID: -7456652324311607331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_8
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 463
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcac42f8a2db8dc0800000000000000
+      internalID: -3635580651110093606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_9
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 503
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a88f86b490d210e0800000000000000
+      internalID: -2300547122496304983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 463
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3cd6b384d1cbe750800000000000000
+      internalID: 6335370419313761341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_11
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 503
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08be646ec44a826c0800000000000000
+      internalID: -4167900804943516800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_12
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 463
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c8feb8dba5ada50800000000000000
+      internalID: 6546644778479488152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_13
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 503
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f012b58c6539b6610800000000000000
+      internalID: 1615546892280340751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_14
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 503
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2021bfae1d132e590800000000000000
+      internalID: -7646494439661432318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 463
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccea63208076b8e0800000000000000
+      internalID: -1678030115496596281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 423
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c8f7e3ecad7efa0800000000000000
+      internalID: -5771403818105336702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_17
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 423
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c0ca7c3c926cff0800000000000000
+      internalID: -16279627803915231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 463
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090dbe7cd1fee6b80800000000000000
+      internalID: -8399513343812185968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_19
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 463
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b8923a29e059970800000000000000
+      internalID: 8760924673084590939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 463
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a866dc05414d1a600800000000000000
+      internalID: 477896219198056074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_21
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 463
+        width: 37
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1826f2d24e9dd2d0800000000000000
+      internalID: -3252269346047252453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_22
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 422
+        width: 36
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42abf534cce32f90800000000000000
+      internalID: -6979474670030708145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_23
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 421
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4464025139585b580800000000000000
+      internalID: -8811990229119383996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_24
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 417
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a2709ae238d2690800000000000000
+      internalID: -7625294357640828350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_25
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 417
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91d589591c32a14d0800000000000000
+      internalID: -3163176473928901351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_26
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 462
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc31ee2bdd71aa700800000000000000
+      internalID: 552280145263465421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_27
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 422
+        width: 31
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c282287eb115e1fd0800000000000000
+      internalID: -2369367173660268500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_28
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 422
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c4346f33bf8ffb0800000000000000
+      internalID: -4613661617647563646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_29
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 422
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab6e6f5342201c80800000000000000
+      internalID: -8354139636013044831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 422
+        width: 37
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070c88d4a7bd964c0800000000000000
+      internalID: -4293659451387756432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_31
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 452
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a61ef00e50e73d0800000000000000
+      internalID: -3207119424743970166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_32
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 441
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70b0e3b51da2c5390800000000000000
+      internalID: -7828334973609440505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_33
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 452
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6222c6f0b71c5f0800000000000000
+      internalID: -738173557743147277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_34
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 441
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d97455285903260800000000000000
+      internalID: 7075319401608092974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_35
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 452
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481612ff0fd087350800000000000000
+      internalID: 6014572631076987268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_36
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 441
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af75342943f4cf7b0800000000000000
+      internalID: -5189185583426873350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_37
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 452
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1a7d081485253e0800000000000000
+      internalID: -2066492240651902483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_38
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 441
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c6f4fdda06aa4df0800000000000000
+      internalID: -195161068233492797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_39
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 452
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd26395ece170ba20800000000000000
+      internalID: 3076083807771910876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_40
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 441
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d08943890c7b0540800000000000000
+      internalID: 4975206593660027095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_41
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 452
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31b390af44eeb89a0800000000000000
+      internalID: -6229623679516853485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_42
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 441
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35867e33d205b1390800000000000000
+      internalID: -7846589770688403373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_43
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 451
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9bae0761e74a4670800000000000000
+      internalID: 8523704278174313374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_44
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 441
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f19bc5f4d3e5280800000000000000
+      internalID: -9052730789900771550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_45
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c79542a65308b1d50800000000000000
+      internalID: 6709097036800874876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_46
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9699561934ee3170800000000000000
+      internalID: 8160210508681156255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_47
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc4f1723e19886030800000000000000
+      internalID: 3488188674186802380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_48
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff13bbf44faf84170800000000000000
+      internalID: 8163050251825656319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_49
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 430
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63510f0ff987d0380800000000000000
+      internalID: -9003407451706354378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_50
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e31d405cb3e0720800000000000000
+      internalID: 2814252534528556685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_51
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 430
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27189f1f14a2d80f0800000000000000
+      internalID: -1113187070169742990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_52
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a4bb299c42282e0800000000000000
+      internalID: -2125095625996678656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_53
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 430
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d930414507330c6b0800000000000000
+      internalID: -5278162205738269795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_54
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 418
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3320544e6af43d560800000000000000
+      internalID: 7337295796129563187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_55
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 418
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c72b2759ef197a60800000000000000
+      internalID: 7672198527252637635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_56
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 418
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ede0e7357fac460800000000000000
+      internalID: 7262889287057595995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_57
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 418
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdac4ba4101d47c60800000000000000
+      internalID: 7815101056873188063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_58
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 418
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0986396b86ba72420800000000000000
+      internalID: 2605239375685183632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 362
+        width: 400
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbba81e4eafa5510800000000000000
+      internalID: 1538818083643898868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_60
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 363
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb2f87146cd3b5b0800000000000000
+      internalID: -5353693209563288595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_61
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 364
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b0879fee3c51d40800000000000000
+      internalID: 5554561146586401612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_62
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 366
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4e33c1ff0398a70800000000000000
+      internalID: 8829642416684524774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_63
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 369
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f2510929af5980b0800000000000000
+      internalID: -5725940271082810633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_64
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 370
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90bc39b2bfe408040800000000000000
+      internalID: 4647801656121215753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_65
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 369
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005e1e510661bb530800000000000000
+      internalID: 3871712906594870528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_66
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 365
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479459e2fc74b4870800000000000000
+      internalID: 8668100862969989492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_67
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 363
+        width: 31
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f96e054d9b4314080800000000000000
+      internalID: -9205018190632917345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_68
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 368
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a3256f17b08daf0800000000000000
+      internalID: -371534385166271886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_69
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 368
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56555b72bb4ed4b10800000000000000
+      internalID: 1967480104706987365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_70
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 368
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43e8434464aac8a0800000000000000
+      internalID: -6284029579509570739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_71
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 368
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bbbd951689fa820800000000000000
+      internalID: 2931729426328304459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_72
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 331
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68ffa85c552f4560800000000000000
+      internalID: 7300094599546009709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_73
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 335
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4669f17b0808026b0800000000000000
+      internalID: -5323113469235456412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_74
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 341
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3abac3d9ce5ea1b0800000000000000
+      internalID: -5643469062113936836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_75
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 333
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560cb50bbd4fb8690800000000000000
+      internalID: -7598710721863761819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_76
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 294
+        width: 36
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2359c0d05764300800000000000000
+      internalID: 236004729389658808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_77
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 293
+        width: 39
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2632ff9ddf5a73a30800000000000000
+      internalID: 4195004087621591906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_78
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 299
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af38284ed6a2f1af0800000000000000
+      internalID: -423573188475976710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_79
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 299
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eea36576b4eaac50800000000000000
+      internalID: 6677400869834829545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_80
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 299
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4453073d11575d0800000000000000
+      internalID: -3065524371537443622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_81
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 299
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69cbbe6476bd82900800000000000000
+      internalID: 660018582027746454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_82
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 323
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914034e6939f5f930800000000000000
+      internalID: 4176518254514340889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_83
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 314
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de36d361aa74aae0800000000000000
+      internalID: -1538970339070558506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_84
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 299
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd589ffb45d4c0f10800000000000000
+      internalID: 2237248141289686495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_85
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 199
+        width: 43
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 139d53686f7cf3e50800000000000000
+      internalID: 6791366624725555505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_86
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 197
+        width: 49
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e17e4a81e3bad0d0800000000000000
+      internalID: -3397205187628207645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_87
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 197
+        width: 49
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc8a2e82d132cb5d0800000000000000
+      internalID: -3045520639862331185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_88
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 196
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d8c2cae553fc6fb0800000000000000
+      internalID: -4653076764644161320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_89
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 195
+        width: 50
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b03e5d9a0f44a2d0800000000000000
+      internalID: -3268400522555674440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_90
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 193
+        width: 49
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acec57fb238899ae0800000000000000
+      internalID: -1542051645855772982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_91
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 190
+        width: 50
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709051890973190c0800000000000000
+      internalID: -4570811052638009081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_92
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 93
+        width: 49
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdecaf58d18f0fe20800000000000000
+      internalID: 3382476125840789215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_93
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 93
+        width: 49
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab20ef375be2c750800000000000000
+      internalID: 6323875586747935658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_94
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 97
+        width: 50
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a290129f6c536bbf0800000000000000
+      internalID: -309000395728811734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_95
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 102
+        width: 50
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604cc200da3a1be50800000000000000
+      internalID: 6823414873870615558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_96
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 107
+        width: 50
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f98ee20b88d17b70800000000000000
+      internalID: 8895128830594681329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_97
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 106
+        width: 50
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771a382e78960fe60800000000000000
+      internalID: 7994005370924409207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_98
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 108
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a2f7e908c597ed0800000000000000
+      internalID: -2415798017622857107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_99
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 112
+        width: 50
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1769010020d3b4e50800000000000000
+      internalID: 6794591541618841201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_100
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 18
+        width: 50
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b232d398620addc30800000000000000
+      internalID: 4385837699500417835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_101
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 33
+        width: 86
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c000c87c4e93bd990800000000000000
+      internalID: -7360225511243775988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_102
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 59
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cabea84629272220800000000000000
+      internalID: 2460980965786172102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_103
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 90
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b200e32d97eff37d0800000000000000
+      internalID: -2936348632850497493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_104
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 51
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe7e0a35e9192900800000000000000
+      internalID: 660087292698722040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_105
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 24
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc2d29425961b0c0800000000000000
+      internalID: -4561749145413669646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_106
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 23
+        width: 45
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d32f4346f3300f890800000000000000
+      internalID: -7426432214734933443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_107
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 61
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d780ad17c0f72ca00800000000000000
+      internalID: 775321777287596157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_108
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 75
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15d03d7fddca81f0800000000000000
+      internalID: -1041794004021095142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_109
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 59
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a791314764c29d690800000000000000
+      internalID: -7576976216967407238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_110
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 59
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6206dd1bfeb09b950800000000000000
+      internalID: 6465211864176222246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_111
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 34
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96627b22df8320190800000000000000
+      internalID: -7997767328396269975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_112
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 22
+        width: 17
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d478dc919fd29fe30800000000000000
+      internalID: 4537708647455491917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_113
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 45
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d816a74e6f76c3400800000000000000
+      internalID: 305233184847192461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_114
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 51
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e1bc405c8f42fd0800000000000000
+      internalID: -2367493979017372057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_115
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 51
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e82084629dcc6bb70800000000000000
+      internalID: 8914537745448698510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_116
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 30
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9327a9d7b158bb850800000000000000
+      internalID: 6393850449100436025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_117
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 31
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ac27afa79469980800000000000000
+      internalID: -8532551651470161292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 400
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9212b2288bf7edd0800000000000000
+      internalID: -2456718509591096673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_119
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 32
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e5f9de755680290800000000000000
+      internalID: -7923972116035183031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_120
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 26
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820608dbde9600db0800000000000000
+      internalID: -4827742330733699032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_121
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8701b579d42f5210800000000000000
+      internalID: 1323817331871254412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_122
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028735050cdde35c0800000000000000
+      internalID: -4233702781630580704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_123
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba494f287fd72a630800000000000000
+      internalID: 3936847526282695851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_124
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a340d82befa326a0800000000000000
+      internalID: -6475138414691728475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_125
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7e59ea650c10170800000000000000
+      internalID: 8143001079791347680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_126
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 945c77f1bfb773a60800000000000000
+      internalID: 7653722410234398025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_127
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439d987ea288c5380800000000000000
+      internalID: -8981153839029036748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_128
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b060d2f4d9bb52830800000000000000
+      internalID: 4045846124574869003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_129
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f25fcb4b54115340800000000000000
+      internalID: 4850680656001192689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_130
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 19
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 038c27fd4ac229520800000000000000
+      internalID: 2707275412638189616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_131
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e91daa4c6ea1e0a0800000000000000
+      internalID: -6854005377748624923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_132
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7527502a31b155ed0800000000000000
+      internalID: -2426003053132549545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_133
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e946c4cd733dccd0800000000000000
+      internalID: -2536314399874463262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_134
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d26d523136d83dd0800000000000000
+      internalID: -2506017685844958506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_135
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7d7b36c667fbb50800000000000000
+      internalID: 6611132985904715732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_136
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 18
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cd05b39143e262c0800000000000000
+      internalID: -4439736411843392064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_137
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ab5fca130d51740800000000000000
+      internalID: 5122229062977567354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_138
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d2889777e0be530800000000000000
+      internalID: 3885215009840049434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_139
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90de655570f252270800000000000000
+      internalID: 8225032003005115657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_140
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 19
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7959300dcbd24b80800000000000000
+      internalID: -8411919480456128134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_141
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c125be9d15a1e70800000000000000
+      internalID: 9086665194571177030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_142
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 617ceeeafa99f4e60800000000000000
+      internalID: 7948740847165425430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_143
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 19
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d4967bea887be10800000000000000
+      internalID: 2213388025858706721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_144
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f28762fa3d76bf0800000000000000
+      internalID: -331063298370293895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_145
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 19
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0affdd15e0a9b3f0800000000000000
+      internalID: -884498945892419061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_146
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7375a9397046e4170800000000000000
+      internalID: 8164573158173202231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_147
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 29
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd8a0312b080fd00800000000000000
+      internalID: 1004444219215613386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_148
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6392a249939d5a4b0800000000000000
+      internalID: -5429694934403110602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_149
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 29
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e8dab5e5fac0e00800000000000000
+      internalID: 1012376836051406443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_150
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2be6d7b0647e3b0800000000000000
+      internalID: -5483337006137298242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_151
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70af3ccec648b65c0800000000000000
+      internalID: -4221134622366107129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_152
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f672048d7d622a180800000000000000
+      internalID: -9105672788101814417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_153
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1912238b4290760800000000000000
+      internalID: 7424505834230616501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_154
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06ad5057a8bce3840800000000000000
+      internalID: 5205822014816115296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_155
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7dde9f37c615f90800000000000000
+      internalID: -6966667903195293779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_156
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 781b3f4ed6a5401d0800000000000000
+      internalID: -3385481591836659321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_157
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1d15dea8f0672ea0800000000000000
+      internalID: -5897638565817017057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_158
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea75d51e7add77e50800000000000000
+      internalID: 6807153074904061870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_159
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 490b4c04df0393c60800000000000000
+      internalID: 7798318094040215700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_160
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70bfecb247f02e00800000000000000
+      internalID: 1018085381795459199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_161
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba351cd7ed6c61250800000000000000
+      internalID: 5915133819492586411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_162
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d58ad6230fea8acc0800000000000000
+      internalID: -3699514747223431075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_163
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8f282cadb30e940800000000000000
+      internalID: 5323320570304198889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_164
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a087f0a794d40f0800000000000000
+      internalID: -1131167142805763464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_165
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e807be623ba2fa80800000000000000
+      internalID: -8434490919017314080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_166
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baed87cbe5c3bd670800000000000000
+      internalID: 8564505493961760427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_167
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d4cc4e0bdb51cb0800000000000000
+      internalID: -4893796852617687741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_168
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c741313480fdcd0800000000000000
+      internalID: -2531295381382988661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_169
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdfe757b51617b90800000000000000
+      internalID: -7245903280021242432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_170
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0122b28b23a75510800000000000000
+      internalID: 1537877205041946890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_171
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdb54eeda968bdf0800000000000000
+      internalID: -164265190651216398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_172
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c3b83c978a8beb30800000000000000
+      internalID: 4317696982810932169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_173
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdaf6469aec92be50800000000000000
+      internalID: 6823688916777237211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_174
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da74fea01980eb250800000000000000
+      internalID: 5962212375731849133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_175
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11af844488dcd620800000000000000
+      internalID: 2800351130915152157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_176
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cfd496e86938600800000000000000
+      internalID: 469384324572904599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_177
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d625b79523d6a9f0800000000000000
+      internalID: -457446153719044400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_178
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a17f8ff83d1bb860800000000000000
+      internalID: 7546657731232362917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_179
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b392e0e29b0dd55b0800000000000000
+      internalID: -5377912886250297029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_180
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f059a2e40d85f06d0800000000000000
+      internalID: -3022099173254458097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_181
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54dd5d78af2455bb0800000000000000
+      internalID: -4947974971808424635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_182
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da174367779cc9090800000000000000
+      internalID: -8026318920959626835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_183
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f9feb8bb3f1e4b60800000000000000
+      internalID: 7732151951604775410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_184
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43f65a6ca9e1a8b0800000000000000
+      internalID: -5142572372752665782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_185
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c716f0ce811d380800000000000000
+      internalID: -8948343582459069302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_186
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72fc64feaed3e18f0800000000000000
+      internalID: -567948423756067033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_187
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828a84bc13374fc30800000000000000
+      internalID: 4392262194294204456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_188
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ebd230659627ba0800000000000000
+      internalID: -6092691527737426418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_189
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37af9f71a0e5c36d0800000000000000
+      internalID: -3009427053545391501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_190
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 188d779a3792a1a20800000000000000
+      internalID: 3033782875728631937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_191
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a1d34350c9d0030800000000000000
+      internalID: 3462595234682968579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_192
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d94600655955ab0800000000000000
+      internalID: -5019942013028229836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_193
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dfdc6fdd8611b70800000000000000
+      internalID: 8867984443806973305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_194
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4330f647ab214fb80800000000000000
+      internalID: -8362038016093519052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_195
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0681268dcbd5f670800000000000000
+      internalID: 8571999141534729743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_196
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0598272b57d26d720800000000000000
+      internalID: 2870531796023544144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_197
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c184abd609641f7a0800000000000000
+      internalID: -6345212813858158564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_198
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a653994f250c858e0800000000000000
+      internalID: -1704400996436200086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NicePng_slug-png_2372791_199
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 2
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88aa994a898f4c00800000000000000
+      internalID: 887078878648641677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 93ee87fb45999424b842126ac5d6223e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NicePng_slug-png_2372791_0: 7346735373250245676
+      NicePng_slug-png_2372791_1: -5871116260519709171
+      NicePng_slug-png_2372791_10: 6335370419313761341
+      NicePng_slug-png_2372791_100: 4385837699500417835
+      NicePng_slug-png_2372791_101: -7360225511243775988
+      NicePng_slug-png_2372791_102: 2460980965786172102
+      NicePng_slug-png_2372791_103: -2936348632850497493
+      NicePng_slug-png_2372791_104: 660087292698722040
+      NicePng_slug-png_2372791_105: -4561749145413669646
+      NicePng_slug-png_2372791_106: -7426432214734933443
+      NicePng_slug-png_2372791_107: 775321777287596157
+      NicePng_slug-png_2372791_108: -1041794004021095142
+      NicePng_slug-png_2372791_109: -7576976216967407238
+      NicePng_slug-png_2372791_11: -4167900804943516800
+      NicePng_slug-png_2372791_110: 6465211864176222246
+      NicePng_slug-png_2372791_111: -7997767328396269975
+      NicePng_slug-png_2372791_112: 4537708647455491917
+      NicePng_slug-png_2372791_113: 305233184847192461
+      NicePng_slug-png_2372791_114: -2367493979017372057
+      NicePng_slug-png_2372791_115: 8914537745448698510
+      NicePng_slug-png_2372791_116: 6393850449100436025
+      NicePng_slug-png_2372791_117: -8532551651470161292
+      NicePng_slug-png_2372791_118: -2456718509591096673
+      NicePng_slug-png_2372791_119: -7923972116035183031
+      NicePng_slug-png_2372791_12: 6546644778479488152
+      NicePng_slug-png_2372791_120: -4827742330733699032
+      NicePng_slug-png_2372791_121: 1323817331871254412
+      NicePng_slug-png_2372791_122: -4233702781630580704
+      NicePng_slug-png_2372791_123: 3936847526282695851
+      NicePng_slug-png_2372791_124: -6475138414691728475
+      NicePng_slug-png_2372791_125: 8143001079791347680
+      NicePng_slug-png_2372791_126: 7653722410234398025
+      NicePng_slug-png_2372791_127: -8981153839029036748
+      NicePng_slug-png_2372791_128: 4045846124574869003
+      NicePng_slug-png_2372791_129: 4850680656001192689
+      NicePng_slug-png_2372791_13: 1615546892280340751
+      NicePng_slug-png_2372791_130: 2707275412638189616
+      NicePng_slug-png_2372791_131: -6854005377748624923
+      NicePng_slug-png_2372791_132: -2426003053132549545
+      NicePng_slug-png_2372791_133: -2536314399874463262
+      NicePng_slug-png_2372791_134: -2506017685844958506
+      NicePng_slug-png_2372791_135: 6611132985904715732
+      NicePng_slug-png_2372791_136: -4439736411843392064
+      NicePng_slug-png_2372791_137: 5122229062977567354
+      NicePng_slug-png_2372791_138: 3885215009840049434
+      NicePng_slug-png_2372791_139: 8225032003005115657
+      NicePng_slug-png_2372791_14: -7646494439661432318
+      NicePng_slug-png_2372791_140: -8411919480456128134
+      NicePng_slug-png_2372791_141: 9086665194571177030
+      NicePng_slug-png_2372791_142: 7948740847165425430
+      NicePng_slug-png_2372791_143: 2213388025858706721
+      NicePng_slug-png_2372791_144: -331063298370293895
+      NicePng_slug-png_2372791_145: -884498945892419061
+      NicePng_slug-png_2372791_146: 8164573158173202231
+      NicePng_slug-png_2372791_147: 1004444219215613386
+      NicePng_slug-png_2372791_148: -5429694934403110602
+      NicePng_slug-png_2372791_149: 1012376836051406443
+      NicePng_slug-png_2372791_15: -1678030115496596281
+      NicePng_slug-png_2372791_150: -5483337006137298242
+      NicePng_slug-png_2372791_151: -4221134622366107129
+      NicePng_slug-png_2372791_152: -9105672788101814417
+      NicePng_slug-png_2372791_153: 7424505834230616501
+      NicePng_slug-png_2372791_154: 5205822014816115296
+      NicePng_slug-png_2372791_155: -6966667903195293779
+      NicePng_slug-png_2372791_156: -3385481591836659321
+      NicePng_slug-png_2372791_157: -5897638565817017057
+      NicePng_slug-png_2372791_158: 6807153074904061870
+      NicePng_slug-png_2372791_159: 7798318094040215700
+      NicePng_slug-png_2372791_16: -5771403818105336702
+      NicePng_slug-png_2372791_160: 1018085381795459199
+      NicePng_slug-png_2372791_161: 5915133819492586411
+      NicePng_slug-png_2372791_162: -3699514747223431075
+      NicePng_slug-png_2372791_163: 5323320570304198889
+      NicePng_slug-png_2372791_164: -1131167142805763464
+      NicePng_slug-png_2372791_165: -8434490919017314080
+      NicePng_slug-png_2372791_166: 8564505493961760427
+      NicePng_slug-png_2372791_167: -4893796852617687741
+      NicePng_slug-png_2372791_168: -2531295381382988661
+      NicePng_slug-png_2372791_169: -7245903280021242432
+      NicePng_slug-png_2372791_17: -16279627803915231
+      NicePng_slug-png_2372791_170: 1537877205041946890
+      NicePng_slug-png_2372791_171: -164265190651216398
+      NicePng_slug-png_2372791_172: 4317696982810932169
+      NicePng_slug-png_2372791_173: 6823688916777237211
+      NicePng_slug-png_2372791_174: 5962212375731849133
+      NicePng_slug-png_2372791_175: 2800351130915152157
+      NicePng_slug-png_2372791_176: 469384324572904599
+      NicePng_slug-png_2372791_177: -457446153719044400
+      NicePng_slug-png_2372791_178: 7546657731232362917
+      NicePng_slug-png_2372791_179: -5377912886250297029
+      NicePng_slug-png_2372791_18: -8399513343812185968
+      NicePng_slug-png_2372791_180: -3022099173254458097
+      NicePng_slug-png_2372791_181: -4947974971808424635
+      NicePng_slug-png_2372791_182: -8026318920959626835
+      NicePng_slug-png_2372791_183: 7732151951604775410
+      NicePng_slug-png_2372791_184: -5142572372752665782
+      NicePng_slug-png_2372791_185: -8948343582459069302
+      NicePng_slug-png_2372791_186: -567948423756067033
+      NicePng_slug-png_2372791_187: 4392262194294204456
+      NicePng_slug-png_2372791_188: -6092691527737426418
+      NicePng_slug-png_2372791_189: -3009427053545391501
+      NicePng_slug-png_2372791_19: 8760924673084590939
+      NicePng_slug-png_2372791_190: 3033782875728631937
+      NicePng_slug-png_2372791_191: 3462595234682968579
+      NicePng_slug-png_2372791_192: -5019942013028229836
+      NicePng_slug-png_2372791_193: 8867984443806973305
+      NicePng_slug-png_2372791_194: -8362038016093519052
+      NicePng_slug-png_2372791_195: 8571999141534729743
+      NicePng_slug-png_2372791_196: 2870531796023544144
+      NicePng_slug-png_2372791_197: -6345212813858158564
+      NicePng_slug-png_2372791_198: -1704400996436200086
+      NicePng_slug-png_2372791_199: 887078878648641677
+      NicePng_slug-png_2372791_2: 2934591717057420928
+      NicePng_slug-png_2372791_20: 477896219198056074
+      NicePng_slug-png_2372791_21: -3252269346047252453
+      NicePng_slug-png_2372791_22: -6979474670030708145
+      NicePng_slug-png_2372791_23: -8811990229119383996
+      NicePng_slug-png_2372791_24: -7625294357640828350
+      NicePng_slug-png_2372791_25: -3163176473928901351
+      NicePng_slug-png_2372791_26: 552280145263465421
+      NicePng_slug-png_2372791_27: -2369367173660268500
+      NicePng_slug-png_2372791_28: -4613661617647563646
+      NicePng_slug-png_2372791_29: -8354139636013044831
+      NicePng_slug-png_2372791_3: -1061730359320670102
+      NicePng_slug-png_2372791_30: -4293659451387756432
+      NicePng_slug-png_2372791_31: -3207119424743970166
+      NicePng_slug-png_2372791_32: -7828334973609440505
+      NicePng_slug-png_2372791_33: -738173557743147277
+      NicePng_slug-png_2372791_34: 7075319401608092974
+      NicePng_slug-png_2372791_35: 6014572631076987268
+      NicePng_slug-png_2372791_36: -5189185583426873350
+      NicePng_slug-png_2372791_37: -2066492240651902483
+      NicePng_slug-png_2372791_38: -195161068233492797
+      NicePng_slug-png_2372791_39: 3076083807771910876
+      NicePng_slug-png_2372791_4: -5314488716794697344
+      NicePng_slug-png_2372791_40: 4975206593660027095
+      NicePng_slug-png_2372791_41: -6229623679516853485
+      NicePng_slug-png_2372791_42: -7846589770688403373
+      NicePng_slug-png_2372791_43: 8523704278174313374
+      NicePng_slug-png_2372791_44: -9052730789900771550
+      NicePng_slug-png_2372791_45: 6709097036800874876
+      NicePng_slug-png_2372791_46: 8160210508681156255
+      NicePng_slug-png_2372791_47: 3488188674186802380
+      NicePng_slug-png_2372791_48: 8163050251825656319
+      NicePng_slug-png_2372791_49: -9003407451706354378
+      NicePng_slug-png_2372791_5: -7209334473301435154
+      NicePng_slug-png_2372791_50: 2814252534528556685
+      NicePng_slug-png_2372791_51: -1113187070169742990
+      NicePng_slug-png_2372791_52: -2125095625996678656
+      NicePng_slug-png_2372791_53: -5278162205738269795
+      NicePng_slug-png_2372791_54: 7337295796129563187
+      NicePng_slug-png_2372791_55: 7672198527252637635
+      NicePng_slug-png_2372791_56: 7262889287057595995
+      NicePng_slug-png_2372791_57: 7815101056873188063
+      NicePng_slug-png_2372791_58: 2605239375685183632
+      NicePng_slug-png_2372791_59: 1538818083643898868
+      NicePng_slug-png_2372791_6: -8446764481105475056
+      NicePng_slug-png_2372791_60: -5353693209563288595
+      NicePng_slug-png_2372791_61: 5554561146586401612
+      NicePng_slug-png_2372791_62: 8829642416684524774
+      NicePng_slug-png_2372791_63: -5725940271082810633
+      NicePng_slug-png_2372791_64: 4647801656121215753
+      NicePng_slug-png_2372791_65: 3871712906594870528
+      NicePng_slug-png_2372791_66: 8668100862969989492
+      NicePng_slug-png_2372791_67: -9205018190632917345
+      NicePng_slug-png_2372791_68: -371534385166271886
+      NicePng_slug-png_2372791_69: 1967480104706987365
+      NicePng_slug-png_2372791_7: -7456652324311607331
+      NicePng_slug-png_2372791_70: -6284029579509570739
+      NicePng_slug-png_2372791_71: 2931729426328304459
+      NicePng_slug-png_2372791_72: 7300094599546009709
+      NicePng_slug-png_2372791_73: -5323113469235456412
+      NicePng_slug-png_2372791_74: -5643469062113936836
+      NicePng_slug-png_2372791_75: -7598710721863761819
+      NicePng_slug-png_2372791_76: 236004729389658808
+      NicePng_slug-png_2372791_77: 4195004087621591906
+      NicePng_slug-png_2372791_78: -423573188475976710
+      NicePng_slug-png_2372791_79: 6677400869834829545
+      NicePng_slug-png_2372791_8: -3635580651110093606
+      NicePng_slug-png_2372791_80: -3065524371537443622
+      NicePng_slug-png_2372791_81: 660018582027746454
+      NicePng_slug-png_2372791_82: 4176518254514340889
+      NicePng_slug-png_2372791_83: -1538970339070558506
+      NicePng_slug-png_2372791_84: 2237248141289686495
+      NicePng_slug-png_2372791_85: 6791366624725555505
+      NicePng_slug-png_2372791_86: -3397205187628207645
+      NicePng_slug-png_2372791_87: -3045520639862331185
+      NicePng_slug-png_2372791_88: -4653076764644161320
+      NicePng_slug-png_2372791_89: -3268400522555674440
+      NicePng_slug-png_2372791_9: -2300547122496304983
+      NicePng_slug-png_2372791_90: -1542051645855772982
+      NicePng_slug-png_2372791_91: -4570811052638009081
+      NicePng_slug-png_2372791_92: 3382476125840789215
+      NicePng_slug-png_2372791_93: 6323875586747935658
+      NicePng_slug-png_2372791_94: -309000395728811734
+      NicePng_slug-png_2372791_95: 6823414873870615558
+      NicePng_slug-png_2372791_96: 8895128830594681329
+      NicePng_slug-png_2372791_97: 7994005370924409207
+      NicePng_slug-png_2372791_98: -2415798017622857107
+      NicePng_slug-png_2372791_99: 6794591541618841201
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
