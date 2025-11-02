@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-using UnityEngine;
-using UnityEngine.InputSystem.Controls;
-
-=======
 ﻿using UnityEngine;
 using UnityEngine.InputSystem.Controls;
 
@@ -19,15 +14,12 @@ public enum ItemType
     Weapon
 }
 
->>>>>>> main
 [CreateAssetMenu(fileName = "ItemData", menuName = "Scriptable Objects/ItemData")]
 public class ItemData : ScriptableObject
 {
     public Sprite sprite;
     public int point;
     public int dropChance;
-<<<<<<< HEAD
-=======
     public ItemType type;
 
     [Header("Values")]
@@ -40,5 +32,4 @@ public class ItemData : ScriptableObject
     [Header("Weapon Config")]
     [Tooltip("Chỉ điền vào đây nếu 'Type' là Weapon")]
     public WeaponData weaponData;
->>>>>>> main
 }

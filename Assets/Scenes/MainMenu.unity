@@ -149,11 +149,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-<<<<<<< HEAD
-  m_Volume: 0.351
-=======
   m_Volume: 0.492
->>>>>>> main
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -630,10 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf0f173603ecd045b81d8020a6bbee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuEventListener
-<<<<<<< HEAD
-=======
   _settingButtonPage: {fileID: 9197481963319205126, guid: 21f8fa5fcfd9a0d4cbc91f698ab5bdb6, type: 3}
->>>>>>> main
 --- !u!114 &2025956895
 MonoBehaviour:
   m_ObjectHideFlags: 0

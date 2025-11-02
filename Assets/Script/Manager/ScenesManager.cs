@@ -4,38 +4,6 @@ using UnityEngine.SceneManagement;
 public class ScenesManager : MonoBehaviour
 {
     public static ScenesManager Instance;
-<<<<<<< HEAD
-
-    void Awake()
-    {
-        Instance = this;
-    }
-    public enum Scene
-    {
-        MainMenu,
-        SampleScene_Map_0
-    }
-
-
-    public void LoadScene(Scene scene)
-    {
-        SceneManager.LoadScene(scene.ToString());
-    }
-
-    public void LoadNewGame()
-    {
-        SceneManager.LoadScene(Scene.SampleScene_Map_0.ToString());
-    }
-
-    public void LoadNextScene()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    public void LoadMainMenu()
-    {
-        SceneManager.LoadScene(Scene.MainMenu.ToString());
-=======
     public static string NextSceneName;
 
     private void Awake()
@@ -89,6 +57,5 @@ public class ScenesManager : MonoBehaviour
             Debug.Log($"[ScenesManager] Destroying leftover object: {name}");
             Destroy(obj);
         }
->>>>>>> main
     }
 }

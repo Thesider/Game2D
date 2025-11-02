@@ -4,13 +4,6 @@ public class FollowPlayerAction : NPCAction
 {
     private readonly float stoppingDistance;
     private readonly string moveSpeedKey;
-<<<<<<< HEAD
-
-    public FollowPlayerAction(INPC npc, float stoppingDistance = 1.5f, string moveSpeedKey = "MoveSpeed") : base(npc)
-    {
-        this.stoppingDistance = Mathf.Max(0.1f, stoppingDistance);
-        this.moveSpeedKey = moveSpeedKey;
-=======
     private readonly float gapCheckDistance;
     private readonly float groundCheckDepth;
     private readonly float obstacleCheckDistance;
@@ -46,7 +39,6 @@ public class FollowPlayerAction : NPCAction
             jumpHeight = Mathf.Max(0.75f, storedHeight);
         }
         maxJumpHeight = jumpHeight;
->>>>>>> main
     }
 
     protected override NodeState DoAction()
@@ -68,13 +60,6 @@ public class FollowPlayerAction : NPCAction
 
         float speed = npc.Blackboard != null && npc.Blackboard.TryGet(moveSpeedKey, out float storedSpeed)
             ? storedSpeed
-<<<<<<< HEAD
-            : 3f;
-
-        Vector3 next = Vector3.MoveTowards(current, target, speed * Time.deltaTime);
-        npc.Transform.position = next;
-        npc.Animator?.SetBool("IsMoving", true);
-=======
             : (npc != null ? npc.MoveSpeed : 3f);
 
         Vector2 direction = (target - current).normalized;
@@ -158,7 +143,6 @@ public class FollowPlayerAction : NPCAction
         npc.Blackboard?.Set("FollowObstacleAhead", obstacleAhead);
         npc.Blackboard?.Set("FollowNeedsJump", shouldJump);
         npc.Blackboard?.Set("FollowHeightDelta", target.y - current.y);
->>>>>>> main
 
         return NodeState.Running;
     }

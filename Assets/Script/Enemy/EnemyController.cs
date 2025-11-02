@@ -17,10 +17,7 @@ public class EnemyController : MonoBehaviour, IEnemy
     [SerializeField] private float bulletSpeed = 8f;
     [SerializeField] private float bulletLifetime = 4f;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
 
@@ -118,10 +115,6 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     public void OnDieAnimationComplete()
     {
-<<<<<<< HEAD
-        Destroy(gameObject);
-    }
-=======
 
         gameObject.SetActive(false);
     }
@@ -148,5 +141,4 @@ public class EnemyController : MonoBehaviour, IEnemy
 
 
     private float initialHealth;
->>>>>>> main
 }

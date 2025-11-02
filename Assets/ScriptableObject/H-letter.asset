@@ -14,12 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   sprite: {fileID: -8483259033098780477, guid: 64259c50d78b55d42a52cb4ce797fb08, type: 3}
   point: 50
-<<<<<<< HEAD
-  dropChance: 99
-=======
   dropChance: 49
   type: 6
   amount: 0
   duration: 10
   weaponData: {fileID: 11400000, guid: 06f8dc2ad0a13b741867671957655f2c, type: 2}
->>>>>>> main

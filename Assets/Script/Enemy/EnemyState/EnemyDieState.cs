@@ -12,8 +12,6 @@ public class EnemyDieState : EnemyBaseState
         {
             animator.SetTrigger("Die");
             animator.Play("Die");
-<<<<<<< HEAD
-=======
             // Disable colliders so the dead enemy no longer interacts with physics/triggers
             try
             {
@@ -27,7 +25,6 @@ public class EnemyDieState : EnemyBaseState
                 }
             }
             catch { }
->>>>>>> main
         }
 
 

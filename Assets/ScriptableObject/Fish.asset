@@ -14,11 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
   sprite: {fileID: 7846787863919182111, guid: c20487bc19bdc76468343730b9ca876b, type: 3}
   point: 10
-<<<<<<< HEAD
-  dropChance: 99
-=======
   dropChance: 51
   type: 0
   amount: 50
   duration: 0
->>>>>>> main

@@ -1,11 +1,6 @@
-<<<<<<< HEAD
-using UnityEngine;
-using TMPro;
-=======
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
->>>>>>> main
 
 
 public class GameManager : MonoBehaviour
@@ -13,29 +8,6 @@ public class GameManager : MonoBehaviour
 
     public int score = 0;
     [SerializeField] TextMeshProUGUI scoreText;
-<<<<<<< HEAD
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        updateScore();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    public void addScore(int point)
-    {
-        score += point;
-        updateScore();
-    }
-    private void updateScore()
-    {
-        scoreText.text = score.ToString();
-        
-    }
-=======
 
     [Header("Player References")]
     [Tooltip("Kéo game object Player vào đây")]
@@ -99,5 +71,4 @@ public class GameManager : MonoBehaviour
     }
     
   
->>>>>>> main
 }

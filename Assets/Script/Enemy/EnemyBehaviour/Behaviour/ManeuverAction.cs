@@ -17,8 +17,6 @@ public class ManeuverAction : Action
 
     private readonly float maxDuration;
     private float startTime = -1f;
-<<<<<<< HEAD
-=======
     private readonly Rigidbody2D rb;
     private readonly LayerMask groundMask;
     private readonly LayerMask obstacleMask;
@@ -28,7 +26,6 @@ public class ManeuverAction : Action
     private readonly float jumpForce = 6f;
     private readonly float jumpCooldown = 0.4f;
     private float lastJumpTime = -5f;
->>>>>>> main
 
     public ManeuverAction(IEnemy enemy, ManeuverStrategy strategy = ManeuverStrategy.Aggressive, bool debug = false, float maxDuration = 3.0f) : base(enemy)
     {
@@ -51,9 +48,6 @@ public class ManeuverAction : Action
                 break;
         }
         // Randomize initial flank direction
-<<<<<<< HEAD
-        flankDirection = UnityEngine.Random.value < 0.5f ? 0.5f : 1f;
-=======
         flankDirection = UnityEngine.Random.value < 0.5f ? -1f : 1f;
 
         if (enemy is MonoBehaviour mb)
@@ -63,7 +57,6 @@ public class ManeuverAction : Action
 
         groundMask = PlatformingNavigator.GroundMask;
         obstacleMask = PlatformingNavigator.ObstacleMask;
->>>>>>> main
     }
 
     protected override NodeState DoAction()
@@ -81,12 +74,9 @@ public class ManeuverAction : Action
         float dist = toPlayer.magnitude;
 
         float step = enemy.MoveSpeed * Time.deltaTime;
-<<<<<<< HEAD
-=======
         Vector2 desiredVelocity = Vector2.zero;
         Vector3 fallbackTarget = selfPos;
         bool requestJump = false;
->>>>>>> main
 
         if (maxDuration > 0f && Time.time - startTime > maxDuration)
         {
@@ -105,18 +95,12 @@ public class ManeuverAction : Action
                     return NodeState.Success;
                 }
                 // Move toward player
-<<<<<<< HEAD
-                selfT.position = Vector3.MoveTowards(selfPos, playerPos, step);
-                if (debug) Debug.Log("[BT] ManeuverAction(Aggressive): Closing (dist=" + dist + ")");
-                return NodeState.Running;
-=======
                 Vector3 toTarget = (playerPos - selfPos).normalized;
                 desiredVelocity = new Vector2(toTarget.x, 0f) * enemy.MoveSpeed;
                 fallbackTarget = Vector3.MoveTowards(selfPos, playerPos, step);
                 requestJump = PlatformingNavigator.ShouldJumpForHeight(selfPos, playerPos, 0.75f);
                 if (debug) Debug.Log("[BT] ManeuverAction(Aggressive): Closing (dist=" + dist + ")");
                 break;
->>>>>>> main
 
             case ManeuverStrategy.KeepDistance:
                 if (Mathf.Abs(dist - desiredDistance) <= tolerance)
@@ -129,31 +113,19 @@ public class ManeuverAction : Action
                 {
                     // Move away from player
                     Vector3 away = (selfPos - playerPos).normalized;
-<<<<<<< HEAD
-                    selfT.position = selfPos + away * step;
-                    if (debug) Debug.Log("[BT] ManeuverAction(KeepDistance): Backing off (dist=" + dist + ")");
-                    return NodeState.Running;
-=======
                     desiredVelocity = new Vector2(away.x, 0f) * enemy.MoveSpeed;
                     fallbackTarget = selfPos + away * step;
                     if (debug) Debug.Log("[BT] ManeuverAction(KeepDistance): Backing off (dist=" + dist + ")");
                     break;
->>>>>>> main
                 }
                 else
                 {
                     // Move closer
-<<<<<<< HEAD
-                    selfT.position = Vector3.MoveTowards(selfPos, playerPos, step);
-                    if (debug) Debug.Log("[BT] ManeuverAction(KeepDistance): Closing slightly (dist=" + dist + ")");
-                    return NodeState.Running;
-=======
                     Vector3 toward = (playerPos - selfPos).normalized;
                     desiredVelocity = new Vector2(toward.x, 0f) * enemy.MoveSpeed;
                     fallbackTarget = Vector3.MoveTowards(selfPos, playerPos, step);
                     if (debug) Debug.Log("[BT] ManeuverAction(KeepDistance): Closing slightly (dist=" + dist + ")");
                     break;
->>>>>>> main
                 }
 
             case ManeuverStrategy.Flank:
@@ -161,27 +133,16 @@ public class ManeuverAction : Action
                 if (dist > enemy.AttackRange + 0.5f)
                 {
                     // If too far, close in first
-<<<<<<< HEAD
-                    selfT.position = Vector3.MoveTowards(selfPos, playerPos, step);
-                    if (debug) Debug.Log("[BT] ManeuverAction(Flank): Closing in (dist=" + dist + ")");
-                    return NodeState.Running;
-=======
                     Vector3 toward = (playerPos - selfPos).normalized;
                     desiredVelocity = new Vector2(toward.x, 0f) * enemy.MoveSpeed;
                     fallbackTarget = Vector3.MoveTowards(selfPos, playerPos, step);
                     if (debug) Debug.Log("[BT] ManeuverAction(Flank): Closing in (dist=" + dist + ")");
                     break;
->>>>>>> main
                 }
                 // Strafe around player while maintaining range
                 Vector3 forward = toPlayer.normalized;
                 Vector3 perp = Vector3.Cross(Vector3.up, forward).normalized * flankDirection;
                 Vector3 move = (perp * 0.9f + -forward * 0.1f).normalized; // mostly perpendicular, small inward force
-<<<<<<< HEAD
-                selfT.position = selfPos + move * step;
-                if (debug) Debug.Log("[BT] ManeuverAction(Flank): Flanking (dist=" + dist + ")");
-                return NodeState.Running;
-=======
                 desiredVelocity = new Vector2(move.x, 0f) * enemy.MoveSpeed;
                 fallbackTarget = selfPos + move * step;
                 requestJump = PlatformingNavigator.ShouldJumpForHeight(selfPos, playerPos, 0.75f);
@@ -246,7 +207,6 @@ public class ManeuverAction : Action
         else
         {
             enemy.Self.position = Vector3.MoveTowards(currentPosition, fallbackTarget, step);
->>>>>>> main
         }
     }
 }

@@ -8,11 +8,7 @@ PhysicsMaterial2D:
   m_PrefabAsset: {fileID: 0}
   m_Name: Wall
   serializedVersion: 2
-<<<<<<< HEAD
-  friction: 0
-=======
   friction: 1
->>>>>>> main
   bounciness: 0
   m_FrictionCombine: 1
   m_BounceCombine: 4

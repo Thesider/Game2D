@@ -195,11 +195,7 @@ MonoBehaviour:
   detectionRange: 6
   player: {fileID: 5010959937085753463, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
   health: 100
-<<<<<<< HEAD
-  animator: {fileID: 0}
-=======
   animator: {fileID: 5337585288335853272}
->>>>>>> main
   bulletPrefab: {fileID: 8908353632752610231, guid: af679940e12007743b893428a112500c, type: 3}
   attackPoint: {fileID: 6692316209045661455}
   attackDamage: 10

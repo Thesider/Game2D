@@ -9,10 +9,7 @@ TagManager:
   - Fish
   - BlindBox
   - Enemy
-<<<<<<< HEAD
-=======
   - H_letter
->>>>>>> main
   layers:
   - Default
   - TransparentFX
@@ -25,10 +22,6 @@ TagManager:
   - Water
   - Warning
   - Player
-<<<<<<< HEAD
-  - PlayerProjectile
-  - Enemy
-=======
   - 
   - 
 >>>>>>> main

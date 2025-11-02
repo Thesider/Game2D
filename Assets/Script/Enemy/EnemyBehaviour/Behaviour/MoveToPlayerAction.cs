@@ -4,8 +4,6 @@ using UnityEngine;
 public class MoveToPlayerAction : Action
 {
     private readonly bool debug;
-<<<<<<< HEAD
-=======
     private readonly Rigidbody2D rb;
     private readonly LayerMask groundMask;
     private readonly LayerMask obstacleMask;
@@ -15,13 +13,10 @@ public class MoveToPlayerAction : Action
     private readonly float jumpForce = 6f;
     private readonly float jumpCooldown = 0.35f;
     private float lastJumpTime = -5f;
->>>>>>> main
 
     public MoveToPlayerAction(IEnemy enemy, bool debug = false) : base(enemy)
     {
         this.debug = debug;
-<<<<<<< HEAD
-=======
         if (enemy is MonoBehaviour mb)
         {
             rb = mb.GetComponent<Rigidbody2D>();
@@ -29,22 +24,16 @@ public class MoveToPlayerAction : Action
 
         groundMask = PlatformingNavigator.GroundMask;
         obstacleMask = PlatformingNavigator.ObstacleMask;
->>>>>>> main
     }
 
     protected override NodeState DoAction()
     {
         if (enemy.Player == null) return NodeState.Failure;
 
-<<<<<<< HEAD
-        Vector3 target = enemy.Player.position;
-        float dist = Vector3.Distance(enemy.Self.position, target);
-=======
         Transform selfTransform = enemy.Self;
         Vector3 target = enemy.Player.position;
         Vector3 currentPosition = selfTransform.position;
         float dist = Vector3.Distance(currentPosition, target);
->>>>>>> main
 
         if (dist <= enemy.AttackRange)
         {
@@ -52,10 +41,6 @@ public class MoveToPlayerAction : Action
             return NodeState.Success;
         }
 
-<<<<<<< HEAD
-        float step = enemy.MoveSpeed * Time.deltaTime;
-        enemy.Self.position = Vector3.MoveTowards(enemy.Self.position, target, step);
-=======
         if (rb != null)
         {
             Vector2 rbPosition = rb.position;
@@ -100,7 +85,6 @@ public class MoveToPlayerAction : Action
 
             selfTransform.position = Vector3.MoveTowards(currentPosition, moveTarget, step);
         }
->>>>>>> main
 
         if (debug) Debug.Log("[BT] MoveToPlayerAction: Moving towards player");
         return NodeState.Running;
