@@ -23,18 +23,18 @@ public class PlayerDashState : PlayerAbilityState {
         //isHolding = true;
         dashDirection = Vector2.right * player.facingDirection;
         // Freeze gravity and record current damping to avoid drifting during dash
-        prevGravityScale = player.rb.gravityScale;
-        prevLinearDamping = player.rb.linearDamping;
-        player.rb.gravityScale = 0f;
-        player.rb.linearDamping = 0f;
+        //prevGravityScale = player.rb.gravityScale;
+        //prevLinearDamping = player.rb.linearDamping;
+        //player.rb.gravityScale = 0f;
+        //player.rb.linearDamping = 0f;
         
     }
 
     public override void Exit() {
         base.Exit();
         // Restore physics properties after dashing
-        player.rb.linearDamping = prevLinearDamping;
-        player.rb.gravityScale = prevGravityScale;
+        //player.rb.linearDamping = prevLinearDamping;
+        //player.rb.gravityScale = prevGravityScale;
     }
 
     public override void LogicUpdate() {

@@ -6,6 +6,7 @@ public class PlayerGroundedState : PlayerState {
     private bool jumpInput;
     private bool isGrounded;
     private bool dashInput;
+    private bool crouchInput;
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
     }
 
@@ -29,11 +30,14 @@ public class PlayerGroundedState : PlayerState {
     public override void LogicUpdate() {
         base.LogicUpdate();
 
-        xInput = player.inputHandler.normInputX;
-        jumpInput = player.inputHandler.jumpInput;
-        dashInput = player.inputHandler.dashInput;
+    xInput = player.inputHandler.normInputX;
+    jumpInput = player.inputHandler.jumpInput;
+    dashInput = player.inputHandler.dashInput;
+    crouchInput = player.inputHandler.crouchInput;
 
-        if (jumpInput && player.jumpState.CanJump()) {
+        if (crouchInput) {
+            stateMachine.ChangeState(player.crouchState);
+        } else if (jumpInput && player.jumpState.CanJump()) {
             player.inputHandler.UseJumpInput();
             stateMachine.ChangeState(player.jumpState);
         } else if (!isGrounded) {

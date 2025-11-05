@@ -12,6 +12,7 @@ public class PlayerInputHandler : MonoBehaviour {
     public bool jumpInputStop { get; private set; }
     public Boolean dashInput { get; private set; }
     public bool dashInputStop { get; private set; }
+    public bool crouchInput { get; private set; }
 
     [SerializeField] private float inputHoldTime = 0.2f;
     private float jumpInputStartTime;
@@ -54,6 +55,16 @@ public class PlayerInputHandler : MonoBehaviour {
             dashInputStop = true;
         } else {
             dashInputStop = false;
+        }
+    }
+
+    // Crouch is hold-based: true while pressed, false when released
+    public void OnCrouchInput(InputAction.CallbackContext context) {
+        if (context.started || context.performed) {
+            crouchInput = true;
+        }
+        if (context.canceled) {
+            crouchInput = false;
         }
     }
 
