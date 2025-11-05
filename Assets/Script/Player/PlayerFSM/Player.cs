@@ -8,7 +8,7 @@ public class Player : MonoBehaviour{
     public PLayerJumpState jumpState { get; private set; }
     public PlayerInAirState inAirState { get; private set; }
     public PlayerLandState landState { get; private set; }
-
+    public PlayerDashState dashState { get; private set; }
 
 
     [SerializeField] private PlayerData playerData;
@@ -40,9 +40,10 @@ public class Player : MonoBehaviour{
 
         idleState = new PlayerIdleState(this, stateMachine, playerData, "idle");
         moveState = new PlayerMoveState(this, stateMachine, playerData, "move");
-        jumpState = new PLayerJumpState(this, stateMachine, playerData, "jump");
+        jumpState = new PLayerJumpState(this, stateMachine, playerData, "inAir");
         inAirState = new PlayerInAirState(this, stateMachine, playerData, "inAir");
         landState = new PlayerLandState(this, stateMachine, playerData, "land");
+        dashState = new PlayerDashState(this, stateMachine, playerData, "dash");
     }
 
     private void Start() { 
@@ -69,6 +70,10 @@ public class Player : MonoBehaviour{
 
     #region Set Functions
     //set velocity
+    //public void SetVelocity(Vector2 velocity) {
+    //    rb.linearVelocity = velocity;
+    //    currentVelocity = velocity;
+    //}
     public void SetVelocityX(float velocity) {
         workspace.Set(velocity, currentVelocity.y);
         rb.linearVelocity = workspace;

@@ -35,7 +35,7 @@ public class PlayerInAirState : PlayerState {
         jumpInput = player.inputHandler.jumpInput;
         jumpInputStop = player.inputHandler.jumpInputStop;
 
-        CheckJumpMultiplayer();
+        CheckJumpMultiplier();
 
         if (isGrounded && player.currentVelocity.y < 0.01f) {
             stateMachine.ChangeState(player.landState);
@@ -51,7 +51,7 @@ public class PlayerInAirState : PlayerState {
 
         }
     }
-    private void CheckJumpMultiplayer() {
+    private void CheckJumpMultiplier() {
         if (isJumping) {
             if (jumpInputStop) {
                 player.SetVelocityY(player.currentVelocity.y * playerData.variableJumpHeightMultiplier);

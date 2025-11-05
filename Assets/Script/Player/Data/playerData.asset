@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2.48
   jumpVelocity: 15
+  amountOfJumps: 2
+  coyoteTime: 0.2
+  variableJumpHeightMultiplier: 0.5
   groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0

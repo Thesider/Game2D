@@ -1,3 +1,4 @@
+using System;
 using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,12 +10,16 @@ public class PlayerInputHandler : MonoBehaviour {
     public int normInputY { get; private set; }
     public bool jumpInput { get; private set; }
     public bool jumpInputStop { get; private set; }
+    public Boolean dashInput { get; private set; }
+    public bool dashInputStop { get; private set; }
 
     [SerializeField] private float inputHoldTime = 0.2f;
     private float jumpInputStartTime;
+    private float dashInputStartTime;
 
     private void Update() {
         CheckJumpInputHoldTime();
+        CheckDashInputHoldTime();
     }
     public void OnMoveInput(InputAction.CallbackContext context) {
         rawMovementInput = context.ReadValue<Vector2>();
@@ -39,8 +44,28 @@ public class PlayerInputHandler : MonoBehaviour {
 
     }
 
+    public void OnDashInput(InputAction.CallbackContext context) {
+        if (context.started) {
+            dashInput = true;
+            dashInputStop = false;  
+            dashInputStartTime = Time.time;
+        }
+        if(context.canceled) {
+            dashInputStop = true;
+        } else {
+            dashInputStop = false;
+        }
+    }
+
     public void UseJumpInput() => jumpInput = false;
 
+    public void UseDashInput() => dashInput = false;
+
+    private void CheckDashInputHoldTime() {
+        if (Time.time >= dashInputStartTime + inputHoldTime) {
+        dashInput = false;
+        }
+    }
     private void CheckJumpInputHoldTime() {
         if (Time.time >= jumpInputStartTime + inputHoldTime) {
         jumpInput = false;

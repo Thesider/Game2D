@@ -7,6 +7,7 @@ public class PlayerState : MonoBehaviour {
     protected PlayerData playerData;
 
     protected bool isAnimationFinished;
+    protected bool isExitingState;
 
     protected float startTime;
 
@@ -25,11 +26,12 @@ public class PlayerState : MonoBehaviour {
         startTime = Time.time;
         Debug.Log($"Enter State: {animBoolName}");
         isAnimationFinished = false;
+        isExitingState = false;
     }
 
     public virtual void Exit() {
         player.anim.SetBool(animBoolName, false);
-
+        isExitingState = true;
     }
 
     public virtual void LogicUpdate() {
