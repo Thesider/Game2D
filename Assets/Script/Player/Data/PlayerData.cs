@@ -21,6 +21,9 @@ public class PlayerData : ScriptableObject {
     public float drag = 10f; 
     public float distanceBetweenAfterImages = 0.5f;
 
+    [Header("Crouch State")]
+    public float crouchMoveSpeed = 4f;
+
     [Header("Check Variables")]
     public float groundCheckRadius = 0.3f;
     public LayerMask whatIsGround;
