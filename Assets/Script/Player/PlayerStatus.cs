@@ -37,13 +37,27 @@ public class PlayerStatus : MonoBehaviour
     //biến để lưu điểm
     private int score = 0;
 
-    private HealthBarSlider HealthBarSlider;
+    [SerializeField] private HealthBarSlider HealthBarSlider;
     void Awake()
     {
         currentHealth = maxHealth;
         currentArmor = 0;
         currentLives = maxLives;
         UpdateSpeed();
+
+        if (HealthBarSlider == null)
+        {
+            HealthBarSlider = GetComponentInChildren<HealthBarSlider>();
+            if (HealthBarSlider == null)
+            {
+                Debug.LogWarning("PlayerStatus: No HealthBarSlider found. Health UI will not update until assigned.");
+            }
+        }
+
+        if (HealthBarSlider != null)
+        {
+            HealthBarSlider.SetHealth(currentHealth);
+        }
     }
 
     void Update()
@@ -92,7 +106,14 @@ public class PlayerStatus : MonoBehaviour
         if (remainingDamage > 0)
         {
             currentHealth -= remainingDamage;
-            HealthBarSlider.SetHealth(currentHealth);
+            if (HealthBarSlider != null)
+            {
+                HealthBarSlider.SetHealth(currentHealth);
+            }
+            else
+            {
+                Debug.LogWarning("PlayerStatus: HealthBarSlider is not assigned. Damage applied without UI update.");
+            }
             Debug.Log("Health took " + remainingDamage + " damage. Health left: " + currentHealth);
         }
 

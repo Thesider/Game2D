@@ -18,6 +18,8 @@ public partial class TriggerPoint : MonoBehaviour
     [SerializeField] private bool advanceToNextSceneInList = true;
     [SerializeField] private ScenesManager.Scene manualSceneOverride = ScenesManager.Scene.MainMenu;
     [SerializeField, Min(0f)] private float additionalSceneLoadDelay = 0f;
+    [Header("Spawn Options")]
+    [SerializeField] private string nextSceneSpawnId = ScenesManager.DefaultSpawnId;
 
     private bool hasTriggered;
 
@@ -75,7 +77,8 @@ public partial class TriggerPoint : MonoBehaviour
         delay = Mathf.Max(delay, additionalSceneLoadDelay);
 
         ScenesManager.Scene targetScene = DetermineNextScene();
-        StartCoroutine(LoadSceneAfterDelay(targetScene, delay));
+        string spawnId = string.IsNullOrWhiteSpace(nextSceneSpawnId) ? ScenesManager.DefaultSpawnId : nextSceneSpawnId.Trim();
+        StartCoroutine(LoadSceneAfterDelay(targetScene, delay, spawnId));
     }
 
     private ScenesManager.Scene DetermineNextScene()
@@ -139,7 +142,7 @@ public partial class TriggerPoint : MonoBehaviour
         }
     }
 
-    private IEnumerator LoadSceneAfterDelay(ScenesManager.Scene scene, float delay)
+    private IEnumerator LoadSceneAfterDelay(ScenesManager.Scene scene, float delay, string spawnId)
     {
         if (delay > 0f)
         {
@@ -149,11 +152,12 @@ public partial class TriggerPoint : MonoBehaviour
         ScenesManager manager = ResolveScenesManager();
         if (manager != null)
         {
-            manager.LoadScene(scene);
+            manager.LoadScene(scene, spawnId);
             yield break;
         }
 
         Debug.LogWarning("[TriggerPoint] ScenesManager instance not found. Falling back to direct scene load.");
+        ScenesManager.SetNextSpawn(spawnId);
         SceneManager.LoadScene(scene.ToString());
     }
 

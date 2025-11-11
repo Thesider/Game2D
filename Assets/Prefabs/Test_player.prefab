@@ -12,7 +12,11 @@ GameObject:
   - component: {fileID: 4570030568755832594}
   - component: {fileID: 5064617616747310125}
   - component: {fileID: 5642856559979510856}
-  - component: {fileID: 7448608056847570066}
+  - component: {fileID: 8994155989976095883}
+  - component: {fileID: 8170475429775853152}
+  - component: {fileID: 4588252296040788189}
+  - component: {fileID: 4470260065024194495}
+  - component: {fileID: 7489031754512187851}
   m_Layer: 10
   m_Name: Test_player
   m_TagString: Player
@@ -29,8 +33,8 @@ Transform:
   m_GameObject: {fileID: 2236937221550534801}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.5644, y: 3.4744, z: 0}
-  m_LocalScale: {x: 0.44437385, y: 0.42144474, z: 1}
+  m_LocalPosition: {x: 118.7, y: 5.2, z: 0}
+  m_LocalScale: {x: 0.44437385, y: 0.43151727, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,7 +104,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 661b25e72626482499ea387e060cc7b4, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -124,8 +128,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.23546003, y: 0.027435774}
-  m_Size: {x: 0.95445794, y: 2.273911}
+  m_Offset: {x: -0.23546001, y: 0.019001313}
+  m_Size: {x: 0.9544579, y: 2.2907805}
   m_Direction: 0
 --- !u!50 &5642856559979510856
 Rigidbody2D:
@@ -154,7 +158,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7448608056847570066
+--- !u!114 &8994155989976095883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,12 +167,70 @@ MonoBehaviour:
   m_GameObject: {fileID: 2236937221550534801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bc01b499ea422140b6282c1c439a292, type: 3}
+  m_Script: {fileID: 11500000, guid: 3af2a377e4dc2804599a2dd7b97cc00b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputActions: {fileID: -944628639613478452, guid: 14ed53438d130a34f8a3ab90b712c411, type: 3}
   moveSpeed: 5
-  jumpForce: 15
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheck: {fileID: 0}
+  jumpForce: 5
+  maxHealth: 100
+  currentHealth: 100
+  healthBar: {fileID: 0}
+--- !u!114 &8170475429775853152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236937221550534801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eee24be1e8269b34bb68a6673bfd042d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4588252296040788189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236937221550534801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a965b9193cad10b418a5f47d6372a648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  maxHealth: 100
+  maxArmor: 50
+  baseMoveSpeed: 5
+  currentMoveSpeed: 0
+  speedModifier: 1
+  isInvincible: 0
+  respawnInvincibilityDuration: 2
+  maxLives: 2
+--- !u!114 &4470260065024194495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236937221550534801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4baf51febc73b1d459d77426e74e4f8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultWeapon: {fileID: 11400000, guid: c30b03eadecaf1b4cb3b785f7c63f2e7, type: 2}
+--- !u!114 &7489031754512187851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2236937221550534801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6f09fa0f7b046c4a8b477d7458e43f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
