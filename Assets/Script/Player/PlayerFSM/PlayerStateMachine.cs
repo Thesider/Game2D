@@ -13,15 +13,4 @@ public class PlayerStateMachine {
         CurrentState = newState;
         CurrentState.Enter();
     }
-
-    public void Exit() {
-
-        CurrentState.Exit();
-
-    }
-
-    public void Enter() {
-
-        CurrentState.Enter();
-    }
 }
