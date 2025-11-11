@@ -626,6 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf0f173603ecd045b81d8020a6bbee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenuEventListener
+  _settingButtonPage: {fileID: 9197481963319205126, guid: 21f8fa5fcfd9a0d4cbc91f698ab5bdb6, type: 3}
 --- !u!114 &2025956895
 MonoBehaviour:
   m_ObjectHideFlags: 0

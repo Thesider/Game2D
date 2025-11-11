@@ -19,6 +19,8 @@ public class AnimatorAdapter : IAnimator
     {
         if (animator != null) animator.SetBool(name, value);
     }
+    public void SetFloat(string name, float value) => animator?.SetFloat(name, value);
+
 
     public void Play(string stateName)
     {

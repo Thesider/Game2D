@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4570030568755832594}
   - component: {fileID: 5064617616747310125}
   - component: {fileID: 5642856559979510856}
-  - component: {fileID: 8994155989976095883}
+  - component: {fileID: 7448608056847570066}
   m_Layer: 10
   m_Name: Test_player
   m_TagString: Player
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2236937221550534801}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.421, y: 3.611179, z: 0}
+  m_LocalPosition: {x: -42.5644, y: 3.4744, z: 0}
   m_LocalScale: {x: 0.44437385, y: 0.42144474, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -154,7 +154,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &8994155989976095883
+--- !u!114 &7448608056847570066
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,14 +163,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 2236937221550534801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3af2a377e4dc2804599a2dd7b97cc00b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0bc01b499ea422140b6282c1c439a292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputActions: {fileID: -944628639613478452, guid: 14ed53438d130a34f8a3ab90b712c411, type: 3}
   moveSpeed: 5
-  jumpForce: 5
-  bulletPrefab: {fileID: 8908353632752610231, guid: af679940e12007743b893428a112500c, type: 3}
-  firePoint: {fileID: 5010959937085753463}
-  bulletSpeed: 8
-  bulletDamage: 10
-  bulletLifetime: 4
+  jumpForce: 15
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheck: {fileID: 0}

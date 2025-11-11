@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+
     public InputActionAsset inputActions;
 
     private InputActionMap playerActionMap;
@@ -22,21 +23,53 @@ public class PlayerController : MonoBehaviour
 
     public HealthBarSlider healthBar;
     private Rigidbody2D rb;
+    private PlayerStatus playerStatus;
 
     [Header("Shooting")]
-    public GameObject bulletPrefab;
-    public Transform firePoint;
-    public float bulletSpeed = 8f;
-    public float bulletDamage = 10f;
-    public float bulletLifetime = 4f;
+    //public GameObject bulletPrefab;
+    //public Transform firePoint;
+    //public float bulletSpeed = 8f;
+    //public float bulletDamage = 10f;
+    //public float bulletLifetime = 4f;
 
+    // Tham chiếu đến chuyên gia vũ khí
+    private PlayerCombat playerCombat;
     private Vector2 facingDirection = Vector2.right;
 
     private void Awake()
     {
+        PlayerController[] controllers = FindObjectsByType<PlayerController>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            PlayerController controller = controllers[i];
+            if (controller != this)
+            {
+                Debug.LogWarning("[PlayerController] Duplicate player detected. Destroying the newest instance.");
+                Destroy(transform.root.gameObject);
+                return;
+            }
+        }
+
+        DontDestroyOnLoad(transform.root.gameObject);
+
+        // Tự động tìm chuyên gia vũ khí trên cùng GameObject
+        playerCombat = GetComponent<PlayerCombat>();
+        playerStatus = GetComponent<PlayerStatus>();
+        if (playerStatus == null)
+        {
+            Debug.LogWarning("[PlayerController] PlayerStatus component not found on the player object.");
+        }
+
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        if (healthBar != null)
+        {
+            healthBar.SetMaxHealth(maxHealth);
+        }
+        else
+        {
+            Debug.LogWarning("[PlayerController] Health bar reference is missing. Assign it in the inspector.");
+        }
 
         if (inputActions == null)
         {
@@ -126,8 +159,8 @@ public class PlayerController : MonoBehaviour
     {
         if (rb == null)
             return;
-
-        rb.linearVelocity = new Vector2(moveAmount.x * moveSpeed, rb.linearVelocity.y);
+        float targetSpeed = playerStatus != null ? playerStatus.currentMoveSpeed : moveSpeed;
+        rb.linearVelocity = new Vector2(moveAmount.x * targetSpeed, rb.linearVelocity.y);
     }
 
     private void Jump()
@@ -147,30 +180,36 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void TakeDamge(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+    //void TakeDamge(int damage)
+    //{
+    //    currentHealth -= damage;
+    //    healthBar.SetHealth(currentHealth);
 
-    }
+    //}
 
     private void OnShootPerformed(InputAction.CallbackContext context)
     {
-        Shoot();
+        // Kiểm tra xem có chuyên gia vũ khí không
+        if (playerCombat != null)
+        {
+            // Ra lệnh cho chuyên gia: "Bắn đi!"
+            playerCombat.Shoot();
+        }
+
     }
 
-    private void Shoot()
-    {
-        if (bulletPrefab == null || firePoint == null) return;
+    //private void Shoot()
+    //{
+    //    if (bulletPrefab == null || firePoint == null) return;
 
-        BulletPool.Spawn(
-            bulletPrefab,
-            firePoint.position,
-            Quaternion.identity,
-            facingDirection,
-            bulletSpeed,
-            bulletDamage,
-            bulletLifetime,
-            gameObject);
-    }
+    //    BulletPool.Spawn(
+    //        bulletPrefab,
+    //        firePoint.position,
+    //        Quaternion.identity,
+    //        facingDirection,
+    //        bulletSpeed,
+    //        bulletDamage,
+    //        bulletLifetime,
+    //        gameObject);
+    //}
 }
