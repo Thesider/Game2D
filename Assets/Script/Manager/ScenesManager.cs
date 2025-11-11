@@ -49,7 +49,7 @@ public class ScenesManager : MonoBehaviour
         Map_1
     }
 
-    // This method always goes through the loading scene
+
     public void LoadScene(Scene target, string spawnId = DefaultSpawnId)
     {
         if (target == Scene.LoadingScene)

@@ -12,7 +12,6 @@ public class EnemyBaseState : BaseState
         this.animator = animator;
     }
 
-    public override void onEnter() { }
     public override void onExit() { }
     public override void onUpdate() { }
     public override void onFixedUpdate() { }

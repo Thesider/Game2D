@@ -57,3 +57,7 @@ Assets/Plugins/*/Editor/ (keep editor plugins if needed)
 
 # Optional: Uncomment to ignore all generated meta files
 # *.meta
+ProjectSettings/TagManager.asset
+Assets/Sprites.meta
+/Assets/Sprites
+Assets/Sprites.meta
