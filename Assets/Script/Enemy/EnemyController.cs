@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour, IEnemy
     [SerializeField] private float bulletSpeed = 8f;
     [SerializeField] private float bulletLifetime = 4f;
 
+
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
 
@@ -24,6 +25,8 @@ public class EnemyController : MonoBehaviour, IEnemy
     public float AttackRange => attackRange;
     public float AttackCooldown => attackCooldown;
     public Transform Player { get => player; set => player = value; }
+
+
 
     // Convenience setter if other code prefers a method call
     public void SetPlayer(Transform t)
@@ -99,6 +102,8 @@ public class EnemyController : MonoBehaviour, IEnemy
         stateMachine.FixedUpdate();
     }
 
+
+
     public void TakeDamage(float damage)
     {
         health -= damage;
@@ -133,6 +138,7 @@ public class EnemyController : MonoBehaviour, IEnemy
         }
         catch { }
     }
+
 
     private float initialHealth;
 }

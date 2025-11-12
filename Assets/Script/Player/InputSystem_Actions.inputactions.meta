@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Script/Player/Input/Player.inputactions.meta
+guid: 91903422b28a87943881bbaefae4d95b
+========
 guid: 14ed53438d130a34f8a3ab90b712c411
+>>>>>>>> main:Assets/Script/Player/InputSystem_Actions.inputactions.meta
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}

@@ -105,8 +105,6 @@ public class EnemySpawner : MonoBehaviour
                 try { enemy.Player = player; } catch { }
             }
 
-            enemy.ResetForReuse();
-
             spawned.Add(enemy);
         }
 
