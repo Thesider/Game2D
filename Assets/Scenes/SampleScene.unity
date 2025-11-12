@@ -2504,6 +2504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3b9db9c392446c4ea90f6cfa882722d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: d95ee797f749c0f419dff5991feb9ef5, type: 2}
 --- !u!4 &2080321504
 Transform:
   m_ObjectHideFlags: 0

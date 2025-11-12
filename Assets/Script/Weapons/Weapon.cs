@@ -1,6 +1,9 @@
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
+    [SerializeField] protected SO_WeaponData weaponData;
+
+
     protected Animator baseAnimator;
     protected Animator weaponAnimator;
 
@@ -32,7 +35,19 @@ public class Weapon : MonoBehaviour {
     public virtual void AnimationFinishTrigger() {
         playerAttackState.AnimationFinishTrigger();
     }
+    public virtual void AnimationStartMovementTrigger() {
+        playerAttackState.SetPlayerVelocity(weaponData.movementSpeed);
+    }
+    public virtual void AnimationStopMovementTrigger() {
+        playerAttackState.SetPlayerVelocity(0f);
+    }
+    public virtual void AnimationTurnOffFlipTrigger() {
+        playerAttackState.SetFLipCheck(false);
+    }
 
+    public virtual void AnimationTurnOnFlipTrigger() {
+        playerAttackState.SetFLipCheck(true);
+    }
     #endregion
 
     public void InitializeWeapon(PlayerAttackState playerAttackState) {
