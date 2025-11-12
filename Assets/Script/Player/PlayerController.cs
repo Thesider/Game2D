@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour
 {
 
     public InputActionAsset inputActions;
+    public PlayerData playerData;
+    public DeadScreen deadScreen;
 
     private InputActionMap playerActionMap;
     private InputAction moveAction;
@@ -18,8 +20,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
 
-    public int maxHealth = 100;
-    public int currentHealth;
+    
 
     public HealthBarSlider healthBar;
     private Rigidbody2D rb;
@@ -38,6 +39,14 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+<<<<<<< HEAD
+        SaveSystem.Load(playerData);
+
+        rb = GetComponent<Rigidbody2D>();
+
+        healthBar.SetMaxHealth(playerData.maxHealth);
+        healthBar.SetHealth(playerData.currentHealth);
+=======
         PlayerController[] controllers = FindObjectsByType<PlayerController>(FindObjectsInactive.Exclude, FindObjectsSortMode.None);
         for (int i = 0; i < controllers.Length; i++)
         {
@@ -70,6 +79,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.LogWarning("[PlayerController] Health bar reference is missing. Assign it in the inspector.");
         }
+>>>>>>> d41ab707f4cdf00f098f1d3c70cdd3126e078682
 
         if (inputActions == null)
         {
@@ -109,6 +119,7 @@ public class PlayerController : MonoBehaviour
             shootAction.performed += OnShootPerformed;
         }
     }
+   
 
     private void OnDisable()
     {
@@ -180,12 +191,36 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
+    void TakeDamage(int damage)
+    {
+        playerData.currentHealth -= damage;
+        healthBar.SetHealth(playerData.currentHealth);
+        SaveSystem.Save(playerData); // optional autosave
+
+        if (playerData.currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        if (deadScreen != null)
+        {
+            deadScreen.Show();
+        }
+        // disable player movement, shooting, etc.
+        this.enabled = false;
+    }
+=======
     //void TakeDamge(int damage)
     //{
     //    currentHealth -= damage;
     //    healthBar.SetHealth(currentHealth);
 
     //}
+>>>>>>> d41ab707f4cdf00f098f1d3c70cdd3126e078682
 
     private void OnShootPerformed(InputAction.CallbackContext context)
     {

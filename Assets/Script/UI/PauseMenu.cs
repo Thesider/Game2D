@@ -7,9 +7,10 @@ public class PauseMenu : MonoBehaviour
 {
     public UIDocument pauseUIDocument;
     public InputActionAsset inputActions;  // Drag your InputActions asset here in Inspector
+    public PlayerData playerData; // drag your SO here in Inspector
 
     private VisualElement root;
-    private Button resumeBtn, restartBtn, quitToMenuBtn, quitBtn;
+    private Button resumeBtn,saveBtn, restartBtn, quitToMenuBtn, quitBtn;
     private bool isPaused = false;
 
     private InputAction toggleMenu;
@@ -26,8 +27,11 @@ public class PauseMenu : MonoBehaviour
         restartBtn = root.Q<Button>("RestartButton");
         quitToMenuBtn = root.Q<Button>("QuitToMenuButton");
         quitBtn = root.Q<Button>("QuitToDesktopButton");
+        saveBtn = root.Q<Button>("SaveButton");
 
+       
         if (resumeBtn != null) resumeBtn.clicked += OnResume;
+        if (saveBtn != null) saveBtn.clicked += OnSaveGame;
         if (restartBtn != null) restartBtn.clicked += OnRestart;
         if (quitToMenuBtn != null) quitToMenuBtn.clicked += OnQuitToMenu;
         if (quitBtn != null) quitBtn.clicked += OnQuit;
@@ -95,25 +99,27 @@ public class PauseMenu : MonoBehaviour
 
     // Button callbacks
     private void OnResume() => Resume();
+    private void OnSaveGame()
+    {
+        SaveSystem.Save(playerData);
+        Debug.Log("✅ Game Saved");
+    }
 
     private void OnRestart()
     {
+        SaveSystem.Save(playerData);
         Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+
     private void OnQuitToMenu()
     {
-        Debug.Log("Quit to menu button pressed!");
-        if (ScenesManager.Instance != null)
-        {
-            ScenesManager.Instance.LoadMainMenu();
-        }
-        else
-        {
-            Debug.LogError("ScenesManager.Instance is NULL! Did you put ScenesManager in the scene?");
-        }
+        SaveSystem.Save(playerData);
+        Time.timeScale = 1f;
+        ScenesManager.Instance.LoadMainMenu();
     }
+
 
     private void OnQuit()
     {

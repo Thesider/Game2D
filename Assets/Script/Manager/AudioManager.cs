@@ -6,11 +6,18 @@ using UnityEngine.Serialization;
 
 public class AudioManager : MonoBehaviour
 {
+<<<<<<< HEAD
+    public static AudioManager Instance;
+
+    [Header("-----------Audio Source-------------")]
+    [SerializeField] private AudioSource musicSource;
+=======
     public static AudioManager Instance { get; private set; }
 
     [Header("-----------Audio Source-------------")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
+>>>>>>> d41ab707f4cdf00f098f1d3c70cdd3126e078682
 
     [Header("-----------Audio Clip-------------")]
     [SerializeField, FormerlySerializedAs("background")] private AudioClip defaultBgm;
@@ -58,8 +65,37 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        // Singleton pattern — make sure only one AudioManager exists
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Start()
     {
+<<<<<<< HEAD
+        musicSource.clip = background;
+        musicSource.loop = true;
+        musicSource.Play();
+    }
+
+    public void SetMusicVolume(float volume)
+    {
+        musicSource.volume = volume;
+    }
+
+    public float GetMusicVolume()
+    {
+        return musicSource.volume;
+=======
         if (Instance == this)
         {
             HandleSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
@@ -228,5 +264,6 @@ public class AudioManager : MonoBehaviour
 
         targetSource.PlayOneShot(clip);
         return clip.length;
+>>>>>>> d41ab707f4cdf00f098f1d3c70cdd3126e078682
     }
 }

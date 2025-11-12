@@ -1,11 +1,18 @@
+<<<<<<< HEAD
+using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
+=======
 ﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+>>>>>>> d41ab707f4cdf00f098f1d3c70cdd3126e078682
 
 
 public class GameManager : MonoBehaviour
 {
-
+   
     public int score = 0;
     [SerializeField] TextMeshProUGUI scoreText;
 

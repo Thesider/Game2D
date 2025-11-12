@@ -10,10 +10,11 @@ public class MainMenuEventListener : MonoBehaviour
     private Button _settingGameButton;
     private VisualElement _buttonsWrapper;
 
-    [SerializeField]
-    private VisualTreeAsset _settingButtonPage;
+    [SerializeField] private VisualTreeAsset _settingButtonPage;
     private VisualElement _settingButton;
-    
+
+    private Slider _musicSlider;
+
     private void Awake()
     {
         _document = GetComponent<UIDocument>();
@@ -35,11 +36,33 @@ public class MainMenuEventListener : MonoBehaviour
 
         _settingGameButton.clicked += SettingButtonOnClicked;
 
+        // Prepare the setting page but don't show it yet
         _settingButton = _settingButtonPage.CloneTree();
         var backButton = _settingButton.Q<Button>("BackButton");
         backButton.clicked += BackButtonOnClicked;
 
+        // Get the slider from the cloned settings page
+        _musicSlider = _settingButton.Q<Slider>("MusicSlider");
+
+        // Initialize and register events for music volume
+        if (_musicSlider != null)
+        {
+            // Set initial value based on current AudioManager volume
+            if (AudioManager.Instance != null)
+                _musicSlider.value = AudioManager.Instance.GetMusicVolume() * 100f;
+
+            // When user moves the slider, change volume
+            _musicSlider.RegisterValueChangedCallback(evt =>
+            {
+                if (AudioManager.Instance != null)
+                {
+                    float newVolume = evt.newValue / 100f;
+                    AudioManager.Instance.SetMusicVolume(newVolume);
+                }
+            });
+        }
     }
+
     private void SettingButtonOnClicked()
     {
         _buttonsWrapper.Clear();
@@ -53,7 +76,6 @@ public class MainMenuEventListener : MonoBehaviour
         _buttonsWrapper.Add(_loadGameButton);
         _buttonsWrapper.Add(_settingGameButton);
         _buttonsWrapper.Add(_quitGameButton);
-
     }
 
     private void OnDisable()
@@ -73,27 +95,19 @@ public class MainMenuEventListener : MonoBehaviour
         Debug.Log("New Game button pressed!");
 
         if (ScenesManager.Instance != null)
-        {
             ScenesManager.Instance.LoadNewGame();
-        }
         else
-        {
             Debug.LogError("ScenesManager.Instance is NULL! Did you put ScenesManager in the scene?");
-        }
     }
-
 
     private void OnLoadGameClick(ClickEvent evt)
     {
         Debug.Log("Load Game button pressed!");
+
         if (ScenesManager.Instance != null)
-        {
             ScenesManager.Instance.LoadNewGame();
-        }
         else
-        {
             Debug.LogError("ScenesManager.Instance is NULL! Did you put ScenesManager in the scene?");
-        }
     }
 
     private void OnQuitGameClick(ClickEvent evt)
@@ -107,4 +121,3 @@ public class MainMenuEventListener : MonoBehaviour
 #endif
     }
 }
-    
