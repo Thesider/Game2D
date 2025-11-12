@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     public InputActionAsset inputActions;
+    public PlayerData playerData;
+    public DeadScreen deadScreen;
 
     private InputActionMap playerActionMap;
     private InputAction moveAction;
@@ -17,8 +19,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpForce = 5f;
 
-    public int maxHealth = 100;
-    public int currentHealth;
+    
 
     public HealthBarSlider healthBar;
     private Rigidbody2D rb;
@@ -34,9 +35,12 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
+        SaveSystem.Load(playerData);
+
         rb = GetComponent<Rigidbody2D>();
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+
+        healthBar.SetMaxHealth(playerData.maxHealth);
+        healthBar.SetHealth(playerData.currentHealth);
 
         if (inputActions == null)
         {
@@ -76,6 +80,7 @@ public class PlayerController : MonoBehaviour
             shootAction.performed += OnShootPerformed;
         }
     }
+   
 
     private void OnDisable()
     {
@@ -147,11 +152,26 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void TakeDamge(int damage)
+    void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        playerData.currentHealth -= damage;
+        healthBar.SetHealth(playerData.currentHealth);
+        SaveSystem.Save(playerData); // optional autosave
 
+        if (playerData.currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        if (deadScreen != null)
+        {
+            deadScreen.Show();
+        }
+        // disable player movement, shooting, etc.
+        this.enabled = false;
     }
 
     private void OnShootPerformed(InputAction.CallbackContext context)

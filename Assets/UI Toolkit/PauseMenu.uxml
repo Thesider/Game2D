@@ -3,6 +3,7 @@
     <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.93);">
         <ui:Label text="PAUSED" class="header" style="color: rgb(255, 255, 255); -unity-text-align: middle-center; font-size: 50px; top: 100px;" />
         <ui:Button text="Resume" name="ResumeButton" class="button" />
+        <ui:Button text="Save Game" name="SaveButton" class="button" />
         <ui:Button text="Restart" name="RestartButton" class="button" />
         <ui:Button text="Quit to menu" name="QuitToMenuButton" class="button" />
         <ui:Button text="Quit to desktop" name="QuitToDesktopButton" class="button" />

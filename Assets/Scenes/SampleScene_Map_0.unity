@@ -507,6 +507,14 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1761348493}
+    - target: {fileID: 8994155989976095883, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
+      propertyPath: deadScreen
+      value: 
+      objectReference: {fileID: 1559861500}
+    - target: {fileID: 8994155989976095883, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
+      propertyPath: playerData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ea4e59e5b4691746bf803ae87667bd9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1029,6 +1037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseUIDocument: {fileID: 763674923}
   inputActions: {fileID: -944628639613478452, guid: 14ed53438d130a34f8a3ab90b712c411, type: 3}
+  playerData: {fileID: 0}
 --- !u!114 &763674922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4431,6 +4440,71 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 519420032}
   parallaxEffect: 0.2
+--- !u!1 &1559861497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1559861499}
+  - component: {fileID: 1559861498}
+  - component: {fileID: 1559861500}
+  m_Layer: 0
+  m_Name: DeadScreenManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1559861498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559861497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: 021e8029ad9028a44b9091b285b58034, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: fe13e1173d1ae7c47a99a595603c5654, type: 3}
+  m_SortingOrder: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+--- !u!4 &1559861499
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559861497}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -32.33109, y: 3.3747313, z: 0.053496733}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1559861500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559861497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b95602292178af4089b448a0a7caf49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deadUIDocument: {fileID: 1559861498}
 --- !u!4 &1571903090 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5010959937085753463, guid: 5c249bc24e442054fb9f999ae5e8c614, type: 3}
@@ -26344,3 +26418,6 @@ SceneRoots:
   - {fileID: 495830218}
   - {fileID: 947470321}
   - {fileID: 763674924}
+  - {fileID: 1252613993}
+  - {fileID: 970112829}
+  - {fileID: 1559861499}
