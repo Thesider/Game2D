@@ -1,9 +1,9 @@
 using UnityEngine;
 
 public class Movement : CoreComponent {
-    public Rigidbody2D rb { get; private set; }
-
+    public Rigidbody2D rb { get; private set; } 
     public int facingDirection { get; private set; }
+    public bool canSetVelocity { get; set; }
 
     public Vector2 currentVelocity { get; private set; }
 
@@ -15,6 +15,7 @@ public class Movement : CoreComponent {
         rb = GetComponentInParent<Rigidbody2D>();
 
         facingDirection = 1;
+        canSetVelocity = true;
     }
 
     public void LogicUpdate() {
@@ -23,33 +24,37 @@ public class Movement : CoreComponent {
 
     #region Set Functions
     public void SetVelocityZero() {
-        rb.linearVelocity = Vector2.zero;
-        currentVelocity = Vector2.zero;
+        workspace = Vector2.zero;
+        SetFinalVelocity();
+
     }
     public void SetVelocity(float velocity, Vector2 angle, int direction) {
         angle.Normalize();
         workspace.Set(angle.x * velocity * direction, angle.y * velocity);
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
+        SetFinalVelocity();
+
     }
 
     public void SetVelocity(float velocity, Vector2 direction) {
         workspace = direction * velocity;
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
+        SetFinalVelocity();
+
     }
     public void SetVelocityX(float velocity) {
         workspace.Set(velocity, currentVelocity.y);
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
+        SetFinalVelocity();
     }
 
     public void SetVelocityY(float velocity) {
         workspace.Set(currentVelocity.x, velocity);
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
+        SetFinalVelocity();
     }
-
+    private void SetFinalVelocity() {
+        if (canSetVelocity) {
+            rb.linearVelocity = workspace;
+            currentVelocity = workspace;
+        }
+    }
     private void Flip() {
         facingDirection *= -1;
         rb.transform.Rotate(0.0f, 180.0f, 0.0f);

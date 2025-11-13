@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour {
 
     protected PlayerAttackState playerAttackState;
 
+    protected Core core;
 
     protected virtual void Awake() {
         baseAnimator = transform.Find("Base").GetComponent<Animator>();
@@ -54,7 +55,8 @@ public class Weapon : MonoBehaviour {
         // to be overridden by child classes
     }
 
-    public void InitializeWeapon(PlayerAttackState playerAttackState) {
+    public void InitializeWeapon(PlayerAttackState playerAttackState, Core core) {
         this.playerAttackState = playerAttackState;
+        this.core = core;
     } 
 }

@@ -5,4 +5,7 @@ public class WeaponAttackDetail {
     public float movementSpeed;
     public float damageAmount;
 
+
+    public float knockBackStrength;
+    public Vector2 knockBackAngle;
 }

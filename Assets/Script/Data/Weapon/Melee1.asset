@@ -15,4 +15,6 @@ MonoBehaviour:
   attackDetails:
     attackName: AttackDefault
     movementSpeed: 3
-    damageAmount: 50
+    damageAmount: 300
+    knockBackStrength: 20
+    knockBackAngle: {x: 3, y: 3}

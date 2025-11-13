@@ -4,7 +4,9 @@ using UnityEngine;
 using System.Linq;
 
 public class AggressiveWeapon : Weapon {
-    private List<IDamageable> detectedDamageable = new List<IDamageable>();
+    private List<IDamageable> detectedDamageables = new List<IDamageable>();
+    protected List<IKnockBackable> detectedKnockBackable = new List<IKnockBackable>();
+
     protected SO_AggressiveWeaponData aggressiveWeaponData;
 
     protected override void Awake() {
@@ -25,28 +27,41 @@ public class AggressiveWeapon : Weapon {
     private void CheckMeleeAttack() {
         WeaponAttackDetail detail = aggressiveWeaponData.AttackDetails;
 
-
-
-        foreach (IDamageable item in detectedDamageable.ToList()) {
+        foreach (IDamageable item in detectedDamageables.ToList()) {
             item.TakeDamage(detail.damageAmount);
         }
+
+        foreach (IKnockBackable item in detectedKnockBackable.ToList()) {
+            item.KnockBack(detail.knockBackAngle,detail.knockBackStrength, core.Movement.facingDirection);
+        }
+
     }
 
     public void AddToDetected(Collider2D collision) {
         IDamageable damageable = collision.GetComponent<IDamageable>();
 
         if(damageable != null ) {
-            detectedDamageable.Add(damageable);
+            detectedDamageables.Add(damageable);
+        }
+
+        IKnockBackable knockBackable = collision.GetComponent<IKnockBackable>();
+        if(knockBackable != null) {
+            detectedKnockBackable.Add(knockBackable);
         }
     }
     public void RemoveFromDetected(Collider2D collision) {
         IDamageable damageable = collision.GetComponent<IDamageable>();
 
         if (damageable != null) {
-            detectedDamageable.Remove(damageable);
+            detectedDamageables.Remove(damageable);
         }
 
-
+        IKnockBackable knockBackable = collision.GetComponent<IKnockBackable>();
+        if (knockBackable != null) {
+            detectedKnockBackable.Remove(knockBackable);
+        }
     }
+
+
 
 }
