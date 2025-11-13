@@ -17,7 +17,7 @@ MonoBehaviour:
   dropChance: 0
   type: 6
   itemName: 
-  price: 0
+  price: 1
   amount: 0
   duration: 0
   weaponData: {fileID: 11400000, guid: c30b03eadecaf1b4cb3b785f7c63f2e7, type: 2}

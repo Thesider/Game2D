@@ -67,6 +67,7 @@ public class ShopManager : MonoBehaviour
     // Hàm để điền các vật phẩm vào shop
     private void PopulateShop()
     {
+        Debug.Log("Bắt đầu điền item vào shop...");
         // Xóa các item cũ đi để tránh trùng lặp nếu mở shop nhiều lần
         foreach (Transform child in itemContainer)
         {
@@ -75,6 +76,7 @@ public class ShopManager : MonoBehaviour
 
         // Tạo các ô item mới từ danh sách itemsToSell
         foreach (ItemData item in itemsToSell)
+        
         {
             GameObject itemObject = Instantiate(shopItemPrefab, itemContainer);
 
@@ -100,7 +102,9 @@ public class ShopManager : MonoBehaviour
             
             // Gán sự kiện cho nút "Buy"
             buyButton.onClick.AddListener(() => { TryBuyItem(item); });
+
         }
+        Debug.Log("Điền item vào shop hoàn tất!");
     }
 
     private void TryBuyItem(ItemData itemToBuy)
