@@ -138,6 +138,7 @@ public class ShopManager : MonoBehaviour
             audioSource.PlayOneShot(failSound);
             //  Hiển thị thông báo "Không đủ tiền"
             ShowFeedback("Not enough gold!", Color.red);
+            Debug.Log("Mua thất bại: Không đủ tiền để mua " + itemToBuy.itemName);
         }
 
     }
@@ -150,6 +151,7 @@ public class ShopManager : MonoBehaviour
         {
             StopCoroutine(feedbackCoroutine);
         }
+        Debug.Log("Bắt đầu hiển thị thông báo: " + message);
         feedbackCoroutine = StartCoroutine(FeedbackRoutine(message, color));
     }
 
@@ -158,7 +160,7 @@ public class ShopManager : MonoBehaviour
         feedbackText.text = message;
         feedbackText.color = color;
         feedbackText.gameObject.SetActive(true);
-
+        Debug.Log("Hiển thị thông báo: " + message);
         yield return new WaitForSeconds(feedbackDuration);
 
         feedbackText.gameObject.SetActive(false);
