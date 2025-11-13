@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : MonoBehaviour, IShopCustomer
 {
     [SerializeField] private GameManager gameManager;
     // --- CÁC BIẾN (PROPERTIES) ---
@@ -28,6 +28,9 @@ public class PlayerStatus : MonoBehaviour
     public int maxLives = 1;
     private int currentLives;
     private Vector3 deathPosition; // Biến lưu vị trí
+
+    [Header("Currency")]
+    [SerializeField] private int gold = 100; // Cho người chơi 100 vàng khởi điểm để test
 
     // MỚI: Biến để theo dõi coroutine đang chạy
     private Coroutine invincibilityCoroutine;
