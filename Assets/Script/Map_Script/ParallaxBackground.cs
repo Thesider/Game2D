@@ -2,31 +2,39 @@ using UnityEngine;
 
 public class ParallaxBackground : MonoBehaviour
 {
-    // Camera sẽ được tham chiếu trong Inspector (nơi lấy vị trí camera để tính hiệu ứng parallax)
-    [SerializeField] private Transform cameraTransform;
-
-    // Hệ số hiệu ứng parallax (0 = không di chuyển, 1 = di chuyển cùng tốc độ camera)
-    [SerializeField] private float parallaxEffect;
-
-    // Lưu lại vị trí trước đó của camera để so sánh khi camera di chuyển
-    private Vector3 lastCameraPosition;
+    [Header("Camera và Tốc độ parallax")]
+    public Transform cameraTransform;     // Camera chính
+    public float parallaxMultiplier = 0.5f; // Tốc độ di chuyển tương đối
+    private float textureUnitSizeX;        // Chiều rộng texture theo world unit
+    private Vector3 lastCameraPosition;    // Vị trí camera trước đó
 
     private void Start()
     {
-        // Khởi tạo vị trí ban đầu của camera
+        if (cameraTransform == null)
+        {
+            cameraTransform = Camera.main.transform;
+        }
+
         lastCameraPosition = cameraTransform.position;
+
+        // Tính chiều rộng của background (tính theo world unit)
+        Sprite sprite = GetComponent<SpriteRenderer>().sprite;
+        Texture2D texture = sprite.texture;
+        textureUnitSizeX = (texture.width / sprite.pixelsPerUnit) * transform.localScale.x;
     }
 
     private void Update()
     {
-        // Tính toán xem camera đã di chuyển bao nhiêu từ frame trước đến frame hiện tại
+        // Tính độ dịch chuyển của camera
         Vector3 deltaMovement = cameraTransform.position - lastCameraPosition;
-
-        // Di chuyển background theo một phần deltaMovement (tùy vào parallaxEffect)
-        // Nếu parallaxEffect < 1 thì background sẽ di chuyển chậm hơn camera → tạo chiều sâu
-        transform.position += new Vector3(deltaMovement.x * parallaxEffect, deltaMovement.y * parallaxEffect, 0);
-
-        // Cập nhật lại vị trí camera để chuẩn bị cho frame tiếp theo
+        transform.position += new Vector3(deltaMovement.x * parallaxMultiplier, 0f, 0f);
         lastCameraPosition = cameraTransform.position;
+
+        // Nếu camera đi xa hơn chiều rộng của texture -> lặp lại background
+        if (Mathf.Abs(cameraTransform.position.x - transform.position.x) >= textureUnitSizeX)
+        {
+            float offset = (cameraTransform.position.x - transform.position.x) % textureUnitSizeX;
+            transform.position = new Vector3(cameraTransform.position.x + offset, transform.position.y, transform.position.z);
+        }
     }
 }
