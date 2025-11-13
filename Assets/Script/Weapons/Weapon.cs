@@ -10,7 +10,7 @@ public class Weapon : MonoBehaviour {
     protected PlayerAttackState playerAttackState;
 
 
-    protected virtual void Start() {
+    protected virtual void Awake() {
         baseAnimator = transform.Find("Base").GetComponent<Animator>();
         weaponAnimator = transform.Find("Weapon").GetComponent<Animator>();
 
@@ -49,6 +49,10 @@ public class Weapon : MonoBehaviour {
         playerAttackState.SetFLipCheck(true);
     }
     #endregion
+
+    public virtual void AnimationActionTrigger() {
+        // to be overridden by child classes
+    }
 
     public void InitializeWeapon(PlayerAttackState playerAttackState) {
         this.playerAttackState = playerAttackState;
