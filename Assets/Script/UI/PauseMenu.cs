@@ -28,7 +28,7 @@ public class PauseMenu : MonoBehaviour
         quitBtn = root.Q<Button>("QuitToDesktopButton");
 
         saveGameBtn = root.Q<Button>("SaveGameButton");
-        if (saveGameBtn != null) saveGameBtn.clicked += OnSaveGame;
+        //if (saveGameBtn != null) saveGameBtn.clicked += OnSaveGame;
 
         if (resumeBtn != null) resumeBtn.clicked += OnResume;
         if (restartBtn != null) restartBtn.clicked += OnRestart;
@@ -51,19 +51,19 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    private void OnSaveGame()
-    {
-        PlayerStatus player = FindObjectOfType<PlayerStatus>();
-        if (player != null)
-        {
-            player.SavePlayerData();
-            Debug.Log("💾 Game saved via Pause Menu!");
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ No PlayerStatus found to save!");
-        }
-    }
+    //private void OnSaveGame()
+    //{
+    //    PlayerStatus player = FindObjectOfType<PlayerStatus>();
+    //    if (player != null)
+    //    {
+    //        player.SavePlayerData();
+    //        Debug.Log("💾 Game saved via Pause Menu!");
+    //    }
+    //    else
+    //    {
+    //        Debug.LogWarning("⚠️ No PlayerStatus found to save!");
+    //    }
+    //}
 
 
     void Start()
