@@ -1,7 +1,8 @@
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour {
-    
+    protected Core core;
+
     protected Player player;
     protected PlayerStateMachine stateMachine;
     protected PlayerData playerData;
@@ -18,13 +19,14 @@ public class PlayerState : MonoBehaviour {
         this.stateMachine = stateMachine;
         this.playerData = playerData;
         this.animBoolName = animBoolName;
+        core = player.core;
     }   
 
     public virtual void Enter() {
         Dochecks();
         player.anim.SetBool(animBoolName, true);
         startTime = Time.time;
-        Debug.Log($"Enter State: {animBoolName}");
+        //Debug.Log($"Enter State: {animBoolName}");
         isAnimationFinished = false;
         isExitingState = false;
     }

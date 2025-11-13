@@ -12,7 +12,7 @@ public class PLayerJumpState : PlayerAbilityState {
     public override void Enter() {
         base.Enter();
 
-        player.SetVelocityY(playerData.jumpVelocity);
+        core.Movement.SetVelocityY(playerData.jumpVelocity);
         isAbilityDone = true;
         amountOfJumpsLeft--;
         player.inAirState.SetIsJumping();

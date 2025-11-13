@@ -19,14 +19,16 @@ public class PlayerMoveState : PlayerGroundedState {
     public override void LogicUpdate() {
         base.LogicUpdate();
 
-        player.CheckFlip(xInput);
+        core.Movement.CheckFlip(xInput);
 
-        player.SetVelocityX(xInput * playerData.moveSpeed);
+        core.Movement.SetVelocityX(xInput * playerData.moveSpeed);
 
 
         if (!isExitingState) {
             if (xInput == 0) {
                 stateMachine.ChangeState(player.idleState);
+            } else if (yInput == -1 ) {
+                stateMachine.ChangeState(player.crouchMoveState);
             }
         }
     }

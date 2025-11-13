@@ -3,17 +3,22 @@ using UnityEngine;
 public class PlayerGroundedState : PlayerState {
 
     protected int xInput;
+    protected int yInput;
+
+    protected bool isTouchingCeiling;
+
     private bool jumpInput;
     private bool isGrounded;
     private bool dashInput;
-    private bool crouchInput;
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName) {
     }
 
     public override void Dochecks() {
         base.Dochecks();
 
-        isGrounded = player.CheckIfGrounded();
+        isGrounded = core.CollisionSenes.Ground;
+        isTouchingCeiling = core.CollisionSenes.Ceiling;
+
     }
 
     public override void Enter() {
@@ -30,23 +35,32 @@ public class PlayerGroundedState : PlayerState {
     public override void LogicUpdate() {
         base.LogicUpdate();
 
-    xInput = player.inputHandler.normInputX;
-    jumpInput = player.inputHandler.jumpInput;
-    dashInput = player.inputHandler.dashInput;
-    crouchInput = player.inputHandler.crouchInput;
+        xInput = player.inputHandler.normInputX;
+        yInput = player.inputHandler.normInputY;
 
-        if (crouchInput) {
-            stateMachine.ChangeState(player.crouchState);
-        } else if (jumpInput && player.jumpState.CanJump()) {
+        jumpInput = player.inputHandler.jumpInput;
+        dashInput = player.inputHandler.dashInput;
+
+
+        if(player.inputHandler.attackInputs[(int)CombatInputs.primary]) {
+            stateMachine.ChangeState(player.primaryAttackState);
+        }
+        else if(player.inputHandler.attackInputs[(int)CombatInputs.secondary]) {
+            stateMachine.ChangeState(player.secondAttackState);
+        }
+        else if (jumpInput && player.jumpState.CanJump() && !isTouchingCeiling && yInput != -1) {
             player.inputHandler.UseJumpInput();
             stateMachine.ChangeState(player.jumpState);
-        } else if (!isGrounded) {
+        }
+        else if (!isGrounded) {
             player.inAirState.StartCoyoteTime();
             stateMachine.ChangeState(player.inAirState);
-        } else if (dashInput && player.dashState.CheckIfDash()) {
+        }
+        else if (dashInput && player.dashState.CheckIfDash() && !isTouchingCeiling && yInput != -1) {
             stateMachine.ChangeState(player.dashState);
         }
     }
+
 
     public override void PhysicsUpdate() {
         base.PhysicsUpdate();
