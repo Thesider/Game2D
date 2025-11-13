@@ -9,8 +9,8 @@ public class PauseMenu : MonoBehaviour
     public InputActionAsset inputActions;  // Drag your InputActions asset here in Inspector
 
     private VisualElement root;
-    private Button resumeBtn, restartBtn, quitToMenuBtn, quitBtn;
-    private bool isPaused = false;
+    private Button resumeBtn, restartBtn, saveGameBtn, quitToMenuBtn, quitBtn;
+        private bool isPaused = false;
 
     private InputAction toggleMenu;
     private InputActionMap playerMap;
@@ -26,6 +26,9 @@ public class PauseMenu : MonoBehaviour
         restartBtn = root.Q<Button>("RestartButton");
         quitToMenuBtn = root.Q<Button>("QuitToMenuButton");
         quitBtn = root.Q<Button>("QuitToDesktopButton");
+
+        saveGameBtn = root.Q<Button>("SaveGameButton");
+        if (saveGameBtn != null) saveGameBtn.clicked += OnSaveGame;
 
         if (resumeBtn != null) resumeBtn.clicked += OnResume;
         if (restartBtn != null) restartBtn.clicked += OnRestart;
@@ -47,6 +50,21 @@ public class PauseMenu : MonoBehaviour
             Debug.LogError("❌ UI map not found in InputActions!");
         }
     }
+
+    private void OnSaveGame()
+    {
+        PlayerStatus player = FindObjectOfType<PlayerStatus>();
+        if (player != null)
+        {
+            player.SavePlayerData();
+            Debug.Log("💾 Game saved via Pause Menu!");
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ No PlayerStatus found to save!");
+        }
+    }
+
 
     void Start()
     {
@@ -99,8 +117,36 @@ public class PauseMenu : MonoBehaviour
     private void OnRestart()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        root.style.display = DisplayStyle.None;
+        StartCoroutine(RestartLevelClean());
     }
+
+    private System.Collections.IEnumerator RestartLevelClean()
+    {
+        yield return null;
+
+        if (ScenesManager.Instance != null)
+        {
+            var current = SceneManager.GetActiveScene().name;
+            ScenesManager.SetNextSpawn(ScenesManager.DefaultSpawnId);
+
+            if (System.Enum.TryParse(current, out ScenesManager.Scene scene))
+            {
+                ScenesManager.Instance.LoadScene(scene);
+            }
+            else
+            {
+                // fallback if not enum name
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+    }
+
+
 
     private void OnQuitToMenu()
     {

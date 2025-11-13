@@ -2,11 +2,17 @@ using UnityEngine;
 
 public class DontDestroyOnLoad : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private static DontDestroyOnLoad instance;
+
     void Awake()
     {
-        DontDestroyOnLoad(this.gameObject);
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject); // destroy duplicates
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject);
     }
-
-
 }

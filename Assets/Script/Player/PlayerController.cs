@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 
     public InputActionAsset inputActions;
+    public DeadScreen deadScreen;
 
     private InputActionMap playerActionMap;
     private InputAction moveAction;
@@ -73,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
         if (inputActions == null)
         {
-            Debug.LogError("InputActionAsset reference missing on PlayerController.", this);
+            Debug.LogError("InputActionAsset reference missing on PlayerController.", this);    
             return;
         }
 

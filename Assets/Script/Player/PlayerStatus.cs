@@ -37,6 +37,10 @@ public class PlayerStatus : MonoBehaviour
     //biến để lưu điểm
     private int score = 0;
 
+    public int CurrentLives => currentLives;
+    public Vector3 DeathPosition => deathPosition;
+
+
     [SerializeField] private HealthBarSlider HealthBarSlider;
     void Awake()
     {
@@ -216,19 +220,32 @@ public class PlayerStatus : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("Player has DIED!");
+        Debug.Log("💀 Player has DIED!");
         currentLives--;
 
-        deathPosition = transform.position; // Lưu vị trí chết
+        deathPosition = transform.position; // Save death position
 
         if (currentLives > 0)
         {
-            Invoke("Respawn", 3f);
+            // Respawn after 3 seconds
+            Invoke(nameof(Respawn), 3f);
         }
         else
         {
             Debug.Log("GAME OVER");
             gameObject.SetActive(false);
+
+            // ✅ Show Death Screen
+            DeadScreen deadScreen = FindObjectOfType<DeadScreen>();
+            if (deadScreen != null)
+            {
+                Time.timeScale = 0f; // Pause the game
+                deadScreen.Show();
+            }
+            else
+            {
+                Debug.LogWarning("No DeadScreen found in the scene!");
+            }
         }
     }
 
@@ -293,4 +310,31 @@ public class PlayerStatus : MonoBehaviour
 
         Die();
     }
+
+    public void SavePlayerData()
+    {
+        PlayerData data = new PlayerData(this);
+        SaveSystem.Save(data);
+        Debug.Log("✅ Player data saved!");
+    }
+
+    public void LoadPlayerData()
+    {
+        PlayerData data = new PlayerData();
+        SaveSystem.Load(data);
+
+        currentHealth = data.currentHealth;
+        currentArmor = data.currentArmor;
+        currentLives = data.currentLives;
+        deathPosition = data.deathPosition;
+
+        // Move player to saved position
+        transform.position = data.savePosition;
+
+        if (HealthBarSlider != null)
+            HealthBarSlider.SetHealth(currentHealth);
+
+        Debug.Log($"✅ Player loaded. HP: {currentHealth}, Armor: {currentArmor}, Lives: {currentLives}");
+    }
+
 }

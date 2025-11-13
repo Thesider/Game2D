@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnemyController : MonoBehaviour, IEnemy
 {
@@ -67,28 +67,41 @@ public class EnemyController : MonoBehaviour, IEnemy
         blackboard.Set("spawnTime", Time.time);
     }
 
-    private void Start()
+   private void Start()
+{
+    if (player == null)
     {
-        if (player == null)
-        {
-            GameObject p = GameObject.FindGameObjectWithTag("Player");
-            if (p != null)
-                player = p.transform;
-            else
-                Debug.LogWarning("EnemyController: Player not found in scene!");
-        }
-        stateMachine = new StateMachine.StateMachine();
-        idleState = new EnemyIdleState(this, Animator);
-        combatState = new EnemyCombatState(this, Animator);
-        dieState = new EnemyDieState(this, Animator);
-
-        stateMachine.SetState(idleState);
-
-        stateMachine.AddTransition(idleState, combatState, new StateMachine.FuncPredicate(() => Vector3.Distance(transform.position, player.position) <= detectionRange));
-        stateMachine.AddTransition(combatState, idleState, new StateMachine.FuncPredicate(() => Vector3.Distance(transform.position, player.position) > detectionRange));
-        stateMachine.AddTransition(idleState, dieState, new StateMachine.FuncPredicate(() => health <= 0));
-        stateMachine.AddTransition(combatState, dieState, new StateMachine.FuncPredicate(() => health <= 0));
+        GameObject p = GameObject.FindGameObjectWithTag("Player");
+        if (p != null)
+            player = p.transform;
+        else
+            Debug.LogWarning("EnemyController: Player not found in scene!");
     }
+
+    stateMachine = new StateMachine.StateMachine();
+    idleState = new EnemyIdleState(this, Animator);
+    combatState = new EnemyCombatState(this, Animator);
+    dieState = new EnemyDieState(this, Animator);
+
+    stateMachine.SetState(idleState);
+
+    // 🛠 FIX: Null-check player before accessing position
+    stateMachine.AddTransition(idleState, combatState,
+        new StateMachine.FuncPredicate(() =>
+            player != null &&
+            Vector3.Distance(transform.position, player.position) <= detectionRange));
+
+    stateMachine.AddTransition(combatState, idleState,
+        new StateMachine.FuncPredicate(() =>
+            player == null ||
+            Vector3.Distance(transform.position, player.position) > detectionRange));
+
+    stateMachine.AddTransition(idleState, dieState,
+        new StateMachine.FuncPredicate(() => health <= 0));
+
+    stateMachine.AddTransition(combatState, dieState,
+        new StateMachine.FuncPredicate(() => health <= 0));
+}
 
     private void Update()
     {
