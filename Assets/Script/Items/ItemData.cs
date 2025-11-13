@@ -21,6 +21,10 @@ public class ItemData : ScriptableObject
     public int point;
     public int dropChance;
     public ItemType type;
+    public string itemName;
+    [Header("Shop Information")]
+    [Tooltip("Giá bán của vật phẩm trong shop. Đặt là 0 nếu không bán.")]
+    public int price;
 
     [Header("Values")]
     [Tooltip("Dùng cho Health, Armor, Treasure")]

@@ -1,8 +1,7 @@
 using UnityEngine;
 
 
-public interface IEnemy
-{
+public interface IEnemy : IDamageable {
     float MoveSpeed { get; }
     float AttackRange { get; }
     float AttackCooldown { get; }

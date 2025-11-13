@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour, IEnemy
     [SerializeField] private Animator animator;
     [Header("Projectile")]
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject hitParticles;
+
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float bulletSpeed = 8f;
@@ -119,11 +121,14 @@ public class EnemyController : MonoBehaviour, IEnemy
 
     public void TakeDamage(float damage)
     {
+        Debug.Log($"Enemy took {damage} damage.");
         health -= damage;
         if (health <= 0)
         {
             stateMachine.SetState(dieState);
         }
+        Instantiate(hitParticles, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+        animator.SetTrigger("damage");
     }
 
     public void OnDieAnimationComplete()

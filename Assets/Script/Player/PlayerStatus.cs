@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : MonoBehaviour, IShopCustomer
 {
     [SerializeField] private GameManager gameManager;
     // --- CÁC BIẾN (PROPERTIES) ---
@@ -29,6 +29,9 @@ public class PlayerStatus : MonoBehaviour
     private int currentLives;
     private Vector3 deathPosition; // Biến lưu vị trí
 
+    [Header("Currency")]
+    [SerializeField] private int gold = 100; // Cho người chơi 100 vàng khởi điểm để test
+
     // MỚI: Biến để theo dõi coroutine đang chạy
     private Coroutine invincibilityCoroutine;
     private Coroutine speedModifierCoroutine;
@@ -36,10 +39,6 @@ public class PlayerStatus : MonoBehaviour
 
     //biến để lưu điểm
     private int score = 0;
-
-    public int CurrentLives => currentLives;
-    public Vector3 DeathPosition => deathPosition;
-
 
     [SerializeField] private HealthBarSlider HealthBarSlider;
     void Awake()
@@ -220,32 +219,19 @@ public class PlayerStatus : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("💀 Player has DIED!");
+        Debug.Log("Player has DIED!");
         currentLives--;
 
-        deathPosition = transform.position; // Save death position
+        deathPosition = transform.position; // Lưu vị trí chết
 
         if (currentLives > 0)
         {
-            // Respawn after 3 seconds
-            Invoke(nameof(Respawn), 3f);
+            Invoke("Respawn", 3f);
         }
         else
         {
             Debug.Log("GAME OVER");
             gameObject.SetActive(false);
-
-            // ✅ Show Death Screen
-            DeadScreen deadScreen = FindObjectOfType<DeadScreen>();
-            if (deadScreen != null)
-            {
-                Time.timeScale = 0f; // Pause the game
-                deadScreen.Show();
-            }
-            else
-            {
-                Debug.LogWarning("No DeadScreen found in the scene!");
-            }
         }
     }
 
@@ -310,31 +296,49 @@ public class PlayerStatus : MonoBehaviour
 
         Die();
     }
+ 
 
-    public void SavePlayerData()
+    // --- TRIỂN KHAI CÁC HÀM TỪ INTERFACE IShopCustomer ---
+
+    // Hàm này kiểm tra xem người chơi có đủ tiền không
+    public bool CanAfford(int amount)
     {
-        PlayerData data = new PlayerData(this);
-        SaveSystem.Save(data);
-        Debug.Log("✅ Player data saved!");
+        return gold >= amount;
     }
 
-    public void LoadPlayerData()
+    // Hàm này trừ tiền của người chơi
+    public void SpendGold(int amount)
     {
-        PlayerData data = new PlayerData();
-        SaveSystem.Load(data);
-
-        currentHealth = data.currentHealth;
-        currentArmor = data.currentArmor;
-        currentLives = data.currentLives;
-        deathPosition = data.deathPosition;
-
-        // Move player to saved position
-        transform.position = data.savePosition;
-
-        if (HealthBarSlider != null)
-            HealthBarSlider.SetHealth(currentHealth);
-
-        Debug.Log($"✅ Player loaded. HP: {currentHealth}, Armor: {currentArmor}, Lives: {currentLives}");
+        gold -= amount;
+        // TODO: Cập nhật UI hiển thị vàng ở đây
     }
 
+    // Hàm này xử lý việc nhận vật phẩm sau khi mua
+    public void BoughtItem(ItemData itemData)
+    {
+        Debug.Log("Player bought: " + itemData.itemName);
+
+        // Đây là nơi chúng ta sẽ kết nối với các hệ thống đã có
+        // Dùng switch-case giống như trong ItemPickup.cs
+        switch (itemData.type)
+        {
+            case ItemType.Health:
+                Heal(itemData.amount);
+                break;
+            case ItemType.Armor:
+                AddArmor(itemData.amount);
+                break;
+            case ItemType.Weapon:
+                // Tìm component PlayerCombat và trang bị vũ khí
+                GetComponent<PlayerCombat>()?.EquipWeapon(itemData.weaponData);
+                break;
+                // Thêm các case khác nếu cần (thuốc tốc độ, đạn...)
+        }
+    }
+
+    // Thêm một hàm getter để UI có thể đọc được số vàng
+    public int GetGoldAmount()
+    {
+        return gold;
+    }
 }

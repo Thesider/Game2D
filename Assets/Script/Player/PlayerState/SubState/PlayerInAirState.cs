@@ -15,7 +15,8 @@ public class PlayerInAirState : PlayerState {
 
     public override void Dochecks() {
         base.Dochecks();
-        isGrounded = player.CheckIfGrounded();
+        isGrounded = core.CollisionSenes.Ground;
+
     }
 
     public override void Enter() {
@@ -43,7 +44,7 @@ public class PlayerInAirState : PlayerState {
         else if (player.inputHandler.attackInputs[(int)CombatInputs.secondary]) {
             stateMachine.ChangeState(player.secondAttackState);
         }
-        else if (isGrounded && player.currentVelocity.y < 0.01f) {
+        else if (isGrounded && core.Movement.currentVelocity.y < 0.01f) {
             stateMachine.ChangeState(player.landState);
         }
         else if (jumpInput && player.jumpState.CanJump()) {
@@ -51,20 +52,21 @@ public class PlayerInAirState : PlayerState {
             stateMachine.ChangeState(player.jumpState);
         }
         else {
-            player.CheckFlip(xInput);
-            player.SetVelocityX(xInput * playerData.moveSpeed);
+            core.Movement.CheckFlip(xInput);
+            
+            core.Movement.SetVelocityX(xInput * playerData.moveSpeed);
 
-            player.anim.SetFloat("yVelocity", player.currentVelocity.y);
-            player.anim.SetFloat("xVelocity", Mathf.Abs(player.currentVelocity.x));
+            player.anim.SetFloat("yVelocity", core.Movement.currentVelocity.y);
+            player.anim.SetFloat("xVelocity", Mathf.Abs(core.Movement.currentVelocity.x));
 
         }
     }
     private void CheckJumpMultiplier() {
         if (isJumping) {
             if (jumpInputStop) {
-                player.SetVelocityY(player.currentVelocity.y * playerData.variableJumpHeightMultiplier);
+                core.Movement.SetVelocityY(core.Movement.currentVelocity.y * playerData.variableJumpHeightMultiplier);
                 isJumping = false;
-            } else if (player.currentVelocity.y <= 0) {
+            } else if (core.Movement.currentVelocity.y <= 0) {
                 isJumping = false;
             }
         }
