@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class PlayerStatus : MonoBehaviour
+public class PlayerStatus : MonoBehaviour, IShopCustomer
 {
     [SerializeField] private GameManager gameManager;
     // --- CÁC BIẾN (PROPERTIES) ---
@@ -28,6 +28,9 @@ public class PlayerStatus : MonoBehaviour
     public int maxLives = 1;
     private int currentLives;
     private Vector3 deathPosition; // Biến lưu vị trí
+
+    [Header("Currency")]
+    [SerializeField] private int gold = 100; // Cho người chơi 100 vàng khởi điểm để test
 
     // MỚI: Biến để theo dõi coroutine đang chạy
     private Coroutine invincibilityCoroutine;
@@ -292,5 +295,50 @@ public class PlayerStatus : MonoBehaviour
         }
 
         Die();
+    }
+ 
+
+    // --- TRIỂN KHAI CÁC HÀM TỪ INTERFACE IShopCustomer ---
+
+    // Hàm này kiểm tra xem người chơi có đủ tiền không
+    public bool CanAfford(int amount)
+    {
+        return gold >= amount;
+    }
+
+    // Hàm này trừ tiền của người chơi
+    public void SpendGold(int amount)
+    {
+        gold -= amount;
+        // TODO: Cập nhật UI hiển thị vàng ở đây
+    }
+
+    // Hàm này xử lý việc nhận vật phẩm sau khi mua
+    public void BoughtItem(ItemData itemData)
+    {
+        Debug.Log("Player bought: " + itemData.itemName);
+
+        // Đây là nơi chúng ta sẽ kết nối với các hệ thống đã có
+        // Dùng switch-case giống như trong ItemPickup.cs
+        switch (itemData.type)
+        {
+            case ItemType.Health:
+                Heal(itemData.amount);
+                break;
+            case ItemType.Armor:
+                AddArmor(itemData.amount);
+                break;
+            case ItemType.Weapon:
+                // Tìm component PlayerCombat và trang bị vũ khí
+                GetComponent<PlayerCombat>()?.EquipWeapon(itemData.weaponData);
+                break;
+                // Thêm các case khác nếu cần (thuốc tốc độ, đạn...)
+        }
+    }
+
+    // Thêm một hàm getter để UI có thể đọc được số vàng
+    public int GetGoldAmount()
+    {
+        return gold;
     }
 }
