@@ -49,7 +49,36 @@ public class ScenesManager : MonoBehaviour
         Map_1
     }
 
+    public void LoadScene(Scene target)
+    {
+        if (target == Scene.LoadingScene)
+        {
+            Debug.LogWarning("Cannot load LoadingScene directly.");
+            return;
+        }
 
+        // Before changing, clean up any old menu UI
+        DestroyIfExists("MainMenu");
+        DestroyIfExists("PauseMenu");
+
+        NextSceneName = target.ToString();
+        Debug.Log($"[ScenesManager] → Preparing to load {NextSceneName}");
+
+        SceneManager.LoadScene(Scene.LoadingScene.ToString());
+    }
+
+    public void LoadNewGame() => LoadScene(Scene.SampleScene_Map_0);
+    public void LoadMainMenu() => LoadScene(Scene.MainMenu);
+
+    private void DestroyIfExists(string name)
+    {
+        GameObject obj = GameObject.Find(name);
+        if (obj != null)
+        {
+            Debug.Log($"[ScenesManager] Destroying leftover object: {name}");
+            Destroy(obj);
+        }
+    }
     public void LoadScene(Scene target, string spawnId = DefaultSpawnId)
     {
         if (target == Scene.LoadingScene)
@@ -68,8 +97,7 @@ public class ScenesManager : MonoBehaviour
         SceneManager.LoadScene(Scene.LoadingScene.ToString());
     }
 
-    public void LoadNewGame() => LoadScene(Scene.SampleScene_Map_0);
-    public void LoadMainMenu() => LoadScene(Scene.MainMenu);
+   
 
     public static void SetNextSpawn(string spawnId)
     {
@@ -82,16 +110,7 @@ public class ScenesManager : MonoBehaviour
         NextSpawnId = spawnId.Trim();
     }
 
-    private void DestroyIfExists(string name)
-    {
-        GameObject obj = GameObject.Find(name);
-        if (obj != null)
-        {
-            Debug.Log($"[ScenesManager] Destroying leftover object: {name}");
-            Destroy(obj);
-        }
-    }
-
+    
     private void HandleSceneLoaded(UnityEngine.SceneManagement.Scene scene, LoadSceneMode mode)
     {
         if (scene.name == Scene.LoadingScene.ToString())
