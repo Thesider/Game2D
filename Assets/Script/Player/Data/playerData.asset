@@ -23,10 +23,10 @@ MonoBehaviour:
   dashVelocity: 15
   drag: 10
   distanceBetweenAfterImages: 0.5
-  crouchMoveSpeed: 2
-  crouchColliderHeightMultiplier: 0.5
-  crouchColliderYOffsetExtra: 0
+  crouchSpeed: 3
+  crouchColliderHeight: 0.172
+  standColliderHeight: 0.343
   groundCheckRadius: 0.3
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
