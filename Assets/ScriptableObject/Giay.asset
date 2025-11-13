@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54ade0dbd0bad434d8d00ba1515adce1, type: 3}
   m_Name: Giay
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -4683111340605770916, guid: a83736450552ecb4c8b605b83fe4a325, type: 3}
   point: 0
   dropChance: 60
   type: 2
+  itemName: 
+  price: 50
   amount: 2
   duration: 15
+  weaponData: {fileID: 0}
