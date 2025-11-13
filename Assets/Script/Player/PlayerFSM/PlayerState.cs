@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour {
+
     
     protected Player player;
     protected PlayerStateMachine stateMachine;
@@ -24,7 +25,7 @@ public class PlayerState : MonoBehaviour {
         Dochecks();
         player.anim.SetBool(animBoolName, true);
         startTime = Time.time;
-        Debug.Log($"Enter State: {animBoolName}");
+        //Debug.Log($"Enter State: {animBoolName}");
         isAnimationFinished = false;
         isExitingState = false;
     }
