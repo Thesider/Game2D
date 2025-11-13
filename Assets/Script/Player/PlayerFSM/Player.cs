@@ -19,6 +19,7 @@ public class Player : MonoBehaviour{
     #endregion
 
     #region Components
+    public Core core { get; private set; }  
     public Animator anim { get; private set; }
     public PlayerInputHandler inputHandler { get; private set; }
     public Rigidbody2D rb { get; private set; }
@@ -27,16 +28,11 @@ public class Player : MonoBehaviour{
 
     #endregion
 
-    #region Check Transforms Variables
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private Transform ceilingCheck;
-
-
-    #endregion
-
     #region Other Variables
-    public Vector2 currentVelocity { get; private set; }
-    public int facingDirection { get; private set; } 
+    //public Vector2 currentVelocity { get; private set; }
+
+
+
 
     private Vector2 workspace;
 
@@ -44,6 +40,9 @@ public class Player : MonoBehaviour{
 
     #region Unity Callbacks Functions
     public void Awake() {
+
+        core = GetComponentInChildren<Core>();
+
         stateMachine = new PlayerStateMachine();
 
         idleState = new PlayerIdleState(this, stateMachine, playerData, "idle");
@@ -65,8 +64,6 @@ public class Player : MonoBehaviour{
         movementCollider = GetComponent<BoxCollider2D>();
         playerInventory = GetComponent<PlayerInventory>();
 
-        facingDirection = 1;
-
         primaryAttackState.SetWeapon(playerInventory.weapons[(int)CombatInputs.primary]);
         //secondAttackState.SetWeapon(playerInventory.weapons[(int)CombatInputs.secondary]);
 
@@ -74,8 +71,7 @@ public class Player : MonoBehaviour{
     }
 
     private void Update() {
-        currentVelocity = rb.linearVelocity;
-
+        core.LogicUpdate();
         stateMachine.CurrentState.LogicUpdate();                                    
     }
 
@@ -85,55 +81,9 @@ public class Player : MonoBehaviour{
     }
     #endregion
 
-    #region Set Functions
-    public void SetVelocityZero() {
-        workspace = Vector2.zero;
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
-    }
-    public void SetVelocity(float velocity, Vector2 angle, int direction) {
-        angle.Normalize();
-        workspace.Set(angle.x * velocity * direction, angle.y * velocity);
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
-    }
-
-    public void SetVelocity(float velocity, Vector2 direction) {
-        workspace = direction * velocity;
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
-    }
-    public void SetVelocityX(float velocity) {
-        workspace.Set(velocity, currentVelocity.y);
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
-    }
-
-    public void SetVelocityY(float velocity) {
-        workspace.Set(currentVelocity.x, velocity);
-        rb.linearVelocity = workspace;
-        currentVelocity = workspace;
-    }
-    #endregion
-
-    #region Check Functions
-    public bool CheckForCeiling() {
-        return Physics2D.OverlapCircle(ceilingCheck.position, playerData.groundCheckRadius, playerData.whatIsGround);
-    }
-
-    public bool CheckIfGrounded() {
-        return Physics2D.OverlapCircle(groundCheck.position, playerData.groundCheckRadius, playerData.whatIsGround);
-    }
-
-    public void CheckFlip(int xInput) {
-        if (xInput != 0 && xInput != facingDirection) {
-            Flip();
-        }
-    }
+    
 
 
-
-    #endregion
 
     #region Other Functions
     public void SetColliderHeight(float height) {
@@ -148,11 +98,7 @@ public class Player : MonoBehaviour{
 
     private void AnimationTrigger() => stateMachine.CurrentState.AnimationTrigger();
     private void AnimationFinishTrigger() => stateMachine.CurrentState.AnimationFinishTrigger();
-    private void Flip() {
-        facingDirection *= -1;
-        transform.Rotate(0.0f, 180.0f, 0.0f);
 
-    }
     #endregion
 
 }

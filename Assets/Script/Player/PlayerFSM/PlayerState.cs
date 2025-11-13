@@ -1,8 +1,8 @@
 using UnityEngine;
 
 public class PlayerState : MonoBehaviour {
+    protected Core core;
 
-    
     protected Player player;
     protected PlayerStateMachine stateMachine;
     protected PlayerData playerData;
@@ -19,6 +19,7 @@ public class PlayerState : MonoBehaviour {
         this.stateMachine = stateMachine;
         this.playerData = playerData;
         this.animBoolName = animBoolName;
+        core = player.core;
     }   
 
     public virtual void Enter() {

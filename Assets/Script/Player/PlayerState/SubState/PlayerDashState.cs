@@ -23,7 +23,7 @@ public class PlayerDashState : PlayerAbilityState {
         canDash = false;
         player.inputHandler.UseDashInput();
 
-        dashDirection = Vector2.right * player.facingDirection;
+        dashDirection = Vector2.right * core.Movement.facingDirection;
 
         // Freeze physics to avoid sliding drift
         prevGravityScale = player.rb.gravityScale;
@@ -43,7 +43,8 @@ public class PlayerDashState : PlayerAbilityState {
         base.Exit();
 
         // Ensure velocity stopped
-        player.SetVelocityZero();
+        
+        core.Movement.SetVelocityZero();
 
         // Restore physics
         player.rb.gravityScale = prevGravityScale;
@@ -66,7 +67,7 @@ public class PlayerDashState : PlayerAbilityState {
         if (rawDashInput.sqrMagnitude > 0.01f) {
             dashDirection = rawDashInput.normalized;
         } else {
-            dashDirection = Vector2.right * player.facingDirection;
+            dashDirection = Vector2.right * core.Movement.facingDirection;
         }
 
         player.rb.linearVelocity = dashDirection * playerData.dashVelocity;
@@ -80,7 +81,7 @@ public class PlayerDashState : PlayerAbilityState {
         dashActive = false;
 
         // Stop movement instantly
-        player.SetVelocityZero();
+        core.Movement.SetVelocityZero();
 
         isAbilityDone = true;
 
