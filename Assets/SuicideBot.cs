@@ -66,6 +66,7 @@ public class SuicideBot : MonoBehaviour
         else
         {
             // Nếu không tìm thấy Player, tự hủy
+            
             Debug.LogWarning("Drone không tìm thấy Player, tự hủy.");
             Destroy(gameObject);
         }
@@ -83,7 +84,6 @@ public class SuicideBot : MonoBehaviour
     }
     
 
-    // Hàm nổ (giữ nguyên, nhưng sửa lại kiểu damage)
     private void Explode()
     {
         Debug.Log("BOOM! Drone tự hủy.");

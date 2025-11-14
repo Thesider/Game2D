@@ -14,7 +14,7 @@ public class WaterKillZone : MonoBehaviour
 
             if (playerStatus != null)
             {
-                // Gọi hàm ForceKill để set máu về 0
+                
                 playerStatus.ForceKill();
                 Debug.Log("Player touched water -> Health = 0 (Dead)");
             }
