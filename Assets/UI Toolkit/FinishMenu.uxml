@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement style="width: 100%; height: 100%; justify-content: center; align-items: center; flex-direction: column; background-color: rgba(0, 0, 0, 0); background-image: url(&quot;project://database/Assets/Scenes/MenuBackground/Background.png?fileID=2800000&amp;guid=1410b850b15b54743999211d1413f5fe&amp;type=3#Background&quot;);">
+        <ui:Label name="Title" text=" Level Complete! " style="font-size: 32px; unity-text-align: middle; margin-bottom: 20px; color: rgb(255, 255, 255);" />
+        <ui:Button name="MainMenuButton" text="Return To Main Menu" style="width: 200px; height: 40px; margin-bottom: 10px;" />
+        <ui:Button name="QuitButton" text="Quit Game" style="width: 200px; height: 40px; margin-bottom: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>

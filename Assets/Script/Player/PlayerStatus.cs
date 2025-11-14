@@ -28,6 +28,8 @@ public class PlayerStatus : MonoBehaviour, IShopCustomer
     public int maxLives = 1;
     private int currentLives;
     private Vector3 deathPosition; // Biến lưu vị trí
+     
+    
 
     [Header("Currency")]
     [SerializeField] private int gold = 100; // Cho người chơi 100 vàng khởi điểm để test
@@ -36,6 +38,9 @@ public class PlayerStatus : MonoBehaviour, IShopCustomer
     private Coroutine invincibilityCoroutine;
     private Coroutine speedModifierCoroutine;
     // ... (Hàm Awake và Update giữ nguyên) ...
+
+    public int CurrentLives => currentLives;
+    public Vector3 DeathPosition => deathPosition;
 
     //biến để lưu điểm
     private int score = 0;
@@ -219,22 +224,34 @@ public class PlayerStatus : MonoBehaviour, IShopCustomer
 
     private void Die()
     {
-        Debug.Log("Player has DIED!");
+        Debug.Log("💀 Player has DIED!");
         currentLives--;
 
-        deathPosition = transform.position; // Lưu vị trí chết
+        deathPosition = transform.position; // Save death position
 
         if (currentLives > 0)
         {
-            Invoke("Respawn", 3f);
+            // Respawn after 3 seconds
+            Invoke(nameof(Respawn), 3f);
         }
         else
         {
             Debug.Log("GAME OVER");
             gameObject.SetActive(false);
+
+            // ✅ Show Death Screen
+            DeadScreen deadScreen = FindObjectOfType<DeadScreen>();
+            if (deadScreen != null)
+            {
+                Time.timeScale = 0f; // Pause the game
+                deadScreen.Show();
+            }
+            else
+            {
+                Debug.LogWarning("No DeadScreen found in the scene!");
+            }
         }
     }
-
     public void Respawn()
     {
 
@@ -297,7 +314,6 @@ public class PlayerStatus : MonoBehaviour, IShopCustomer
         Die();
     }
 
-
     // --- TRIỂN KHAI CÁC HÀM TỪ INTERFACE IShopCustomer ---
 
 
@@ -343,5 +359,32 @@ public class PlayerStatus : MonoBehaviour, IShopCustomer
     }
 
     // Hàm này xử lý việc nhận vật phẩm sau khi mua
+    // ===================== SAVE / LOAD =====================
+
+    public void SavePlayerData()
+    {
+        PlayerData data = new PlayerData(this);
+        SaveSystem.Save(data);
+        Debug.Log("✅ Player data saved!");
+    }
+
+    public void LoadPlayerData()
+    {
+        PlayerData data = new PlayerData();
+        SaveSystem.Load(data);
+
+        currentHealth = data.currentHealth;
+        currentArmor = data.currentArmor;
+        currentLives = data.currentLives;
+        deathPosition = data.deathPosition;
+
+        // Move player to saved position
+        transform.position = data.savePosition;
+
+        if (HealthBarSlider != null)
+            HealthBarSlider.SetHealth(currentHealth);
+
+        Debug.Log($"✅ Player loaded. HP: {currentHealth}, Armor: {currentArmor}, Lives: {currentLives}");
+    }
 
 }

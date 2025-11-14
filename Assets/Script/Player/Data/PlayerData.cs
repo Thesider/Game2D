@@ -2,24 +2,24 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "newPlayerData", menuName = "Data/Player Data/Base Data")]
 public class PlayerData : ScriptableObject {
-    //public int currentHealth;
-    //public int currentArmor;
-    //public int currentLives;
-    //public Vector3 deathPosition;
-    //public Vector3 savePosition;
+    public int currentHealth;
+    public int currentArmor;
+    public int currentLives;
+    public Vector3 deathPosition;
+    public Vector3 savePosition; // the custom position you want to save
 
-    //public PlayerData() { }
+    public PlayerData() { }
 
-    //public PlayerData(PlayerStatus player)
-    //{
-    //    currentHealth = player.GetCurrentHealth();
-    //    currentArmor = player.GetCurrentArmor();
+    public PlayerData(PlayerStatus player)
+    {
+        currentHealth = player.GetCurrentHealth();
+        currentArmor = player.GetCurrentArmor();
 
-    //    // You'll need to make currentLives and deathPosition accessible:
-    //    currentLives = player.CurrentLives;
-    //    deathPosition = player.DeathPosition;
-    //    savePosition = player.transform.position;
-    //}
+        // You'll need to make currentLives and deathPosition accessible:
+        currentLives = player.CurrentLives;
+        deathPosition = player.DeathPosition;
+        savePosition = player.transform.position;
+    }
 
     [Header("Move State")]
     public float moveSpeed = 10f;

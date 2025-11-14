@@ -46,8 +46,10 @@ public class ScenesManager : MonoBehaviour
         MainMenu,
         LoadingScene,
         SampleScene_Map_0,
-        Map_1
+        Map_1,
+        FinishScene  
     }
+
 
     public void LoadScene(Scene target)
     {
