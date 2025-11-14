@@ -68,7 +68,12 @@ public class BossController : MonoBehaviour, IEnemy
     [SerializeField] private float repositionTimeout = 2.5f;
     [SerializeField] private LayerMask playerLayer = ~0;
 
-    [SerializeField] private BossPhaseTracker phaseTracker = new BossPhaseTracker();
+    [Header("Hitbox Settings")]
+    [SerializeField] private float closeAttackHitboxRadius = 1.75f;
+    [SerializeField] private Vector2 closeAttackHitboxOffset = new Vector2(1f, 0.1f);
+    [SerializeField] private float closeAttackHitboxDuration = 0.25f;
+    [SerializeField] private Vector2 chargeHitboxOffset = new Vector2(1.1f, 0f);
+    [SerializeField] private float chargeHitboxExtraLifetime = 0.1f;
 
     private readonly Blackboard blackboard = new Blackboard();
     private AnimatorAdapter animatorAdapter;
@@ -81,6 +86,8 @@ public class BossController : MonoBehaviour, IEnemy
     private bool pendingCombatEntry;
     private BossAttackType lastAttack = BossAttackType.CloseRange;
     private Vector3 initialScale;
+    private BossDamageHitbox closeAttackHitbox;
+    private BossDamageHitbox chargeAttackHitbox;
 
     public float MoveSpeed => moveSpeed;
     public float AttackRange => meleeRange;
@@ -98,8 +105,6 @@ public class BossController : MonoBehaviour, IEnemy
     public IAnimator Animator => animatorAdapter;
     public Blackboard Blackboard => blackboard;
     public bool DebugBehaviour => debugBehaviour;
-
-    public BossPhaseTracker PhaseTracker => phaseTracker;
 
     public bool HasPlayer => playerTransform != null;
     public bool HasPendingCombatEntry => pendingCombatEntry;
@@ -129,8 +134,14 @@ public class BossController : MonoBehaviour, IEnemy
     public float ChargeDamage => chargeDamage;
     public float ChargeHitRadius => chargeHitRadius;
     public float ChargeSpeed => chargeSpeed;
+    public float CloseAttackHitboxRadius => closeAttackHitboxRadius;
+    public Vector2 CloseAttackHitboxOffset => closeAttackHitboxOffset;
+    public float CloseAttackHitboxDuration => closeAttackHitboxDuration;
+    public Vector2 ChargeHitboxOffset => chargeHitboxOffset;
+    public float ChargeHitboxExtraLifetime => chargeHitboxExtraLifetime;
     public bool DebugEnabled => debugBehaviour;
     public Vector2 ForwardDirection => transform.localScale.x < 0f ? Vector2.left : Vector2.right;
+    public LayerMask PlayerLayer => playerLayer;
 
     private void Awake()
     {
@@ -342,6 +353,8 @@ public class BossController : MonoBehaviour, IEnemy
         }
     }
 
+
+
     public IEnumerator PerformChargeAttack()
     {
         Vector2 direction = Vector2.right;
@@ -358,9 +371,13 @@ public class BossController : MonoBehaviour, IEnemy
             direction = transform.localScale.x < 0f ? Vector2.left : Vector2.right;
         }
 
+        float dashDuration = Mathf.Max(0f, chargeDuration);
+        float extraLifetime = Mathf.Max(0f, chargeHitboxExtraLifetime);
+        BossDamageHitbox hitbox = EnsureHitbox(ref chargeAttackHitbox, "Boss_ChargeHitbox");
+        hitbox.Activate(this, chargeDamage, chargeHitRadius, chargeHitboxOffset, dashDuration + extraLifetime, true);
+
         float elapsed = 0f;
-        bool damaged = false;
-        while (elapsed < chargeDuration)
+        while (elapsed < dashDuration)
         {
             if (body != null)
             {
@@ -373,21 +390,29 @@ public class BossController : MonoBehaviour, IEnemy
 
             FaceDirection(direction);
 
-            if (!damaged)
-            {
-                Vector2 hitCenter = Position + direction * Mathf.Max(0f, chargeHitRadius * 0.5f);
-                if (DamagePlayerWithinRadius(hitCenter, chargeHitRadius, chargeDamage))
-                {
-                    damaged = true;
-                    if (DebugEnabled) Debug.Log("[BossController] Charge attack connected.");
-                }
-            }
-
             elapsed += Time.deltaTime;
             yield return null;
         }
 
         StopMovement();
+    }
+
+    public IEnumerator ActivateCloseRangeHitbox()
+    {
+        float lifetime = Mathf.Max(0f, closeAttackHitboxDuration);
+        BossDamageHitbox hitbox = EnsureHitbox(ref closeAttackHitbox, "Boss_CloseAttackHitbox");
+        hitbox.Activate(this, closeAttackDamage, closeAttackHitboxRadius, closeAttackHitboxOffset, lifetime, true);
+
+        if (lifetime > 0f)
+        {
+            yield return new WaitForSeconds(lifetime);
+        }
+        else
+        {
+            yield return null;
+        }
+
+        hitbox.Deactivate();
     }
 
     public bool ApplyDamageToPlayer(float damage)
@@ -424,7 +449,6 @@ public class BossController : MonoBehaviour, IEnemy
             }
         }
 
-        // Fallback to simple distance check in case colliders are misconfigured.
         if (IsPlayerWithinRadius(clampedRadius))
         {
             return ApplyDamageToPlayer(damage);
@@ -478,6 +502,24 @@ public class BossController : MonoBehaviour, IEnemy
     {
         StopAllCoroutines();
         StopMovement();
+        closeAttackHitbox?.Deactivate();
+        chargeAttackHitbox?.Deactivate();
+    }
+
+    private BossDamageHitbox EnsureHitbox(ref BossDamageHitbox cache, string name)
+    {
+        if (cache != null)
+            return cache;
+
+        GameObject hitboxObject = new GameObject(name);
+        hitboxObject.SetActive(false);
+        hitboxObject.transform.SetParent(transform, false);
+        hitboxObject.transform.localPosition = Vector3.zero;
+        hitboxObject.transform.localRotation = Quaternion.identity;
+        hitboxObject.transform.localScale = Vector3.one;
+        hitboxObject.layer = gameObject.layer;
+        cache = hitboxObject.AddComponent<BossDamageHitbox>();
+        return cache;
     }
 
     private void OnDrawGizmosSelected()
@@ -544,25 +586,3 @@ public class BossController : MonoBehaviour, IEnemy
     }
 }
 
-[System.Serializable]
-public class BossPhaseTracker
-{
-    [SerializeField] private int currentPhase = 1;
-
-    public int CurrentPhase => currentPhase;
-
-    public void SetPhase(int phase)
-    {
-        currentPhase = Mathf.Max(1, phase);
-    }
-
-    public void ResetPhase()
-    {
-        currentPhase = 1;
-    }
-
-    public void AdvancePhase()
-    {
-        currentPhase++;
-    }
-}

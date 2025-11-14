@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1107d9ffcfec60145b87f4982af2cd4b, type: 3}
   m_Name: playerData
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpVelocity: 35
+  moveSpeed: 10
+  jumpVelocity: 50
   amountOfJumps: 2
   coyoteTime: 0.5
   variableJumpHeightMultiplier: 0.13
@@ -24,9 +24,5 @@ MonoBehaviour:
   drag: 10
   distanceBetweenAfterImages: 0.5
   crouchSpeed: 3
-  crouchColliderHeight: 0.172
+  crouchColliderHeight: 3.19
   standColliderHeight: 0.343
-  groundCheckRadius: 0.3
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0

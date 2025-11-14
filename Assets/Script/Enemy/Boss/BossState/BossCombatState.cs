@@ -122,14 +122,13 @@ public class BossCombatState : IState
         else
             yield return null;
 
-        Vector2 hitCenter = boss.Position + boss.ForwardDirection * (boss.MeleeRange * 0.5f);
-        bool damageApplied = boss.DamagePlayerWithinRadius(hitCenter, boss.MeleeRange, boss.CloseAttackDamage);
+
         if (boss.DebugEnabled)
         {
-            Debug.Log(damageApplied
-                ? "[BossCombatState] CloseRangeAttack: damage applied."
-                : "[BossCombatState] CloseRangeAttack: player out of range, missed.");
+            Debug.Log("[BossCombatState] CloseRangeAttack: hitbox spawned.");
         }
+
+        yield return boss.ActivateCloseRangeHitbox();
 
         float recovery = Mathf.Max(0f, boss.CloseAttackRecovery);
         if (recovery > 0f)

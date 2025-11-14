@@ -9,7 +9,6 @@ public class BossBehaviourContext
 
     public BossController Boss { get; }
     public Blackboard Blackboard => Boss?.Blackboard;
-    public BossPhaseTracker Phase => Boss?.PhaseTracker;
 
     public Transform Player => Boss?.Player;
     public bool HasPlayer => Player != null;

@@ -6,13 +6,13 @@ public class DontDestroyOnLoad : MonoBehaviour
 
     void Awake()
     {
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject); // destroy duplicates
-            return;
-        }
+        // if (instance != null && instance != this)
+        // {
+        //     Destroy(gameObject);
+        //     return;
+        // }
 
-        instance = this;
+        // instance = this;
         DontDestroyOnLoad(gameObject);
     }
 }
