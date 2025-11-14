@@ -47,7 +47,7 @@ public class ScenesManager : MonoBehaviour
         LoadingScene,
         SampleScene_Map_0,
         Map_1,
-        FinishScene  
+        LevelFinish  
     }
 
 
@@ -72,8 +72,11 @@ public class ScenesManager : MonoBehaviour
     public void LoadNewGame() => LoadScene(Scene.SampleScene_Map_0);
     public void LoadMainMenu() => LoadScene(Scene.MainMenu);
 
-    private void DestroyIfExists(string name)
+    private void DestroyIfExists(string name, string exception = null)
     {
+        if (!string.IsNullOrEmpty(exception) && name == exception)
+            return;
+
         GameObject obj = GameObject.Find(name);
         if (obj != null)
         {
@@ -81,6 +84,7 @@ public class ScenesManager : MonoBehaviour
             Destroy(obj);
         }
     }
+
     public void LoadScene(Scene target, string spawnId = DefaultSpawnId)
     {
         if (target == Scene.LoadingScene)
@@ -88,9 +92,9 @@ public class ScenesManager : MonoBehaviour
             Debug.LogWarning("Cannot load LoadingScene directly.");
             return;
         }
+        DestroyIfExists("MainMenu", target.ToString());
+        DestroyIfExists("PauseMenu", target.ToString());
 
-        DestroyIfExists("MainMenu");
-        DestroyIfExists("PauseMenu");
 
         NextSceneName = target.ToString();
         SetNextSpawn(spawnId);

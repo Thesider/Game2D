@@ -20,6 +20,10 @@ public class PlayerData : ScriptableObject {
         deathPosition = player.DeathPosition;
         savePosition = player.transform.position;
     }
+    public static class PlayerDataHolder
+    {
+        public static PlayerData PlayerData;
+    }
 
     [Header("Move State")]
     public float moveSpeed = 10f;

@@ -17,7 +17,7 @@ public class FinishTrigger : MonoBehaviour
             // If you have ScenesManager
             if (ScenesManager.Instance != null)
             {
-                ScenesManager.Instance.LoadScene(ScenesManager.Scene.FinishScene);
+                ScenesManager.Instance.LoadScene(ScenesManager.Scene.LevelFinish);
             }
             else
             {
