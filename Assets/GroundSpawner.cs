@@ -4,17 +4,17 @@ using UnityEngine;
 public class DroneSpawner : MonoBehaviour
 {
     [Header("Thiết lập Prefab")]
-    [SerializeField] private GameObject botPrefab; // Kéo Prefab SuicideBot vào đây
+    [SerializeField] private GameObject botPrefab; 
 
     [Header("Thiết lập Spawn")]
     [Tooltip("Số lượng drone tối đa muốn spawn")]
-    [SerializeField] private int spawnCount = 10; // Tổng số Drone sẽ sinh ra
+    [SerializeField] private int spawnCount = 10; 
 
     [Tooltip("Thời gian chờ giữa mỗi lần spawn (giây)")]
     [SerializeField] private float spawnInterval = 5f; // Cứ 5 giây sinh ra 1 con
 
     [Tooltip("Kích thước của khu vực spawn (ngẫu nhiên)")]
-    [SerializeField] private Vector2 spawnAreaSize = new Vector2(20f, 10f); // Rộng 20, Cao 10
+    [SerializeField] private Vector2 spawnAreaSize = new Vector2(20f, 10f); 
 
     // Bắt đầu khi game chạy
     void Start()

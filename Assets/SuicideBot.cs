@@ -10,7 +10,7 @@ public class SuicideBot : MonoBehaviour
 
     [Header("Kích hoạt (Activation)")]
     [Tooltip("Thời gian chờ trước khi đuổi theo Player (giây)")]
-    [SerializeField] private float chaseDelay = 1.5f; // Sẽ đứng im 1.5 giây
+    [SerializeField] private float chaseDelay = 1.5f; 
 
     [Header("Hiệu ứng")]
     [SerializeField] private GameObject explosionEffectPrefab;
@@ -54,7 +54,7 @@ public class SuicideBot : MonoBehaviour
         // 4. Chờ (đứng im lơ lửng) trong 'chaseDelay' giây
         yield return new WaitForSeconds(chaseDelay);
 
-        // 5. Sau khi chờ xong, BẮT ĐẦU tìm Player
+        
         Debug.Log("Drone " + gameObject.name + " BẮT ĐẦU ĐUỔI THEO!");
         GameObject playerObject = GameObject.FindWithTag("Player");
 

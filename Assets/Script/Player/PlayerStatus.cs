@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour, IShopCustomer
@@ -234,7 +234,7 @@ public class PlayerStatus : MonoBehaviour, IShopCustomer
             Invoke(nameof(Respawn), 3f);
         }
         else
-        {
+        {   
             Debug.Log("GAME OVER");
             gameObject.SetActive(false);
 
